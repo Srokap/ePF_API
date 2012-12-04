@@ -78,17 +78,6 @@
   @include_once('classes/objects/ep_Sejm_Dzien.php');
   @include_once('classes/objects/ep_Sejm_Wniesiony_Projekt.php');
   @include_once('classes/objects/ep_Posel_Wspolpracownik.php');  
- 
- /* 
-  @include_once('classes/objects/ep_Orzeczenie_sn_typ.php');
-  @include_once('classes/objects/ep_SN_Izba.php');  
-  @include_once('classes/objects/ep_Orzeczenie_sn_stanowisko.php');
-  @include_once('classes/objects/ep_Orzeczenie_sn_blok.php');
-  @include_once('classes/objects/ep_Orzeczenie_sn_osoba_stanowisko.php');
-  @include_once('classes/objects/ep_SN_Osoba.php');
-  @include_once('classes/objects/ep_SN_Orzeczenie.php');
-*/  
-
   @include_once('classes/objects/ep_SN_Orzeczenie_Autor.php');
   @include_once('classes/objects/ep_SN_Orzeczenie_Forma.php');
   @include_once('classes/objects/ep_SN_Orzeczenie_Izba.php');
