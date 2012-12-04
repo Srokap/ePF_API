@@ -2,7 +2,7 @@ eP_API - Dane publiczne dostępne jak nigdy wcześniej!
 
 To jest oficjalny klient platformy eP_API. Umożliwia pobieranie danych publicznych, udostępnianych na portalu http://sejmometr.pl.
 Zobacz więcej informacji o platformie eP_API na stronie http://sejmometr.pl/api.
-Dokumentacja klienta jest dostępna pod adresem http://sejmometr.pl/api/docs
+Dokumentacja klienta jest dostępna pod adresem http://sejmometr.pl/api/docs.
 
 	
 
@@ -28,4 +28,4 @@ Dane, do których uzyskujesz dostęp przez eP_API są materiałami urzędowymi o
 
 
 
-Wydawcą portalu Sejmometr i operatorem platformy eP_API jest Fundacja ePaństwo - niezależna organizacja pozarządowa, działająca na rzecz dostępu do informacji publicznych w Polsce. Zobacz http://epanstwo.org.pl
+Wydawcą portalu Sejmometr i operatorem platformy eP_API jest Fundacja ePaństwo - niezależna organizacja pozarządowa, działająca na rzecz dostępu do informacji publicznych w Polsce. Zobacz http://epanstwo.org.pl.
