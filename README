@@ -1,0 +1,31 @@
+eP_API - Dane publiczne dostępne jak nigdy wcześniej!
+
+To jest oficjalny klient platformy eP_API. Umożliwia pobieranie danych publicznych, udostępnianych na portalu http://sejmometr.pl.
+Zobacz więcej informacji o platformie eP_API na stronie http://sejmometr.pl/api.
+Dokumentacja klienta jest dostępna pod adresem http://sejmometr.pl/api/docs
+
+	
+
+eP_API daje dostęp do danych publicznych, pochodzących od wielu instytucji publicznych. Znajdziesz tu m.in.:
+
+Dokładne dane o pracach legislacyjnych (zintegrowane bazy Rady Ministrów, Sejmu, Senatu oraz Prezydenta RP),
+Akty prawne publikowane w Dzienniku Ustaw i Monitorze Polskim od 1918 r. (bazy Rządowego Centrum Legislacyjnego),
+Wersje ujednolicone aktów prawnych oraz powiązania między nimi opracowywane przez pracowników Kancelarii Sejmu (baza ISAP),
+Orzeczenia sądów administracyjnych, Sądu Najwyższego oraz sądów powszechnych,
+Dane teleadresowe instytucji państowywych w tym jednostek samorządu terytorialnego,
+Dane geodezyjne granic gmin, powiatów, województw i okręgów wyborczych,
+Wyniki wyborów samorządowych oraz parlamentarnych,
+Wskaźniki ekonomiczne i socjalne (Bank Danych Lokalnych oraz inne bazy Głównego Urzędu Statystycznego).
+
+
+
+Warunki korzystania
+
+Korzystanie z eP_API jest dozwolone wyłącznie do działalności niekomercyjnej.
+Jeśli chcesz użyć platformy dla celów komercyjnych - skontaktuj się z nami.
+
+Dane, do których uzyskujesz dostęp przez eP_API są materiałami urzędowymi odpowiednich instytucji administracji publicznej i w związku z tym nie dotyczy ich ustawa a prawie autorskim i prawach pokrewnych.
+
+
+
+Wydawcą portalu Sejmometr i operatorem platformy eP_API jest Fundacja ePaństwo - niezależna organizacja pozarządowa, działająca na rzecz dostępu do informacji publicznych w Polsce. Zobacz http://epanstwo.org.pl
