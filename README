@@ -21,11 +21,10 @@ Wskaźniki ekonomiczne i socjalne (Bank Danych Lokalnych oraz inne bazy Główne
 
 Warunki korzystania
 
-Korzystanie z eP_API jest dozwolone wyłącznie do działalności niekomercyjnej.
-Jeśli chcesz użyć platformy dla celów komercyjnych - skontaktuj się z nami.
-
-Dane, do których uzyskujesz dostęp przez eP_API są materiałami urzędowymi odpowiednich instytucji administracji publicznej i w związku z tym nie dotyczy ich ustawa a prawie autorskim i prawach pokrewnych.
-
-
-
 Wydawcą portalu Sejmometr i operatorem platformy eP_API jest Fundacja ePaństwo - niezależna organizacja pozarządowa, działająca na rzecz dostępu do informacji publicznych w Polsce. Zobacz http://epanstwo.org.pl.
+
+Informacje, do których dostęp uzyskuje się przez eP_API są informacjami publicznymi w rozumieniu ustawy o dostępie do informacji publicznej. Są to również akty normatywne lub ich urzędowe projekty, urzędowe dokumenty, materiały, znaki i symbole, o których mowa w art. 4 ustawy o prawie autorskim i prawach pokrewnych. Jako takie zaś nie są przedmiotem prawa autorskiego.
+
+Fundacja ePaństwo stara się strukturalizować, wzbogacać oraz łączyć informacje, które pozyskuje w ramach ponownego wykorzystywania informacji z sektora publicznego. W takim przypadku może powstać chroniony prawem autorskim utwór. Starania Fundacji dotyczace strukturalizacji danych mogą też powodować, że korzystający z eP_API będą korzystali z bazy danych, o której mowa w ustawie o ochronie baz danych.
+
+Fundacja ePaństwo niniejszym udziela "wolnej licencji" na udostępniane w ramach eP_API utwory i bazy danych, do których przysługują jej autorskie prawa majątkowe oraz prawa pokrewne, a jedynym warunkiem takiej licencji - w przypadku tworzenia aplikacji wykorzystujących dane udostępniane przez Fundację - jest umieszczenie informacji o pochodzeniu danych wraz z linkiem do serwisu Sejmometr.pl.
