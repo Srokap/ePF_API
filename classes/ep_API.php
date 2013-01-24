@@ -60,6 +60,10 @@
 
     }
 		
+				
+		
+		
+		
 		/**
 		 * @param array $params
 		 * @return string
@@ -69,6 +73,41 @@
 			$str .= $this->_secret;
 		
 			return md5( $str );		 
+		}
+	}
+	
+	
+	
+	
+	
+	// Helper functions
+	
+	if( !function_exists('sm_data_slowna') ) {
+		function sm_data_slowna( $data ) {
+		  $_miesiace = array(
+		    1 => 'stycznia',
+		    2 => 'lutego',
+		    3 => 'marca',
+		    4 => 'kwietnia',
+		    5 => 'maja',
+		    6 => 'czerwca',
+		    7 => 'lipca',
+		    8 => 'sierpnia',
+		    9 => 'września',
+		    10 => 'października',
+		    11 => 'listopada',
+		    12 => 'grudnia',
+		  );
+		  
+		  $data = trim( strip_tags( $data ) );
+		  $parts = explode('-', $data);
+		  if( count($parts)!=3 ) return $data;
+		  
+		  $rok = (int) $parts[2];
+		  $miesiac = (int) $parts[1];
+		  $dzien = (int) $parts[0];
+		  
+		  return '<span class="_ds" value="' . $data . '">' . $rok . ' ' . $_miesiace[ $miesiac ] . ' ' . $dzien . ' r.</span>';
 		}
 	}
 ?>
