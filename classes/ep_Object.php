@@ -22,8 +22,9 @@ abstract class ep_Object extends ep_Api {
 
 			$id = false;
 			foreach( $this->_aliases as $alias )
-				if( $id = $data[ $alias.'.id'] )
+				if( $id = $data[ $alias.'.id'] ){
 					break;
+				}
 
 		} elseif( $this->_field_init_lookup && is_string( $data ) && !is_numeric( $data ) ) {
 
@@ -33,14 +34,12 @@ abstract class ep_Object extends ep_Api {
 			$data = $dataset->where($this->_field_init_lookup, '=', $data)->find_one( false );
 			unset( $dataset );
 			$id = (int) $data[ $this->_aliases[0].'.id' ];
-
 		} elseif( $data ) {
 
 			// echo '-3<br/>';
 
 			$id = $data;
 			unset( $data );
-
 		}
 
 		if( !$id ){
@@ -71,7 +70,6 @@ abstract class ep_Object extends ep_Api {
 		if( $dataset->mode=='DBF' ) {
 
 			$this->data = $data;
-
 		} else {
 
 			if( $data ) {
@@ -83,7 +81,6 @@ abstract class ep_Object extends ep_Api {
 		}
 
 		unset( $dataset );
-
 	}
 
 	function parse_data( $data ){
@@ -100,16 +97,19 @@ abstract class ep_Object extends ep_Api {
 				}
 
 				$parts_count = count($parts);
-				if( $parts_count<2 )
+				if( $parts_count<2 ){
 					break;
+				}
 
 				$alias = $parts[ $parts_count-2 ];
 				$key = $parts[ $parts_count-1 ];
 
-				if( in_array($alias, $this->_aliases) )
+				if( in_array($alias, $this->_aliases) ) {
 					$this->data[ $key ] = $v;
-				else
+				}
+				else{
 					$children[ $alias ][ $alias.'.'.$key ] =	$v ;
+				}
 
 			}
 
@@ -125,8 +125,9 @@ abstract class ep_Object extends ep_Api {
 
 			}
 
-			if( !empty($layers) )
+			if( !empty($layers) ) {
 				$this->layers = array_merge( $this->layers, $layers );
+			}
 
 		}
 
@@ -145,14 +146,16 @@ abstract class ep_Object extends ep_Api {
 				'params' => $params,
 		));
 
-		if( $data )
+		if( $data ){
 			$this->layers[ $layer ] = $data['data'];
+		}
 	}
 
 	public function getTitle(){
 		foreach( array('tytul', 'nazwa', 'label', 'sygnatura', 'kod') as $key )
-			if( $this->data[ $key ] )
+			if( $this->data[ $key ] ){
 				return $this->data[ $key ];
+			}
 
 		return '';
 	}

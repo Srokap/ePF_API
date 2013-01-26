@@ -8,7 +8,6 @@ class ep_Legislacja_Projekt_Etap extends ep_Object{
 		// echo "\n";
 		// echo $this->data['data_json'];
 		$this->data['_data'] = json_decode( $this->data['data_json'], true );
-
 	}
 
 	/**

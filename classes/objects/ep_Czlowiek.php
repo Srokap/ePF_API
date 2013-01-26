@@ -10,7 +10,6 @@ class ep_Czlowiek extends ep_Object{
 
 			$this->_stanowiska = new ep_Dataset('stanowiska');
 			$this->_stanowiska->init_where('ludzie.id', '=', $this->id);
-
 		}
 		return $this->_stanowiska;
 	}

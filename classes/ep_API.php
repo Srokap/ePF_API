@@ -16,8 +16,9 @@ class ep_Api {
 	public function call( $service, $params ){
 		$service = trim( $service );
 
-		if( !$service )
+		if( !$service ){
 			return false;
+		}
 
 		parse_str( http_build_query( $params ), $params );
 		$params[ 'sign' ] = $this->generate_sig( $params );
@@ -87,7 +88,9 @@ if( !function_exists('sm_data_slowna') ) {
 
 		$data = trim( strip_tags( $data ) );
 		$parts = explode('-', $data);
-		if( count($parts)!=3 ) return $data;
+		if( count($parts)!=3 ) {
+			return $data;
+		}
 
 		$rok = (int) $parts[2];
 		$miesiac = (int) $parts[1];
@@ -116,7 +119,9 @@ if( !function_exists('sm_data_slowna') ) {
 
 		$data = trim( strip_tags( $data ) );
 		$parts = explode('-', $data);
-		if( count($parts)!=3 ) return $data;
+		if( count($parts)!=3 ) {
+			return $data;
+		}
 
 		$rok = (int) $parts[2];
 		$miesiac = (int) $parts[1];

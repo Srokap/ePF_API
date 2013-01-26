@@ -12,7 +12,6 @@ class ep_Sejm_Wystapienie extends ep_Object{
 	public function __construct( $data, $complex = true) {
 		parent::__construct( $data, $complex );
 		$this->data['tytul'] = strip_tags( 'Wystąpienie '.sm_data_slowna( $this->data['data'] ) ).' '.$this->mowca()->data['nazwa'];
-
 	}
 
 	public function posiedzenie(){
@@ -38,7 +37,6 @@ class ep_Sejm_Wystapienie extends ep_Object{
 
 	public function set_ep_mowcy($data){
 		$this->_mowca = new ep_Czlowiek($data);
-
 	}
 
 	public function mowca(){
@@ -47,7 +45,6 @@ class ep_Sejm_Wystapienie extends ep_Object{
 
 	public function set_ep_stanowiska($data){
 		$this->_stanowisko = new ep_Stanowisko($data);
-
 	}
 
 	public function stanowisko(){

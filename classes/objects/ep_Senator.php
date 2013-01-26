@@ -60,7 +60,6 @@ class ep_Senator extends ep_Object{
 		if( !$this->_oswiadczenia_majatkowe ) {
 			$this->_oswiadczenia_majatkowe = new ep_Dataset('senatorowie_oswiadczenia_majatkowe');
 			$this->_oswiadczenia_majatkowe->init_where('senator_id', '=', $this->id);
-
 		}
 		return $this->_oswiadczenia_majatkowe;
 	}
@@ -69,7 +68,6 @@ class ep_Senator extends ep_Object{
 		if( !$this->_rejestr_korzysci ) {
 			$this->_rejestr_korzysci = new ep_Dataset('senat_rejestr_korzysci');
 			$this->_rejestr_korzysci->init_where('senator_id', '=', $this->id);
-
 		}
 		return $this->_rejestr_korzysci;
 	}

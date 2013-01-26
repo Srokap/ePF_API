@@ -25,7 +25,6 @@ class ep_Dataset extends ep_Api {
 
 	public function __construct( $name ) {
 		$this->name = $name;
-
 	}
 
 	public function keyword($keyword){
@@ -44,22 +43,26 @@ class ep_Dataset extends ep_Api {
 	}
 
 	public function init_layer( $layer ) {
-		if( $layer )
+		if( $layer ){
 			$this->_init_layers[] = $layer;
+		}
 		return $this;
 	}
 
 	public function order_by( $field, $direction = 'ASC' ){
-		if( !$field )
+		if( !$field ){
 			return $this;
+		}
 
 		$parts = explode('.', $field);
 		$parts_count = count($parts);
 
-		if( $parts_count===1 )
+		if( $parts_count===1 ){
 			$d_field = $this->name.'.'. $field;
-		else
+		}
+		else{
 			$d_field = $parts[ $parts_count-2 ].'.'.$parts[ $parts_count-1 ];
+		}
 
 		$this->add_runtime_orders( array( $d_field, $direction ) );
 
@@ -70,7 +73,6 @@ class ep_Dataset extends ep_Api {
 		$data = $this->call( 'dataset-info', $this->name );
 		$this->data = $data['dataset'];
 		$this->fields = $data['fields'];
-
 	}
 
 	public function set_limit( $l ){
@@ -79,11 +81,13 @@ class ep_Dataset extends ep_Api {
 	}
 
 	public function find_all( $limit = null, $offset = null, $return_objects=true ){
-		if( $limit )
+		if( $limit ){
 			$this->limit = $limit;
+		}
 
-		if( $offset )
+		if( $offset ){
 			$this->offset = $offset;
+		}
 
 		$params = $this->get_params();
 		$data = $this->call( 'dataset-search', $params );
@@ -133,7 +137,6 @@ class ep_Dataset extends ep_Api {
 					} else {
 
 						$result[] = $data;
-
 					}
 
 				}
@@ -143,10 +146,12 @@ class ep_Dataset extends ep_Api {
 
 		} else {
 
-			if( $return_objects )
+			if( $return_objects ){
 				return $this->return_objects();
-			else
+			}
+			else{
 				return $this->items;
+			}
 		}
 
 	}
@@ -213,17 +218,17 @@ class ep_Dataset extends ep_Api {
 		$class = $this->items_class;
 		$result = array();
 
-		if( $class && is_array($this->items) && !empty($this->items) )
+		if( $class && is_array($this->items) && !empty($this->items) ) {
 			foreach( $this->items as $item ) {
-
-			/*
-			 if( $item && $this->mode=='DBF' && $_SERVER['REMOTE_ADDR']=='80.72.34.251' )
-				$item = @json_decode( $item, true );
-			*/
-
-		if( $item )
-			$result[] = new $class( $item, false );
-
+				/*
+				 if( $item && $this->mode=='DBF' && $_SERVER['REMOTE_ADDR']=='80.72.34.251' ){
+					$item = @json_decode( $item, true );
+				 }
+				*/
+				if( $item ){
+					$result[] = new $class( $item, false );
+				}
+			}
 		}
 
 		return $result;
@@ -249,8 +254,9 @@ class ep_Dataset extends ep_Api {
 	}
 
 	public function add_runtime_keywords( $keyword ){
-		if( $keyword )
+		if( $keyword ){
 			$this->_runtime_keywords[] = $keyword;
+		}
 		return $this;
 	}
 

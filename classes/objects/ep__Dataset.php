@@ -6,12 +6,12 @@ class ep__Dataset extends ep_Object{
 
 	public function __construct( $data ) {
 		$id = $data['_datasets.base_alias'];
-		if( !$id )
+		if( !$id ){
 			return false;
+		}
 
 		$this->id = $id;
 		$this->loaded = $this->parse_data( $data );
-
 	}
 
 	/**

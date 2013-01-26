@@ -8,7 +8,6 @@ class ep_Sejm_Dzien extends ep_Object{
 	public function __construct( $data, $complex = true ){
 		parent::__construct( $data, $complex );
 		$this->data['tytul'] = strip_tags( sm_data_slowna( $this->data['data'] ).', '.sm_dzien_slowny( $this->data['data'] ) );
-
 	}
 
 	public function set_ep_sejm_posiedzenia($data){

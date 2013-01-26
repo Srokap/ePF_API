@@ -11,7 +11,6 @@ class ep_Senat_Wystapienie extends ep_Object{
 	public function __construct( $data, $complex = true) {
 		parent::__construct( $data, $complex );
 		$this->data['tytul'] = strip_tags( 'Wystąpienie '.$this->mowca()->data['nazwa'] );
-
 	}
 
 	/*
@@ -39,7 +38,6 @@ class ep_Senat_Wystapienie extends ep_Object{
 
 	public function set_ep_mowcy($data){
 		$this->_mowca = new ep_Czlowiek($data);
-
 	}
 
 	public function mowca(){
@@ -48,7 +46,6 @@ class ep_Senat_Wystapienie extends ep_Object{
 
 	public function set_ep_stanowiska($data){
 		$this->_stanowisko = new ep_Stanowisko($data);
-
 	}
 
 	public function stanowisko(){

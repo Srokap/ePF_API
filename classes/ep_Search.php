@@ -20,8 +20,9 @@ class ep_Search extends ep_Api {
 
 	public function find_all($limit, $offset){
 		$this->limit = 20;
-		if( $offset )
+		if( $offset ){
 			$this->offset = $offset;
+		}
 
 		$params = array(
 				'q' => $this->q,
@@ -29,8 +30,9 @@ class ep_Search extends ep_Api {
 				'of' => $this->offset,
 		);
 
-		if( $this->dataset )
+		if( $this->dataset ){
 			$params['d'] = $this->dataset;
+		}
 
 		$data = $this->call( 'search', $params );
 		$this->items = array();
@@ -46,7 +48,6 @@ class ep_Search extends ep_Api {
 			$o->data = json_decode( $i['data'], true );
 
 			$this->items[] = $o;
-
 		}
 
 		return $this->items;

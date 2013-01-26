@@ -14,14 +14,12 @@ class ep_SA_Orzeczenie extends ep_Object{
 		$sad = $this->sad()->data;
 		$this->data['tytul_skrocony'] = $this->data['nazwa'].' '.$sad['dopelniacz'].'	z dnia '.sm_data_slowna($this->data['data_orzeczenia']);
 		$this->data['tytul'] = $this->data['sygnatura'];
-
 	}
 
 	public function sedziowie() {
 		if( !$this->_sedziowie ) {
 			$this->_sedziowie = new ep_Dataset('sa_sedziowie');
 			$this->_sedziowie->init_where('sa_sedziowie_orzeczenia.orzeczenie_id', '=', $this->id);
-
 		}
 
 		return $this->_sedziowie;

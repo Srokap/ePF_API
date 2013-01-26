@@ -11,7 +11,6 @@ class ep_Kod_Pocztowy extends ep_Object{
 
 			$this->_gminy = new ep_Dataset('gminy');
 			$this->_gminy->init_where('kody_pocztowe_gminy.kod_id', '=', $this->data['id'])->order_by('typ_id', 'ASC');
-
 		}
 		return $this->_gminy;
 	}

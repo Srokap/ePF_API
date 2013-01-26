@@ -9,7 +9,6 @@ class ep_Posel_Aktywnosc extends ep_Object{
 	// echo "\n";
 	// echo $this->data['data_json'];
 	// $this->data['meta'] = json_decode( $this->data['meta'], true );
-
 	}
 	*/
 

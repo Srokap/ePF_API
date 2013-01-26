@@ -18,12 +18,10 @@ class ep_Posel extends ep_Object{
 
 	public function set_ep_ludzie($data){
 		$this->_mowca = new ep_Czlowiek($data);
-
 	}
 
 	public function set_ep_sejm_kluby($data){
 		$this->_klub = new ep_Sejm_Klub($data);
-
 	}
 
 	public function mowca(){
@@ -39,7 +37,6 @@ class ep_Posel extends ep_Object{
 
 			$this->_aktywnosci = new ep_Dataset('poslowie_aktywnosci');
 			$this->_aktywnosci->init_where('posel_id', '=', $this->data['id']);
-
 		}
 		return $this->_aktywnosci;
 	}
@@ -49,7 +46,6 @@ class ep_Posel extends ep_Object{
 
 			$this->_wystapienia = new ep_Dataset('sejm_wystapienia');
 			$this->_wystapienia->init_where('czlowiek_id', '=', $this->data['mowca_id']);
-
 		}
 		return $this->_wystapienia;
 	}
@@ -59,7 +55,6 @@ class ep_Posel extends ep_Object{
 
 			$this->_glosy = new ep_Dataset('poslowie_glosy');
 			$this->_glosy->init_where('posel_id', '=', $this->id);
-
 		}
 		return $this->_glosy;
 	}
@@ -69,7 +64,6 @@ class ep_Posel extends ep_Object{
 
 			$this->_twitty = new ep_Dataset('twitter');
 			$this->_twitty->init_where('posel_id', '=', $this->id);
-
 		}
 		return $this->_twitty;
 	}
@@ -79,7 +73,6 @@ class ep_Posel extends ep_Object{
 
 			$this->_projekty_ustaw = new ep_Dataset('legislacja_projekty_ustaw');
 			$this->_projekty_ustaw->init_where('poslowie.id', '=', $this->id);
-
 		}
 		return $this->_projekty_ustaw;
 	}
@@ -89,7 +82,6 @@ class ep_Posel extends ep_Object{
 
 			$this->projekty_uchwal = new ep_Dataset('legislacja_projekty_uchwal');
 			$this->projekty_uchwal->init_where('poslowie.id', '=', $this->id);
-
 		}
 		return $this->projekty_uchwal;
 	}
@@ -99,7 +91,6 @@ class ep_Posel extends ep_Object{
 
 			$this->_komisje_stanowiska = new ep_Dataset('poslowie_komisje_stanowiska');
 			$this->_komisje_stanowiska->init_where('poslowie.id', '=', $this->id);
-
 		}
 		return $this->_komisje_stanowiska;
 	}
@@ -109,7 +100,6 @@ class ep_Posel extends ep_Object{
 
 			$this->_wspolpracownicy = new ep_Dataset('poslowie_wspolpracownicy');
 			$this->_wspolpracownicy->init_where('poslowie.id', '=', $this->id);
-
 		}
 		return $this->_wspolpracownicy;
 	}
@@ -119,7 +109,6 @@ class ep_Posel extends ep_Object{
 
 			$this->_oswiadczenia_majatkowe = new ep_Dataset('poslowie_oswiadczenia_majatkowe');
 			$this->_oswiadczenia_majatkowe->init_where('poslowie.id', '=', $this->id);
-
 		}
 		return $this->_oswiadczenia_majatkowe;
 	}
@@ -129,7 +118,6 @@ class ep_Posel extends ep_Object{
 
 			$this->_rejestr_korzysci = new ep_Dataset('poslowie_rejestr_korzysci');
 			$this->_rejestr_korzysci->init_where('poslowie.id', '=', $this->id);
-
 		}
 		return $this->_rejestr_korzysci;
 	}

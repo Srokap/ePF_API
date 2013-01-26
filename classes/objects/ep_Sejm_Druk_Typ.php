@@ -10,7 +10,6 @@ class ep_Sejm_Druk_Typ extends ep_Object{
 
 			$this->_druki = new ep_Dataset('sejm_druki');
 			$this->_druki->init_where('sejm_druki.typ_id', '=', $this->id);
-
 		}
 		return $this->_druki;
 	}

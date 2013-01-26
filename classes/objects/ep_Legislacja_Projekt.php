@@ -20,7 +20,6 @@ class ep_Legislacja_Projekt extends ep_Object{
 		if( !$this->_zmieniane_ustawy ) {
 			$this->_zmieniane_ustawy = new ep_Dataset('ustawy');
 			$this->_zmieniane_ustawy->init_where('legislacja_projekty-prawo_glowne.projekt_id', '=', $this->data['id']);
-
 		}
 		return $this->_zmieniane_ustawy;
 	}
@@ -30,7 +29,6 @@ class ep_Legislacja_Projekt extends ep_Object{
 
 			$this->_podpisy_poslowie = new ep_Dataset('legislacja_projekty-podpisy');
 			$this->_podpisy_poslowie->init_where('projekt_id', '=', $this->data['id']);
-
 		}
 		return $this->_podpisy_poslowie;
 	}

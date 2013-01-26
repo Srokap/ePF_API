@@ -17,7 +17,6 @@ class ep_RCL_Projekt extends ep_Object{
 
 	public function set_ep_instytucje($data){
 		$this->_autor = new ep_Instytucja($data);
-
 	}
 
 	public function autor(){

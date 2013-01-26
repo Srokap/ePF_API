@@ -11,7 +11,6 @@ class ep_Sejm_Klub extends ep_Object{
 
 			!$this->_poslowie = new ep_Dataset('poslowie');
 			$this->_poslowie->init_where('klub_id', '=', $this->data['id']);
-
 		}
 		return $this->_poslowie;
 	}

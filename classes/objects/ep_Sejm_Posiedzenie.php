@@ -15,7 +15,6 @@ class ep_Sejm_Posiedzenie extends ep_Object{
 		unset( $this->data['stats_json'] );
 		$this->data['numer'] = (int) $this->data['tytul'];
 		$this->data['tytul'] = 'Posiedzenie Sejmu nr '.$this->data['tytul'];
-
 	}
 
 	public function dni(){
