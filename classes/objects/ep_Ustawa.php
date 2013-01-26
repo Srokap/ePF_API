@@ -7,8 +7,8 @@ class ep_Ustawa extends ep_Object{
 	private $_projekty_zmian = false;
 
 	/**
-	* @return int
-	*/
+	 * @return int
+	 */
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
@@ -45,7 +45,7 @@ class ep_Ustawa extends ep_Object{
 	}
 
 	/**
-	 * @return string 
+	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_nazwa();

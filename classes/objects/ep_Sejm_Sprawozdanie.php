@@ -5,14 +5,14 @@ class ep_Sejm_Sprawozdanie extends ep_Object{
 	public $_field_init_lookup = 'tytul';
 
 	/**
-	* @return int
-	*/
+	 * @return int
+	 */
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
 
 	/**
-	 * @return string 
+	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_nazwa();

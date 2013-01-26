@@ -36,7 +36,7 @@ class ep_Powiat extends ep_Object{
 	 * @return ep_Wojewodztwo
 	 */
 	public function wojewodztwo(){
-		return $this->_wojewodztwo;	
+		return $this->_wojewodztwo;
 	}
 
 	/**
@@ -44,7 +44,7 @@ class ep_Powiat extends ep_Object{
 	 */
 	public function set_ep_wojewodztwo( $data ){
 		if( $data instanceof ep_Wojewodztwo ){
-			$this->_wojewodztwo = $data; 
+			$this->_wojewodztwo = $data;
 		} else {
 			$this->_wojewodztwo = new ep_Wojewodztwo( $data, false );
 		}

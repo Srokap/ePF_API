@@ -11,10 +11,18 @@ class ep_Gmina extends ep_Object{
 		parent::parse_data($data);
 
 		switch( $this->data['typ_id'] ) {
-			case '1': { $this->data['typ_nazwa'] = 'Gmina miejska'; break; }
-			case '2': { $this->data['typ_nazwa'] = 'Gmina wiejska'; break; }
-			case '3': { $this->data['typ_nazwa'] = 'Gmina miejsko-wiejska'; break; }
-			case '4': { $this->data['typ_nazwa'] = 'Miasto stołeczne'; break; }
+			case '1': {
+				$this->data['typ_nazwa'] = 'Gmina miejska'; break;
+			}
+			case '2': {
+				$this->data['typ_nazwa'] = 'Gmina wiejska'; break;
+			}
+			case '3': {
+				$this->data['typ_nazwa'] = 'Gmina miejsko-wiejska'; break;
+			}
+			case '4': {
+				$this->data['typ_nazwa'] = 'Miasto stołeczne'; break;
+			}
 		}
 
 	}
@@ -29,7 +37,7 @@ class ep_Gmina extends ep_Object{
 
 	/**
 	 * @var ep_Wojewodztwo
-	 */	
+	 */
 	protected $_wojewodztwo = null;
 
 	/**
@@ -74,7 +82,7 @@ class ep_Gmina extends ep_Object{
 	 */
 	public function set_ep_wojewodztwa( $data ){
 		if( $data instanceof ep_Wojewodztwo ){
-			$this->_wojewodztwo = $data;	
+			$this->_wojewodztwo = $data;
 		} else {
 			$this->_wojewodztwo = new ep_Wojewodztwo( $data, false );
 		}
@@ -88,7 +96,7 @@ class ep_Gmina extends ep_Object{
 	/**
 	 * @param array|ep_Powiat $data
 	 */
-	public function set_ep_powiaty( $data ){		
+	public function set_ep_powiaty( $data ){
 		if( $data instanceof ep_Powiat ){
 			$this->_powiat = $data;
 		} else {
@@ -101,7 +109,7 @@ class ep_Gmina extends ep_Object{
 		return $this;
 	}
 
-public function set_ep_Powiat( $data ){
+	public function set_ep_Powiat( $data ){
 		if( $data instanceof ep_Powiat ){
 			$this->_powiat = $data;
 		} else {

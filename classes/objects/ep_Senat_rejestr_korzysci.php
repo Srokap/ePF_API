@@ -13,7 +13,7 @@ class ep_Senat_rejestr_korzysci extends ep_Object{
 
 	public function senator(){
 		return $this->_senator;
-	} 
+	}
 
 	/**
 	 * @return integer

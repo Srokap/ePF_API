@@ -1,8 +1,8 @@
 <?php
 class ep_Czlowiek extends ep_Object{
 
-	protected $_aliases = array('ludzie');
-	protected $_field_init_lookup = 'nazwa';
+	public $_aliases = array('ludzie');
+	public $_field_init_lookup = 'nazwa';
 	private $_stanowiska = false;
 
 	public function stanowiska(){
@@ -18,14 +18,14 @@ class ep_Czlowiek extends ep_Object{
 	}
 
 	/**
-	* @return int
-	*/
+	 * @return int
+	 */
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
 
 	/**
-	 * @return string 
+	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_nazwa();

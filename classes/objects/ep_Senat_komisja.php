@@ -19,7 +19,7 @@ class ep_Senat_komisja extends ep_Object{
 	}
 
 	/**
-	 * @return string 
+	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_nazwa();

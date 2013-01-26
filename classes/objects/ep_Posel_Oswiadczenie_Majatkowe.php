@@ -12,7 +12,7 @@ class ep_Posel_Oswiadczenie_Majatkowe extends ep_Object{
 
 	public function posel(){
 		return $this->_posel;
-	}	
+	}
 
 	/**
 	 * @return integer

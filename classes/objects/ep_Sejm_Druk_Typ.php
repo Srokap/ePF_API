@@ -1,8 +1,8 @@
 <?php
 class ep_Sejm_Druk_Typ extends ep_Object{
 
-	protected $_aliases = array('sejm_druki_typy');
-	protected $_field_init_lookup = 'nazwa';
+	public $_aliases = array('sejm_druki_typy');
+	public $_field_init_lookup = 'nazwa';
 	private $_druki = false;
 
 	public function druki(){
@@ -18,14 +18,14 @@ class ep_Sejm_Druk_Typ extends ep_Object{
 	}
 
 	/**
-	* @return int
-	*/
+	 * @return int
+	 */
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
 
 	/**
-	 * @return string 
+	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_nazwa();

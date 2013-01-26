@@ -41,14 +41,14 @@ class ep_Legislacja_Projekt extends ep_Object{
 	}
 
 	/**
-	* @return int
-	*/
+	 * @return int
+	 */
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
 
 	/**
-	 * @return string 
+	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_nazwa();

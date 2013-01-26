@@ -22,21 +22,21 @@ class ep_Sejm_Interpelacja extends ep_Object{
 
 		if( $this->_tablica===false ) {
 			$this->_tablica = new ep_Dataset('sejm_interpelacje_pisma');
-			$this->_tablica->init_where('interpelacja_id', '=', $this->data['id']);			
+			$this->_tablica->init_where('interpelacja_id', '=', $this->data['id']);
 		}
 		return $this->_tablica;
 
 	}
 
 	/**
-	* @return int
-	*/
+	 * @return int
+	 */
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
 
 	/**
-	 * @return string 
+	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_nazwa();

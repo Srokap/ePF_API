@@ -16,7 +16,7 @@ class ep_Sejm_Glosowanie extends ep_Object{
 			$this->_posiedzenie = new ep_Sejm_Posiedzenie( $this->data['posiedzenie_id'] );
 		}
 
-		return $this->_posiedzenie;	
+		return $this->_posiedzenie;
 
 	}
 
@@ -26,7 +26,7 @@ class ep_Sejm_Glosowanie extends ep_Object{
 			$this->_dzien = new ep_Sejm_Dzien( $this->data['dzien_id'] );
 		}
 
-		return $this->_dzien;	
+		return $this->_dzien;
 
 	}
 
@@ -36,7 +36,7 @@ class ep_Sejm_Glosowanie extends ep_Object{
 			$this->_debata = new ep_Sejm_Posiedzenie_Debata( $this->data['debata_id'] );
 		}
 
-		return $this->_debata;	
+		return $this->_debata;
 
 	}
 
@@ -46,7 +46,7 @@ class ep_Sejm_Glosowanie extends ep_Object{
 			$this->_wystapienie = new ep_Sejm_Wystapienie( $this->data['wystapienie_id'] );
 		}
 
-		return $this->_wystapienie;	
+		return $this->_wystapienie;
 
 	}
 
@@ -55,7 +55,7 @@ class ep_Sejm_Glosowanie extends ep_Object{
 		if( !$this->_kluby ) {
 			$this->_kluby = new ep_Dataset('sejm_kluby');
 			//$this->_kluby->init_where('');
-				$this->_kluby->init_layer('sejm_glosowania_glosy')->init_where('sejm_glosowania_glosy.glosowanie_id', '=', $this->get_id());
+			$this->_kluby->init_layer('sejm_glosowania_glosy')->init_where('sejm_glosowania_glosy.glosowanie_id', '=', $this->get_id());
 		}
 
 		return $this->_kluby;
@@ -70,14 +70,14 @@ class ep_Sejm_Glosowanie extends ep_Object{
 	}
 
 	/**
-	* @return int
-	*/
+	 * @return int
+	 */
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
 
 	/**
-	 * @return string 
+	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_nazwa();

@@ -4,7 +4,7 @@ class ep_Senat_senator_komisja extends ep_Object{
 	public $_aliases = array('senat_senatorowie_komisje');
 
 	private $_komisja = false;
-	private $_senator = false; 
+	private $_senator = false;
 
 	/**
 	 * @return int
@@ -39,7 +39,7 @@ class ep_Senat_senator_komisja extends ep_Object{
 	}
 
 	/**
-	 * @return string 
+	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_stanowisko();
@@ -48,14 +48,14 @@ class ep_Senat_senator_komisja extends ep_Object{
 	public function komisja(){
 		if( !$this->_komisja ){
 			$this->_komisja = new ep_Senat_komisja($this->get_komisja_id() );
-		}	
+		}
 		return $this->_komisja;
 	}
 
 	public function senator(){
 		if( !$this->_senator ){
 			$this->_senator = new ep_Senator($this->get_senator_id() );
-		}	
+		}
 		return $this->_senator;
 	}
 
