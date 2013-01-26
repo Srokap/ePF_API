@@ -50,5 +50,4 @@ class ep_Kod_Pocztowy extends ep_Object{
 		}
 		return $this->_wojewodztwo;
 	}
-
 }

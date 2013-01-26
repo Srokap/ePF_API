@@ -45,5 +45,4 @@ class ep_Posel_Rejestr_Korzysci extends ep_Object{
 	public function __toString(){
 		return $this->get_nazwa();
 	}
-
 }

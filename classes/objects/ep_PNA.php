@@ -89,5 +89,4 @@ class ep_PNA extends ep_Object{
 		}
 		return $this->_wojewodztwo;
 	}
-
 }

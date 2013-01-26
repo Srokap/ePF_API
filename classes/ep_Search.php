@@ -52,6 +52,5 @@ class ep_Search extends ep_Api {
 
 		return $this->items;
 	}
-
 }
 ?>

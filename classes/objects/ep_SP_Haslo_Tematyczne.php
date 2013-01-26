@@ -34,5 +34,4 @@ class ep_SP_Haslo_Tematyczne extends ep_Object{
 		}
 		return $this->_orzeczenia_sp_hasla;
 	}
-
 }

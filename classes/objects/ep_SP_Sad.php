@@ -41,5 +41,4 @@ class ep_SP_Sad extends ep_Object{
 		}
 		return $this->_orzeczenia_sp;
 	}
-
 }

@@ -39,5 +39,4 @@ class ep_Senat_rejestr_korzysci extends ep_Object{
 	public function __toString(){
 		return $this->get_nazwa();
 	}
-
 }

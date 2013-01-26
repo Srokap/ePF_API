@@ -46,5 +46,4 @@ class ep_SP_Haslo extends ep_Object{
 		}
 		return $this->_orzeczenie_sp;
 	}
-
 }

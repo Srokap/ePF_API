@@ -46,5 +46,4 @@ class ep_SN_Orzeczenie_Sedzia extends ep_Object{
 		}
 		return $this->_orzeczenie_sn_osoba;
 	}
-
 }

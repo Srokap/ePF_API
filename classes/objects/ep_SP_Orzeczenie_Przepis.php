@@ -45,5 +45,4 @@ class ep_SP_Orzeczenie_Przepis extends ep_Object{
 		}
 		return $this->_orzeczenie_sp;
 	}
-
 }

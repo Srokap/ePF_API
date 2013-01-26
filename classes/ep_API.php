@@ -50,7 +50,6 @@ class ep_Api {
 			case '200': {
 				return json_decode( $data, true );
 			}
-
 		}
 
 	}

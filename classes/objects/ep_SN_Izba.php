@@ -34,5 +34,4 @@ class ep_SN_Izba extends ep_Object{
 		}
 		return $this->_orzeczenia;
 	}
-
 }

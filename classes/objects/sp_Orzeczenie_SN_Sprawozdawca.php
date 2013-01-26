@@ -46,5 +46,4 @@ class sp_Orzeczenie_SN_Sprawozdawca extends ep_Object{
 		}
 		return $this->_orzeczenie_sn_osoba;
 	}
-
 }

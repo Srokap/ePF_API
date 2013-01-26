@@ -89,5 +89,4 @@ class ep_Miejscowosc extends ep_Object{
 		}
 		return $this->_wojewodztwo;
 	}
-
 }

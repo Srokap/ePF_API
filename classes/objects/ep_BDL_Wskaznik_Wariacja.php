@@ -109,5 +109,4 @@ class ep_BDL_Wskaznik_Wariacja extends ep_Object{
 		}
 		return $this->_gminy;
 	}
-
 }

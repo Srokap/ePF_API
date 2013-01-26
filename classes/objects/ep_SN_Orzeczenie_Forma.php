@@ -34,5 +34,4 @@ class ep_SN_Orzeczenie_Forma extends ep_Object{
 		}
 		return $this->_orzeczenia_sn;
 	}
-
 }

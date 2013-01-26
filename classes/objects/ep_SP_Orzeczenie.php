@@ -172,5 +172,4 @@ class ep_SP_Orzeczenie extends ep_Object{
 		}
 		return $this->_przepisy;
 	}
-
 }

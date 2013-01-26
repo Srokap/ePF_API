@@ -241,5 +241,4 @@ class ep_SN_Orzeczenie extends ep_Object{
 		}
 		return $this->_wspolsprawozdawcy;
 	}
-
 }

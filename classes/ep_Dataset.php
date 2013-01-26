@@ -133,17 +133,14 @@ class ep_Dataset extends ep_Api {
 							$obj->data = $data;
 							$result[] = $obj;
 						}
-
 					} else {
 
 						$result[] = $data;
 					}
-
 				}
 
 				return $result;
 			}
-
 		} else {
 
 			if( $return_objects ){
@@ -153,7 +150,6 @@ class ep_Dataset extends ep_Api {
 				return $this->items;
 			}
 		}
-
 	}
 
 	public function count(){
@@ -316,7 +312,6 @@ class ep_Dataset extends ep_Api {
 	public function set_joins( $joins ){
 		$this->_joins = $joins;
 	}
-
 }
 
 ?>

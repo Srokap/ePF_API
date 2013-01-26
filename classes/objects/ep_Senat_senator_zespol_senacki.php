@@ -54,5 +54,4 @@ class ep_Senat_senator_zespol_senacki extends ep_Object{
 		}
 		return $this->_senator;
 	}
-
 }

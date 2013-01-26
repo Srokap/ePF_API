@@ -49,5 +49,4 @@ class ep_SP_Orzeczenie_Czesc extends ep_Object{
 		}
 		return $this->_orzeczenie_sp;
 	}
-
 }

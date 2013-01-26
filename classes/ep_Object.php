@@ -25,7 +25,6 @@ abstract class ep_Object extends ep_Api {
 				if( $id = $data[ $alias.'.id'] ){
 					break;
 				}
-
 		} elseif( $this->_field_init_lookup && is_string( $data ) && !is_numeric( $data ) ) {
 
 			// echo '-2<br/>';
@@ -77,7 +76,6 @@ abstract class ep_Object extends ep_Api {
 			} else {
 				$this->loaded = false;
 			}
-
 		}
 
 		unset( $dataset );
@@ -110,7 +108,6 @@ abstract class ep_Object extends ep_Api {
 				else{
 					$children[ $alias ][ $alias.'.'.$key ] =	$v ;
 				}
-
 			}
 
 			foreach( $children as $k => $v ){
@@ -122,13 +119,11 @@ abstract class ep_Object extends ep_Api {
 					// var_export( $v );
 					call_user_func_array(array($this, $method), array($data));
 				}
-
 			}
 
 			if( !empty($layers) ) {
 				$this->layers = array_merge( $this->layers, $layers );
 			}
-
 		}
 
 		return true;

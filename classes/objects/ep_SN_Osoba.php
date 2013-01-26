@@ -82,5 +82,4 @@ class ep_SN_Osoba extends ep_Object{
 		}
 		return $this->_orzeczenia_sn_wspolsprawozdawcy;
 	}
-
 }

@@ -23,7 +23,6 @@ class ep_Gmina extends ep_Object{
 				$this->data['typ_nazwa'] = 'Miasto stołeczne'; break;
 			}
 		}
-
 	}
 
 	public function pna(){

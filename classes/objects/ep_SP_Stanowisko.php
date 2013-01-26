@@ -34,5 +34,4 @@ class ep_SP_Stanowisko extends ep_Object{
 		}
 		return $this->_orzeczenia_sp_osoby_stanowiska;
 	}
-
 }

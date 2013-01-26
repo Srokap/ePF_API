@@ -34,5 +34,4 @@ class ep_SP_Osoba extends ep_Object{
 		}
 		return $this->_stanowiska;
 	}
-
 }

@@ -51,5 +51,4 @@ class ep_Senat_senator_komisja extends ep_Object{
 		}
 		return $this->_senator;
 	}
-
 }
