@@ -5,7 +5,6 @@ class ep_Posel_Aktywnosc extends ep_Object{
 
 	/*
 	 public function parse_data( $data ){
-
 	parent::parse_data($data);
 	// echo "\n";
 	// echo $this->data['data_json'];

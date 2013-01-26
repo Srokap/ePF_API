@@ -6,7 +6,6 @@ class ep_Czlowiek extends ep_Object{
 	private $_stanowiska = false;
 
 	public function stanowiska(){
-
 		if( !$this->_stanowiska ) {
 
 			$this->_stanowiska = new ep_Dataset('stanowiska');

@@ -7,7 +7,6 @@ class ep_Gmina extends ep_Object{
 	private $_pna = false;
 
 	public function parse_data($data){
-
 		parent::parse_data($data);
 
 		switch( $this->data['typ_id'] ) {
@@ -59,7 +58,6 @@ class ep_Gmina extends ep_Object{
 
 	protected $_poslowie_dataset = null;
 	public function poslowie(){
-
 		if( !$this->_poslowie_dataset ) {
 
 			$this->_poslowie_dataset = new ep_Dataset('poslowie');

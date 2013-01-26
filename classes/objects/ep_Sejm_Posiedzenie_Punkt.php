@@ -10,7 +10,6 @@ class ep_Sejm_Posiedzenie_Punkt extends ep_Object{
 	private $_posiedzenie = false;
 
 	public function posiedzenie(){
-
 		if( !$this->_posiedzenie ) {
 			$this->_posiedzenie = new ep_Sejm_Posiedzenie( $this->data['posiedzenie_id'] );
 		}

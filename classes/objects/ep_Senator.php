@@ -39,7 +39,6 @@ class ep_Senator extends ep_Object{
 	}
 
 	public function komisje(){
-
 		if( !$this->_komisje ) {
 			$this->_komisje = new ep_Dataset('senat_senatorowie_komisje');
 			$this->_komisje->init_where('senator_id', '=', $this->id);

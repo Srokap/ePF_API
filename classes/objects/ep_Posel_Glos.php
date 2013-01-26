@@ -5,7 +5,6 @@ class ep_Posel_Glos extends ep_Object{
 	private $_glosowanie = false;
 
 	public function set_ep_sejm_glosowania($data){
-
 		$this->_glosowanie = new ep_Sejm_Glosowanie($data);
 
 	}

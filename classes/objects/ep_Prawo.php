@@ -5,7 +5,6 @@ class ep_Prawo extends ep_Object{
 	public $_field_init_lookup = 'tytul';
 
 	public function getDescription(){
-
 		return $this->data ? $this->data['sygnatura'] : false;
 
 	}

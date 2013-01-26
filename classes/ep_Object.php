@@ -65,7 +65,6 @@ abstract class ep_Object extends ep_Api {
 	}
 
 	function load_from_db(){
-
 		$dataset = new ep_Dataset( $this->_aliases[0] );
 		$data = $dataset->where('id', '=', $this->id)->find_one( false );
 
@@ -88,7 +87,6 @@ abstract class ep_Object extends ep_Api {
 	}
 
 	function parse_data( $data ){
-
 		$children = array();
 		if( is_array($data) && !empty($data) ) {
 
@@ -152,7 +150,6 @@ abstract class ep_Object extends ep_Api {
 	}
 
 	public function getTitle(){
-
 		foreach( array('tytul', 'nazwa', 'label', 'sygnatura', 'kod') as $key )
 			if( $this->data[ $key ] )
 				return $this->data[ $key ];
@@ -162,7 +159,6 @@ abstract class ep_Object extends ep_Api {
 	}
 
 	public function getDescription(){
-
 		return false;
 
 	}

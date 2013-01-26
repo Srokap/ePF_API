@@ -7,7 +7,6 @@ class ep_RCL_Projekt extends ep_Object{
 	private $_autor;
 
 	public function tablica() {
-
 		if( !$this->_tablica ) {
 			$this->_tablica = new ep_Dataset('rcl_projekty_tablice');
 			$this->_tablica->init_where('projekt_id', '=', $this->id);
@@ -18,7 +17,6 @@ class ep_RCL_Projekt extends ep_Object{
 	}
 
 	public function set_ep_instytucje($data){
-
 		$this->_autor = new ep_Instytucja($data);
 
 	}

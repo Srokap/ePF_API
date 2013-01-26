@@ -8,7 +8,6 @@ class ep_Legislacja_Projekt extends ep_Object{
 	private $_podpisy_poslowie = false;
 
 	public function etapy(){
-
 		if( !$this->_etapy ) {
 			$this->_etapy = new ep_Dataset('legislacja_projekty-etapy');
 			$this->_etapy->init_where('projekt_id', '=', $this->data['id']);
@@ -18,7 +17,6 @@ class ep_Legislacja_Projekt extends ep_Object{
 	}
 
 	public function zmieniane_ustawy(){
-
 		if( !$this->_zmieniane_ustawy ) {
 			$this->_zmieniane_ustawy = new ep_Dataset('ustawy');
 			$this->_zmieniane_ustawy->init_where('legislacja_projekty-prawo_glowne.projekt_id', '=', $this->data['id']);
@@ -29,7 +27,6 @@ class ep_Legislacja_Projekt extends ep_Object{
 	}
 
 	public function podpisy_poslowie(){
-
 		if( !$this->_podpisy_poslowie ) {
 
 			$this->_podpisy_poslowie = new ep_Dataset('legislacja_projekty-podpisy');

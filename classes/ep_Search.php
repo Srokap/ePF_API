@@ -9,21 +9,18 @@ class ep_Search extends ep_Api {
 	public $dataset;
 
 	public function set_q( $q ) {
-
 		$this->q = trim( $q );
 		return $this;
 
 	}
 
 	public function set_dataset( $dataset ) {
-
 		$this->dataset = trim( $dataset );
 		return $this;
 
 	}
 
 	public function find_all($limit, $offset){
-
 		$this->limit = 20;
 		if( $offset )
 			$this->offset = $offset;

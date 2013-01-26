@@ -17,31 +17,26 @@ class ep_Posel extends ep_Object{
 	private $_twitty = false;
 
 	public function set_ep_ludzie($data){
-
 		$this->_mowca = new ep_Czlowiek($data);
 
 	}
 
 	public function set_ep_sejm_kluby($data){
-
 		$this->_klub = new ep_Sejm_Klub($data);
 
 	}
 
 	public function mowca(){
-
 		return $this->_mowca;
 
 	}
 
 	public function klub(){
-
 		return $this->_klub;
 
 	}
 
 	public function aktywnosci(){
-
 		if( !$this->_aktywnosci ) {
 
 			$this->_aktywnosci = new ep_Dataset('poslowie_aktywnosci');
@@ -53,7 +48,6 @@ class ep_Posel extends ep_Object{
 	}
 
 	public function wystapienia(){
-
 		if( !$this->_wystapienia ) {
 
 			$this->_wystapienia = new ep_Dataset('sejm_wystapienia');
@@ -65,7 +59,6 @@ class ep_Posel extends ep_Object{
 	}
 
 	public function glosy(){
-
 		if( !$this->_glosy ) {
 
 			$this->_glosy = new ep_Dataset('poslowie_glosy');
@@ -77,7 +70,6 @@ class ep_Posel extends ep_Object{
 	}
 
 	public function twitty(){
-
 		if( !$this->_twitty ) {
 
 			$this->_twitty = new ep_Dataset('twitter');
@@ -89,7 +81,6 @@ class ep_Posel extends ep_Object{
 	}
 
 	public function projekty_ustaw(){
-
 		if( !$this->_projekty_ustaw ) {
 
 			$this->_projekty_ustaw = new ep_Dataset('legislacja_projekty_ustaw');
@@ -101,7 +92,6 @@ class ep_Posel extends ep_Object{
 	}
 
 	public function projekty_uchwal(){
-
 		if( !$this->projekty_uchwal ) {
 
 			$this->projekty_uchwal = new ep_Dataset('legislacja_projekty_uchwal');
@@ -113,7 +103,6 @@ class ep_Posel extends ep_Object{
 	}
 
 	public function komisje_stanowiska(){
-
 		if( !$this->_komisje_stanowiska ) {
 
 			$this->_komisje_stanowiska = new ep_Dataset('poslowie_komisje_stanowiska');
@@ -125,7 +114,6 @@ class ep_Posel extends ep_Object{
 	}
 
 	public function wspolpracownicy(){
-
 		if( !$this->_wspolpracownicy ) {
 
 			$this->_wspolpracownicy = new ep_Dataset('poslowie_wspolpracownicy');
@@ -137,7 +125,6 @@ class ep_Posel extends ep_Object{
 	}
 
 	public function oswiadczenia_majatkowe(){
-
 		if( !$this->_oswiadczenia_majatkowe ) {
 
 			$this->_oswiadczenia_majatkowe = new ep_Dataset('poslowie_oswiadczenia_majatkowe');
@@ -149,7 +136,6 @@ class ep_Posel extends ep_Object{
 	}
 
 	public function rejestr_korzysci(){
-
 		if( !$this->_rejestr_korzysci ) {
 
 			$this->_rejestr_korzysci = new ep_Dataset('poslowie_rejestr_korzysci');

@@ -24,13 +24,11 @@ class ep_Dataset extends ep_Api {
 	protected $_runtime_layers = array();
 
 	public function __construct( $name ) {
-
 		$this->name = $name;
 
 	}
 
 	public function keyword($keyword){
-
 		$this->add_runtime_keywords( $keyword );
 		return $this;
 	}
@@ -52,7 +50,6 @@ class ep_Dataset extends ep_Api {
 	}
 
 	public function order_by( $field, $direction = 'ASC' ){
-
 		if( !$field )
 			return $this;
 
@@ -70,7 +67,6 @@ class ep_Dataset extends ep_Api {
 	}
 
 	public function get_info(){
-
 		$data = $this->call( 'dataset-info', $this->name );
 		$this->data = $data['dataset'];
 		$this->fields = $data['fields'];
@@ -83,7 +79,6 @@ class ep_Dataset extends ep_Api {
 	}
 
 	public function find_all( $limit = null, $offset = null, $return_objects=true ){
-
 		if( $limit )
 			$this->limit = $limit;
 
@@ -179,7 +174,6 @@ class ep_Dataset extends ep_Api {
 	}
 
 	public function get_params(){
-
 		return array(
 				'name' => $this->name,
 				'l'	=> $this->limit,
@@ -194,7 +188,6 @@ class ep_Dataset extends ep_Api {
 	}
 
 	protected function get_wheres(){
-
 		$result = array();
 
 		for( $i=0; $i<count($this->_init_wheres); $i++ )
@@ -207,7 +200,6 @@ class ep_Dataset extends ep_Api {
 	}
 
 	protected function get_layers(){
-
 		$result = array();
 
 		for( $i=0; $i<count($this->_init_layers); $i++ )
@@ -220,7 +212,6 @@ class ep_Dataset extends ep_Api {
 	}
 
 	protected function return_objects(){
-
 		$class = $this->items_class;
 		$result = array();
 

@@ -6,7 +6,6 @@ class ep_Sejm_Druk_Typ extends ep_Object{
 	private $_druki = false;
 
 	public function druki(){
-
 		if( !$this->_druki ) {
 
 			$this->_druki = new ep_Dataset('sejm_druki');

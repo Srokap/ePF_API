@@ -6,7 +6,6 @@ class ep_Posel_Komisja_Stanowisko extends ep_Object{
 	private $_posel = fasle;
 
 	public function set_ep_poslowie($data){
-
 		$this->_posel = new ep_Posel($data);
 
 	}
@@ -15,7 +14,6 @@ class ep_Posel_Komisja_Stanowisko extends ep_Object{
 	}
 
 	public function set_ep_sejm_komisje($data){
-
 		$this->_komisja = new ep_Sejm_Komisja($data);
 
 	}

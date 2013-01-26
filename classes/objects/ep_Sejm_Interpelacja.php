@@ -8,7 +8,6 @@ class ep_Sejm_Interpelacja extends ep_Object{
 	private $_poslowie = false;
 
 	public function poslowie(){
-
 		if( $this->_poslowie===false ) {
 			$_poslowie = new ep_Dataset('poslowie');
 			$_poslowie->init_where('sejm_interpelacje.id', '=', $this->data['id']);
@@ -19,7 +18,6 @@ class ep_Sejm_Interpelacja extends ep_Object{
 	}
 
 	public function tablica(){
-
 		if( $this->_tablica===false ) {
 			$this->_tablica = new ep_Dataset('sejm_interpelacje_pisma');
 			$this->_tablica->init_where('interpelacja_id', '=', $this->data['id']);

@@ -14,13 +14,11 @@ class ep_Ustawa extends ep_Object{
 	}
 
 	public function set_ep_Prawo($data){
-
 		$this->_prawo = new ep_Prawo($data);
 
 	}
 
 	public function projekty_zmian(){
-
 		if( !$this->_projekty_zmian ) {
 			$this->_projekty_zmian = new ep_Dataset('legislacja_projekty_ustaw');
 			$this->_projekty_zmian->init_where('ustawy.id', '=', $this->data['id']);
@@ -35,7 +33,6 @@ class ep_Ustawa extends ep_Object{
 	}
 
 	function parse_data( $data ){
-
 		parent::parse_data($data);
 
 		$fields = array('autor_id', 'data_publikacji', 'data_wejscia_w_zycie', 'data_wydania', 'isap_data_uchylenia', 'isap_data_wygasniecia', 'isap_id', 'isap_uwagi_str', 'status_id', 'sygnatura', 'typ_id', 'typ_nazwa', 'tytul', 'tytul_skrocony', 'zrodlo');

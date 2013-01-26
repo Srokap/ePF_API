@@ -34,7 +34,6 @@ class ep_Sejm_Pytanie_Biezace extends ep_Object{
 	}
 
 	public function posiedzenie(){
-
 		if( !$this->_posiedzenie ) {
 			$this->_posiedzenie = new ep_Sejm_Posiedzenie( $this->data['posiedzenie_id'] );
 		}
@@ -43,7 +42,6 @@ class ep_Sejm_Pytanie_Biezace extends ep_Object{
 	}
 
 	public function dzien(){
-
 		if( !$this->_dzien ) {
 			$this->_dzien = new ep_Sejm_Dzien( $this->data['dzien_id'] );
 		}

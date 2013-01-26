@@ -6,7 +6,6 @@ class ep_Sejm_Dzien extends ep_Object{
 	private $_debaty = false;
 
 	public function __construct( $data, $complex = true ){
-
 		parent::__construct( $data, $complex );
 		$this->data['tytul'] = strip_tags( sm_data_slowna( $this->data['data'] ).', '.sm_dzien_slowny( $this->data['data'] ) );
 
@@ -21,7 +20,6 @@ class ep_Sejm_Dzien extends ep_Object{
 	}
 
 	public function debaty(){
-
 		if( !$this->_debaty ) {
 			$this->_debaty = new ep_Dataset('sejm_debaty');
 			$this->_debaty->init_where('dzien_id', '=', $this->data['id'])->order_by('kolejnosc', 'ASC')->set_limit(1000);

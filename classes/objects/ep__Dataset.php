@@ -5,7 +5,6 @@ class ep__Dataset extends ep_Object{
 	public $_field_init_lookup = 'base_alias';
 
 	public function __construct( $data ) {
-
 		$id = $data['_datasets.base_alias'];
 		if( !$id )
 			return false;
