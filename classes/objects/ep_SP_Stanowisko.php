@@ -11,13 +11,6 @@ class ep_SP_Stanowisko extends ep_Object{
 	protected $_orzeczenia_sp_osoby_stanowiska = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

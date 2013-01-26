@@ -4,13 +4,6 @@ class ep_BDL_Grupa extends ep_Object{
 	public $_aliases = array('bdl_wskazniki_grupy');
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

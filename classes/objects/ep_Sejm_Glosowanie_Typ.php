@@ -4,13 +4,6 @@ class ep_Sejm_Glosowanie_Typ extends ep_Object{
 	public $_aliases = array('sejm_glosowania_typy');
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

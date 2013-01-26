@@ -6,13 +6,6 @@ class ep_Ustawa extends ep_Object{
 	private $_prawo = false;
 	private $_projekty_zmian = false;
 
-	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
 	public function set_ep_Prawo($data){
 		$this->_prawo = new ep_Prawo($data);
 

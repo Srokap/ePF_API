@@ -15,13 +15,6 @@ class ep_Posel_Rejestr_Korzysci extends ep_Object{
 	}
 
 	/**
-	 * @return integer
-	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_data(){

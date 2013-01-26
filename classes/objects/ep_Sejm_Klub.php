@@ -17,13 +17,6 @@ class ep_Sejm_Klub extends ep_Object{
 	}
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

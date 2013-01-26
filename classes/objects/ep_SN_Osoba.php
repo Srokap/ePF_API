@@ -26,13 +26,6 @@ class ep_SN_Osoba extends ep_Object{
 	protected $_orzeczenia_sn_wspolsprawozdawcy = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

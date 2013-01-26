@@ -4,13 +4,6 @@ class ep_Bip_Instytucja extends ep_Object{
 	public $_aliases = array( 'bip_instytucje' );
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

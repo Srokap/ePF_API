@@ -118,12 +118,6 @@ class ep_Gmina extends ep_Object{
 		}
 		return $this;
 	}
-	/**
-	 * @return integer
-	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
 
 	/**
 	 * @return string

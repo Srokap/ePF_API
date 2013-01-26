@@ -9,10 +9,6 @@ class ep_Wojewodztwo extends ep_Object{
 	 */
 	private $_obszar = null;
 
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
 	/**
 	 * @return string
 	 */

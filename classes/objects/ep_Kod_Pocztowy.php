@@ -24,13 +24,6 @@ class ep_Kod_Pocztowy extends ep_Object{
 	/**
 	 * @return string
 	 */
-	public function get_id(){
-		return (string) $this->data['id'];
-	}
-
-	/**
-	 * @return string
-	 */
 	public function get_kod(){
 		return (string) $this->data['kod'];
 	}

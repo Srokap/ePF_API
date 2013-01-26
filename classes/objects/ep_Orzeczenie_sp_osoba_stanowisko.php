@@ -21,13 +21,6 @@ class ep_Orzeczenie_sp_osoba_stanowisko extends ep_Object{
 	/**
 	 * @return int
 	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
-	 * @return int
-	 */
 	public function get_orzeczenie_sp_id(){
 		return (int) $this->data['orzeczenie_sp_id'];
 	}

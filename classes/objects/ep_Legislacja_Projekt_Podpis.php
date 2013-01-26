@@ -4,13 +4,6 @@ class ep_Legislacja_Projekt_Podpis extends ep_Object{
 	public $_aliases = array('legislacja_projekty-podpisy');
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

@@ -4,13 +4,6 @@ class ep_SP_Teza extends ep_Object{
 	public $_aliases = array('sp_tezy','sp_orzeczenia','sp_sady');
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

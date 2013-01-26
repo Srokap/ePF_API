@@ -11,13 +11,6 @@ class ep_SN_Izba extends ep_Object{
 	protected $_orzeczenia = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

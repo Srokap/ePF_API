@@ -4,13 +4,6 @@ class ep_RCL_Projekt_Etap extends ep_Object{
 	public $_aliases = array('rcl_projekty_tablice', 'rcl_projekty_tablice_typy');
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

@@ -11,13 +11,6 @@ class ep_SP_Orzeczenie_Czesc extends ep_Object{
 	/**
 	 * @return int
 	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
-	 * @return int
-	 */
 	public function get_orzeczenie_sp_id(){
 		return (int) $this->data['orzeczenie_sp_id'];
 	}

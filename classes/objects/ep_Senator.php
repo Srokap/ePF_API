@@ -10,12 +10,6 @@ class ep_Senator extends ep_Object{
 	private $_oswiadczenia_majatkowe = false;
 	private $_rejestr_korzysci = false;
 	private $_wystapienia = false;
-	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
 
 	/**
 	 * @return int

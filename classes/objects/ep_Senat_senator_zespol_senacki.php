@@ -12,13 +12,6 @@ class ep_Senat_senator_zespol_senacki extends ep_Object{
 	/**
 	 * @return int
 	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
-	 * @return int
-	 */
 	public function get_zespol_senacki_id(){
 		return (int)$this->data['zespol_senacki_id'];
 	}

@@ -15,13 +15,6 @@ class ep_Powiat extends ep_Object{
 	private $_obszar = null;
 
 	/**
-	 * @return integer
-	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

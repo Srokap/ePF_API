@@ -5,13 +5,6 @@ class ep_SA_Orzeczenie_Wynik extends ep_Object{
 	public $_field_init_lookup = 'nazwa';
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

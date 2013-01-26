@@ -10,13 +10,6 @@ class ep_BDL_Wskaznik_Wariacja extends ep_Object{
 	/**
 	 * @return int
 	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
-	 * @return int
-	 */
 	public function get_podgrupa_id(){
 		return (int)$this->data['podgrupa_id'];
 	}

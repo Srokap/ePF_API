@@ -16,13 +16,6 @@ class ep_SN_Orzeczenie_Autor extends ep_Object{
 	/**
 	 * @return int
 	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
-	 * @return int
-	 */
 	public function get_orzeczenie_sn_id(){
 		return (int) $this->data['orzeczenie_sn_id'];
 	}

@@ -18,13 +18,6 @@ class ep_Senat_rejestr_korzysci extends ep_Object{
 	/**
 	 * @return integer
 	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
-	 * @return integer
-	 */
 	public function get_dokument_id(){
 		return (int) $this->data['dokument_id'];
 	}

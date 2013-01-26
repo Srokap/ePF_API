@@ -5,13 +5,6 @@ class ep_KRS_Wpis extends ep_Object{
 	public $_field_init_lookup = 'krs';
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

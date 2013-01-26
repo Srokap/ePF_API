@@ -9,13 +9,6 @@ class ep_Senat_senator_komisja extends ep_Object{
 	/**
 	 * @return int
 	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
-	 * @return int
-	 */
 	public function get_komisja_id(){
 		return (int)$this->data['komisja_id'];
 	}

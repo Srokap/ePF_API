@@ -9,13 +9,6 @@ class ep_Prawo extends ep_Object{
 	}
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function __toString(){

@@ -28,13 +28,6 @@ class ep_Miejscowosc extends ep_Object{
 	/**
 	 * @return string
 	 */
-	public function get_id(){
-		return (string) $this->data['id'];
-	}
-
-	/**
-	 * @return string
-	 */
 	public function get_nazwa(){
 		return (string) $this->data['nazwa'];
 	}

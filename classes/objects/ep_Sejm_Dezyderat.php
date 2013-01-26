@@ -5,13 +5,6 @@ class ep_Sejm_Dezyderat extends ep_Object{
 	public $_field_init_lookup = 'tytul';
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

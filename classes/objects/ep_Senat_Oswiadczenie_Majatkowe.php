@@ -14,13 +14,6 @@ class ep_Senat_Oswiadczenie_Majatkowe extends ep_Object{
 	}
 
 	/**
-	 * @return integer
-	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_data(){

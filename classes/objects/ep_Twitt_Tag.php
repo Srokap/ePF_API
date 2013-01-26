@@ -4,13 +4,6 @@ class ep_Twitt_Tag extends ep_Object{
 	public $_aliases = array('twitter_tags');
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_nazwa(){

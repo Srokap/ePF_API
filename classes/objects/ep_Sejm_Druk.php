@@ -5,13 +5,6 @@ class ep_Sejm_Druk extends ep_Object{
 	public $_field_init_lookup = 'numer';
 
 	/**
-	 * @return int
-	 */
-	public function get_id(){
-		return (int)$this->data['id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function __toString(){

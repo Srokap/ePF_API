@@ -76,13 +76,6 @@ class ep_SN_Orzeczenie extends ep_Object{
 	/**
 	 * @return int
 	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
-	 * @return int
-	 */
 	public function get_item_id(){
 		return (int) $this->data['item_id'];
 	}

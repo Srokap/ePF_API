@@ -11,13 +11,6 @@ class ep_SP_Orzeczenie_Przepis extends ep_Object{
 	/**
 	 * @return int
 	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
-	 * @return int
-	 */
 	public function get_lp(){
 		return (int) $this->data['lp'];
 	}

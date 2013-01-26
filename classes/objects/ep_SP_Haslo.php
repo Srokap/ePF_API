@@ -16,13 +16,6 @@ class ep_SP_Haslo extends ep_Object{
 	/**
 	 * @return int
 	 */
-	public function get_id(){
-		return (int) $this->data['id'];
-	}
-
-	/**
-	 * @return int
-	 */
 	public function get_orzeczenie_sp_haslo_tematyczne_id(){
 		return (int) $this->data['orzeczenie_sp_haslo_tematyczne_id'];
 	}
