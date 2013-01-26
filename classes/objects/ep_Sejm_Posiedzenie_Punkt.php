@@ -1,25 +1,23 @@
 <?php
 class ep_Sejm_Posiedzenie_Punkt extends ep_Object{
-  
+
   public $_aliases = array('sejm_posiedzenia_punkty');
-  
+
   private $_debaty = false;
   private $_wystapienia = false;
   private $_glosowania = false;
   private $_druki = false;
   private $_posiedzenie = false;
-  
-  
+
   public function posiedzenie(){
-	  
+
 	  if( !$this->_posiedzenie ) {
 		  $this->_posiedzenie = new ep_Sejm_Posiedzenie( $this->data['posiedzenie_id'] );
 	  }
-	  
+
 	  return $this->_posiedzenie;
   }
-  
-  
+
   public function debaty(){
 	  if( !$this->_debaty ) {
 		  $this->_debaty = new ep_Dataset('sejm_debaty');
@@ -27,7 +25,7 @@ class ep_Sejm_Posiedzenie_Punkt extends ep_Object{
 	  }
 	  return $this->_debaty;
   }
-  
+
   public function wystapienia(){
 	  if( !$this->_wystapienia ) {
 		  $this->_wystapienia = new ep_Dataset('sejm_wystapienia');
@@ -35,7 +33,7 @@ class ep_Sejm_Posiedzenie_Punkt extends ep_Object{
 	  }
 	  return $this->_wystapienia;
   }
-  
+
   public function glosowania(){
 	  if( !$this->_glosowania ) {
 		  $this->_glosowania = new ep_Dataset('sejm_glosowania');
@@ -43,7 +41,7 @@ class ep_Sejm_Posiedzenie_Punkt extends ep_Object{
 	  }
 	  return $this->_glosowania;
   }
-  
+
   public function druki(){
 	  if( !$this->_druki ) {
 		  $this->_druki = new ep_Dataset('sejm_druki');
@@ -51,11 +49,7 @@ class ep_Sejm_Posiedzenie_Punkt extends ep_Object{
 	  }
 	  return $this->_druki;
   }
-  
-  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -117,7 +111,7 @@ class ep_Sejm_Posiedzenie_Punkt extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

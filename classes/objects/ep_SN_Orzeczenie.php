@@ -46,7 +46,6 @@ class ep_SN_Orzeczenie extends ep_Object{
 	 */
 	protected $_wspolsprawozdawcy = null;
 
-
 	/**
 	 * @return string
 	 */
@@ -250,6 +249,5 @@ class ep_SN_Orzeczenie extends ep_Object{
 		}
 		return $this->_wspolsprawozdawcy;
 	}
-
 
 }

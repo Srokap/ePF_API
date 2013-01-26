@@ -1,14 +1,8 @@
 <?php
 class ep_Legislacja_Projekt_Podpis extends ep_Object{
-  
+
   public $_aliases = array('legislacja_projekty-podpisy');
 
-
-
-  
-  
-   
-  
 	/**
 	 * @return int
 	 */
@@ -70,7 +64,7 @@ class ep_Legislacja_Projekt_Podpis extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

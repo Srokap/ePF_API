@@ -1,12 +1,9 @@
 <?php
 class ep_Sejm_Dezyderat extends ep_Object{
-  
+
   public $_aliases = array('sejm_dezyderaty');
   public $_field_init_lookup = 'tytul';
-  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -68,7 +65,7 @@ class ep_Sejm_Dezyderat extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

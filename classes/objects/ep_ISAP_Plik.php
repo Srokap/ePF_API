@@ -9,7 +9,6 @@ class ep_ISAP_Plik extends ep_Object{
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
-	
 
 	/**
 	 * @return string 

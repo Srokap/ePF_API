@@ -9,7 +9,6 @@ class ep_SP_Orzeczenie_Czesc extends ep_Object{
 	 */
 	protected $_orzeczenie_sp = null;
 
-
 	/**
 	 * @return int
 	 */
@@ -41,8 +40,6 @@ class ep_SP_Orzeczenie_Czesc extends ep_Object{
 			return (string) $this->data['wartosc'];
 		}
 	}
-		
-	
 
 	/**
 	 * @return string
@@ -60,6 +57,5 @@ class ep_SP_Orzeczenie_Czesc extends ep_Object{
 		}
 		return $this->_orzeczenie_sp;
 	}
-
 
 }

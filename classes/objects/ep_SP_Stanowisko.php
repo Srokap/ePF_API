@@ -11,7 +11,6 @@ class ep_SP_Stanowisko extends ep_Object{
 	 */
 	protected $_orzeczenia_sp_osoby_stanowiska = null;
 
-
 	/**
 	 * @return int
 	 */
@@ -43,6 +42,5 @@ class ep_SP_Stanowisko extends ep_Object{
 		}
 		return $this->_orzeczenia_sp_osoby_stanowiska;
 	}
-
 
 }

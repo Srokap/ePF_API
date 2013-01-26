@@ -11,7 +11,6 @@ class ep_SP_Haslo_Tematyczne extends ep_Object{
 	 */
 	protected $_orzeczenia_sp_hasla = null;
 
-
 	/**
 	 * @return int
 	 */
@@ -43,6 +42,5 @@ class ep_SP_Haslo_Tematyczne extends ep_Object{
 		}
 		return $this->_orzeczenia_sp_hasla;
 	}
-
 
 }

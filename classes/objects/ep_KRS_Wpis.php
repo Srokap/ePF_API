@@ -1,12 +1,9 @@
 <?php
 class ep_KRS_Wpis extends ep_Object{
-  
+
   public $_aliases = array('krs');
   public $_field_init_lookup = 'krs';
-  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -68,7 +65,7 @@ class ep_KRS_Wpis extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

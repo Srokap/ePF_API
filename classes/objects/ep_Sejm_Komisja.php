@@ -1,14 +1,11 @@
 <?php
 class ep_Sejm_Komisja extends ep_Object{
-  
+
   public $_aliases = array('sejm_komisje');
   public $_field_init_lookup = 'nazwa';
-  
+
   private $_stanowiska = false;
-  
-  
-  
-  
+
   public function stanowiska(){
 	  if( !$this->_stanowiska ) {
 	    $this->_stanowiska = new ep_Dataset('poslowie_komisje_stanowiska');
@@ -18,8 +15,7 @@ class ep_Sejm_Komisja extends ep_Object{
 	  }
 	  return $this->_stanowiska;
   }
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -81,7 +77,7 @@ class ep_Sejm_Komisja extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

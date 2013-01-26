@@ -4,7 +4,6 @@ class ep_Bip_Instytucja extends ep_Object{
 
 	public $_aliases = array( 'bip_instytucje' );
 
-
 	/**
 	 * @return int
 	 */
@@ -25,6 +24,5 @@ class ep_Bip_Instytucja extends ep_Object{
 	public function __toString(){
 		return (string) $this->get_nazwa();
 	}
-
 
 }

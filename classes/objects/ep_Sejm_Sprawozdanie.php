@@ -10,7 +10,6 @@ class ep_Sejm_Sprawozdanie extends ep_Object{
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
-	
 
 	/**
 	 * @return string 

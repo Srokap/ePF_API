@@ -1,11 +1,8 @@
 <?php
 class ep_Prawo_Typ extends ep_Object{
-  
+
   public $_aliases = array('prawo_typy');
-  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -67,7 +64,7 @@ class ep_Prawo_Typ extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

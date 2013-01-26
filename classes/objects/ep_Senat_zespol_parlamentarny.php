@@ -1,9 +1,9 @@
 <?php
 class ep_Senat_zespol_parlamentarny extends ep_Object{
-  
+
 	public $_aliases = array('senat_zespoly_parlamentarne');
 	public $_field_init_lookup = 'nazwa';
-  
+
 	/**
 	 * @return int
 	 */
@@ -17,7 +17,7 @@ class ep_Senat_zespol_parlamentarny extends ep_Object{
 	public function get_nazwa(){
 		return (string)$this->data['nazwa'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

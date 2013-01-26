@@ -1,12 +1,9 @@
 <?php
 class ep_NIK_Raport extends ep_Object{
-  
+
   public $_aliases = array('nik_raporty');
   public $_field_init_lookup = 'numer';
-  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -68,7 +65,7 @@ class ep_NIK_Raport extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

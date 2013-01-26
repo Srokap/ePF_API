@@ -11,7 +11,6 @@ class ep_SP_Sad extends ep_Object{
 	 */
 	protected $_orzeczenia_sp = null;
 
-
 	/**
 	 * @return int
 	 */
@@ -32,7 +31,7 @@ class ep_SP_Sad extends ep_Object{
 	//public function get_url(){
 	//	return (string) $this->data['url'];
 	//}
-	
+
 	/**
 	 * @return string
 	 */
@@ -50,6 +49,5 @@ class ep_SP_Sad extends ep_Object{
 		}
 		return $this->_orzeczenia_sp;
 	}
-
 
 }

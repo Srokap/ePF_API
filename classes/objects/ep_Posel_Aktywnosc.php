@@ -1,13 +1,11 @@
 <?php
 class ep_Posel_Aktywnosc extends ep_Object{
-  
+
   public $_aliases = array('poslowie_aktywnosci');
-  
-  
-  
+
   /*
   public function parse_data( $data ){
-	  
+
 	  parent::parse_data($data);
 	  // echo "\n";
 	  // echo $this->data['data_json'];
@@ -16,9 +14,6 @@ class ep_Posel_Aktywnosc extends ep_Object{
 	}
 */
 
-
-
-  
 	/**
 	 * @return int
 	 */
@@ -80,7 +75,7 @@ class ep_Posel_Aktywnosc extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

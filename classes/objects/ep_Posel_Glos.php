@@ -1,21 +1,19 @@
 <?php
 class ep_Posel_Glos extends ep_Object{
-  
+
   public $_aliases = array('poslowie_glosy');
   private $_glosowanie = false;
-  
-  
+
   public function set_ep_sejm_glosowania($data){
-	  
+
 	  $this->_glosowanie = new ep_Sejm_Glosowanie($data);
-	  
+
   }
-  
+
   public function glosowanie(){
 	  return $this->_glosowanie;
   }
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -77,7 +75,7 @@ class ep_Posel_Glos extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

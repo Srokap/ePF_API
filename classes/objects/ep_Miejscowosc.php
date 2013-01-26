@@ -19,7 +19,6 @@ class ep_Miejscowosc extends ep_Object{
 	 */
 	protected $_wojewodztwo = null;
 
-
 	/**
 	 * @return int
 	 */
@@ -98,6 +97,5 @@ class ep_Miejscowosc extends ep_Object{
 		}
 		return $this->_wojewodztwo;
 	}
-
 
 }

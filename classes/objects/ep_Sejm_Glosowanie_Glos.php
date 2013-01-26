@@ -1,8 +1,8 @@
 <?php
 class ep_Sejm_Glosowanie_Glos extends ep_Object{
-  
+
 	public $_aliases = array('sejm_glosowania_glosy');
-   
+
 	/**
 	 * @return int
 	 */
@@ -31,7 +31,6 @@ class ep_Sejm_Glosowanie_Glos extends ep_Object{
 		return (string)$this->data['opis'];
 	}
 
-	
 	/**
 	 * @return string 
 	 */

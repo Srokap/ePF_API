@@ -1,12 +1,8 @@
 <?php
 class ep_Sejm_Komunikat extends ep_Object{
-  
+
   public $_aliases = array('sejm_komunikaty');
 
-  
-  
-   
-  
 	/**
 	 * @return int
 	 */
@@ -68,7 +64,7 @@ class ep_Sejm_Komunikat extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

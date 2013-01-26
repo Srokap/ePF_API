@@ -1,27 +1,17 @@
 <?php
 class ep_Twitt extends ep_Object{
-  
+
   public $_aliases = array('twitter');
   private $_posel = false;
 
-  
-  
-  
   public function set_ep_poslowie( $data ){
 		$this->_posel = new ep_Posel( $data );
 	}
-	
-	
-	
+
 	public function posel(){
 	  return $this->_posel;	
 	}
-	
-	
-	  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -83,7 +73,7 @@ class ep_Twitt extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

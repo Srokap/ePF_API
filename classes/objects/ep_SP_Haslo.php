@@ -14,7 +14,6 @@ class ep_SP_Haslo extends ep_Object{
 	 */
 	protected $_orzeczenie_sp = null;
 
-
 	/**
 	 * @return int
 	 */
@@ -55,6 +54,5 @@ class ep_SP_Haslo extends ep_Object{
 		}
 		return $this->_orzeczenie_sp;
 	}
-
 
 }

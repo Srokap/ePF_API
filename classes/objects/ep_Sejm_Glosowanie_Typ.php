@@ -1,11 +1,8 @@
 <?php
 class ep_Sejm_Glosowanie_Typ extends ep_Object{
-  
+
   public $_aliases = array('sejm_glosowania_typy');
-  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -67,7 +64,7 @@ class ep_Sejm_Glosowanie_Typ extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

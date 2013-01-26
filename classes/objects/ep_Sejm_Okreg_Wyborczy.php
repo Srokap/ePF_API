@@ -1,12 +1,9 @@
 <?php
 class ep_Sejm_Okreg_Wyborczy extends ep_Object{
-  
+
   public $_aliases = array('sejm_okregi_wyborcze');
   public $_field_init_lookup = 'numer';
-  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -68,7 +65,7 @@ class ep_Sejm_Okreg_Wyborczy extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

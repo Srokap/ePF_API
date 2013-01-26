@@ -9,7 +9,6 @@ class ep_Legislacja_Projekt_Status extends ep_Object{
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
-	
 
 	/**
 	 * @return string 

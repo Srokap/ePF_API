@@ -1,12 +1,9 @@
 <?php
 class ep_SA_Sad extends ep_Object{
-  
+
   public $_aliases = array('sa_sady');
   public $_field_init_lookup = 'nazwa';
-  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -68,7 +65,7 @@ class ep_SA_Sad extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

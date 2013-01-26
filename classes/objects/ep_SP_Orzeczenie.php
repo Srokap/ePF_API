@@ -29,14 +29,13 @@ class ep_SP_Orzeczenie extends ep_Object{
 	 */
 	protected $_przepisy = null;
 
-
 	/**
 	 * @return int
 	 */
 	public function get_akcept(){
 		return (int) $this->data['akcept'];
 	}
-	
+
 	/**
 	 * @return string
 	 */
@@ -50,7 +49,7 @@ class ep_SP_Orzeczenie extends ep_Object{
 	public function get_hasla_tematyczne(){
 		return (string) $this->data['hasla_tematyczne'];
 	}
-	
+
 	/**
 	 * @return int
 	 */
@@ -71,14 +70,14 @@ class ep_SP_Orzeczenie extends ep_Object{
 	public function get_sad_sp_id(){
 		return (int) $this->data['sad_sp_id'];
 	}
-	
+
 	/**
 	 * @return string
 	 */
 	public function get_sad(){
 		return (string) $this->data['sad'];
 	}
-	
+
 	/**
 	 * @return string
 	 */
@@ -181,6 +180,5 @@ class ep_SP_Orzeczenie extends ep_Object{
 		}
 		return $this->_przepisy;
 	}
-
 
 }

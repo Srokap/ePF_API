@@ -1,25 +1,21 @@
 <?php
 class ep_Sejm_Klub extends ep_Object{
-  
+
   public $_aliases = array('sejm_kluby');
   public $_field_init_lookup = 'nazwa';
-  
+
   private $_poslowie = false;
-  
-  
-  
-  
+
   public function poslowie(){
 	  if( !$this->_poslowie ) {
-		  
+
 		  !$this->_poslowie = new ep_Dataset('poslowie');
 		  $this->_poslowie->init_where('klub_id', '=', $this->data['id']);
-		  
+
 	  }
 	  return $this->_poslowie;
   }
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -81,7 +77,7 @@ class ep_Sejm_Klub extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

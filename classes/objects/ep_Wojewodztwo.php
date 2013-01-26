@@ -4,17 +4,15 @@ class ep_Wojewodztwo extends ep_Object{
   public $_aliases = array('wojewodztwa');
   public $_field_init_lookup = 'nazwa';
 
-
-
 	/**
 	 * @var ep_Area
 	 */
 	private $_obszar = null;
-	
+
 	public function get_id(){
 		return (int)$this->data['id'];
 	}
-	
+
 	/**
 	 * @return string
 	 */
@@ -28,7 +26,7 @@ class ep_Wojewodztwo extends ep_Object{
 	public function __toString(){
 		return $this->get_nazwa();
 	}
-	
+
 	/**
 	 * @return ep_Area
 	 */

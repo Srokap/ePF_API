@@ -19,7 +19,6 @@ class ep_PNA extends ep_Object{
 	 */
 	protected $_wojewodztwo = null;
 
-
 	/**
 	 * @return string
 	 */
@@ -98,6 +97,5 @@ class ep_PNA extends ep_Object{
 		}
 		return $this->_wojewodztwo;
 	}
-
 
 }

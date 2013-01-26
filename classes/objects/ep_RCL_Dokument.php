@@ -1,11 +1,8 @@
 <?php
 class ep_RCL_Dokument extends ep_Object{
-  
+
   public $_aliases = array('rcl_dokumenty');
-  
-  
-  
-  
+
 	/**
 	 * @return int
 	 */
@@ -67,7 +64,7 @@ class ep_RCL_Dokument extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

@@ -11,7 +11,6 @@ class ep_SN_Jednostka extends ep_Object{
 	 */
 	protected $_orzeczenia_sn = null;
 
-
 	/**
 	 * @return int
 	 */
@@ -43,6 +42,5 @@ class ep_SN_Jednostka extends ep_Object{
 		}
 		return $this->_orzeczenia_sn;
 	}
-
 
 }

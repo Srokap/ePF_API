@@ -1,13 +1,10 @@
 <?php
 class ep_Legislacja_Projekt_Etap extends ep_Object{
-  
+
   public $_aliases = array('legislacja_projekty-etapy');
-  
-  
-  
-  
+
   public function parse_data( $data ){
-	  
+
 	  parent::parse_data($data);
 	  // echo "\n";
 	  // echo $this->data['data_json'];
@@ -15,10 +12,6 @@ class ep_Legislacja_Projekt_Etap extends ep_Object{
 
 	}
 
-
-
-
-  
 	/**
 	 * @return int
 	 */
@@ -80,7 +73,7 @@ class ep_Legislacja_Projekt_Etap extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

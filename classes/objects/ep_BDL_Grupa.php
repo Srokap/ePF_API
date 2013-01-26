@@ -1,10 +1,8 @@
 <?php
 class ep_BDL_Podgrupa extends ep_Object{
-  
+
   public $_aliases = array('bdl_wskazniki_podgrupy');
-  
-   
-  
+
 	/**
 	 * @return int
 	 */
@@ -66,7 +64,7 @@ class ep_BDL_Podgrupa extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

@@ -4,43 +4,41 @@ class ep_Powiat extends ep_Object{
 	public $_aliases = array('powiaty');
 	public $_field_init_lookup = 'nazwa';
 
-
 	/**
 	 * @var ep_Wojewodztwo
 	 */
 	private $_wojewodztwo = null;
-	
-	
+
 	/**
 	 * @var ep_Area
 	 */
 	private $_obszar = null;
-	
+
 	/**
 	 * @return integer
 	 */
 	public function get_id(){
 		return (int) $this->data['id'];
 	}
-	
+
 	/**
 	 * @return string
 	 */
 	public function get_nazwa(){
 		return (string) $this->data['nazwa'];
 	}
-	
+
 	public function __toString(){
 		return $this->get_nazwa();
 	}
-	
+
 	/**
 	 * @return ep_Wojewodztwo
 	 */
 	public function wojewodztwo(){
 		return $this->_wojewodztwo;	
 	}
-	
+
 	/**
 	 * @param array|ep_Wojewodztwo $data
 	 */
@@ -52,7 +50,7 @@ class ep_Powiat extends ep_Object{
 		}
 		return $this;
 	}
-	
+
 	/**
 	 * @return ep_Area
 	 */

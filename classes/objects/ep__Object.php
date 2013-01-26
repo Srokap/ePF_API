@@ -1,11 +1,9 @@
 <?php
 class ep__Object extends ep_Object{
-  
+
   public $_aliases = array('_objects');
   public $_field_init_lookup = 'class';
-  
-   
-  
+
 	/**
 	 * @return int
 	 */
@@ -67,7 +65,7 @@ class ep__Object extends ep_Object{
 	public function get_nr_okregu(){
 		return (int)$this->data['nr_okregu'];
 	}
-	
+
 	/**
 	 * @return string 
 	 */

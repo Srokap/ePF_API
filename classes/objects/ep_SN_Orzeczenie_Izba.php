@@ -14,7 +14,6 @@ class ep_SN_Orzeczenie_Izba extends ep_Object{
 	 */
 	protected $_orzeczenie_sn_izba = null;
 
-
 	/**
 	 * @return int
 	 */
@@ -55,6 +54,5 @@ class ep_SN_Orzeczenie_Izba extends ep_Object{
 		}
 		return $this->_orzeczenie_sn_izba;
 	}
-
 
 }
