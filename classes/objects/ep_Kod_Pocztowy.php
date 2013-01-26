@@ -1,5 +1,4 @@
 <?php
-
 class ep_Kod_Pocztowy extends ep_Object{
 
 	public $_aliases = array('kody_pocztowe');

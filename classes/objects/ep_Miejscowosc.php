@@ -1,5 +1,4 @@
 <?php
-
 class ep_Miejscowosc extends ep_Object{
 
 	public $_aliases = array( 'miejscowosci' );

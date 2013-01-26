@@ -1,5 +1,4 @@
 <?php
-
 class ep_Orzeczenie_sp_osoba_stanowisko extends ep_Object{
 
 	public $_aliases = array( 'sp_ludzie_stanowiska' );

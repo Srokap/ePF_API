@@ -1,5 +1,4 @@
 <?php
-
 class ep_PNA extends ep_Object{
 
 	public $_aliases = array('kody_pocztowe_miejsca');

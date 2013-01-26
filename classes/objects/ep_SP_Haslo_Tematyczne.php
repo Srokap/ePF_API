@@ -1,5 +1,4 @@
 <?php
-
 class ep_SP_Haslo_Tematyczne extends ep_Object{
 
 	public $_aliases = array( 'sp_orzeczenia_hasla_tematyczne' );

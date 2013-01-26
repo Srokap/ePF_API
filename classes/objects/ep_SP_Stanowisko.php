@@ -1,5 +1,4 @@
 <?php
-
 class ep_SP_Stanowisko extends ep_Object{
 
 	public $_aliases = array( 'sp_stanowiska' );

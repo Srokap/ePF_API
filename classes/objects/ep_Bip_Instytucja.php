@@ -1,5 +1,4 @@
 <?php
-
 class ep_Bip_Instytucja extends ep_Object{
 
 	public $_aliases = array( 'bip_instytucje' );

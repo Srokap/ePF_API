@@ -1,5 +1,4 @@
 <?php
-
 class ep_SN_Osoba extends ep_Object{
 
 	public $_aliases = array( 'sn_ludzie' );

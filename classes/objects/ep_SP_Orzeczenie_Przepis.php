@@ -1,5 +1,4 @@
 <?php
-
 class ep_SP_Orzeczenie_Przepis extends ep_Object{
 
 	public $_aliases = array( 'sp_przepisy' );
