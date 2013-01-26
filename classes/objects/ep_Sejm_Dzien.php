@@ -26,7 +26,6 @@ class ep_Sejm_Dzien extends ep_Object{
 		}
 
 		return $this->_debaty;
-
 	}
 
 	/**

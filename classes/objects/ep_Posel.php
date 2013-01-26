@@ -28,12 +28,10 @@ class ep_Posel extends ep_Object{
 
 	public function mowca(){
 		return $this->_mowca;
-
 	}
 
 	public function klub(){
 		return $this->_klub;
-
 	}
 
 	public function aktywnosci(){
@@ -44,7 +42,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->_aktywnosci;
-
 	}
 
 	public function wystapienia(){
@@ -55,7 +52,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->_wystapienia;
-
 	}
 
 	public function glosy(){
@@ -66,7 +62,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->_glosy;
-
 	}
 
 	public function twitty(){
@@ -77,7 +72,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->_twitty;
-
 	}
 
 	public function projekty_ustaw(){
@@ -88,7 +82,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->_projekty_ustaw;
-
 	}
 
 	public function projekty_uchwal(){
@@ -99,7 +92,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->projekty_uchwal;
-
 	}
 
 	public function komisje_stanowiska(){
@@ -110,7 +102,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->_komisje_stanowiska;
-
 	}
 
 	public function wspolpracownicy(){
@@ -121,7 +112,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->_wspolpracownicy;
-
 	}
 
 	public function oswiadczenia_majatkowe(){
@@ -132,7 +122,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->_oswiadczenia_majatkowe;
-
 	}
 
 	public function rejestr_korzysci(){
@@ -143,7 +132,6 @@ class ep_Posel extends ep_Object{
 
 		}
 		return $this->_rejestr_korzysci;
-
 	}
 
 	/**

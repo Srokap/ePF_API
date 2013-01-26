@@ -25,7 +25,6 @@ class ep_Ustawa extends ep_Object{
 		}
 
 		return $this->_projekty_zmian;
-
 	}
 
 	public function prawo(){

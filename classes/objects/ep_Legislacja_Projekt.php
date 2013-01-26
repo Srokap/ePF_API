@@ -23,7 +23,6 @@ class ep_Legislacja_Projekt extends ep_Object{
 
 		}
 		return $this->_zmieniane_ustawy;
-
 	}
 
 	public function podpisy_poslowie(){
@@ -34,7 +33,6 @@ class ep_Legislacja_Projekt extends ep_Object{
 
 		}
 		return $this->_podpisy_poslowie;
-
 	}
 
 	/**

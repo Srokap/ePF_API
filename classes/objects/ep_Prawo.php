@@ -6,7 +6,6 @@ class ep_Prawo extends ep_Object{
 
 	public function getDescription(){
 		return $this->data ? $this->data['sygnatura'] : false;
-
 	}
 
 	/**

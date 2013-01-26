@@ -16,7 +16,6 @@ class ep_Sejm_Glosowanie extends ep_Object{
 		}
 
 		return $this->_posiedzenie;
-
 	}
 
 	public function dzien(){
@@ -25,7 +24,6 @@ class ep_Sejm_Glosowanie extends ep_Object{
 		}
 
 		return $this->_dzien;
-
 	}
 
 	public function debata(){
@@ -34,7 +32,6 @@ class ep_Sejm_Glosowanie extends ep_Object{
 		}
 
 		return $this->_debata;
-
 	}
 
 	public function wystapienie(){
@@ -43,7 +40,6 @@ class ep_Sejm_Glosowanie extends ep_Object{
 		}
 
 		return $this->_wystapienie;
-
 	}
 
 	public function kluby(){

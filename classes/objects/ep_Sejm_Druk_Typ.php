@@ -13,7 +13,6 @@ class ep_Sejm_Druk_Typ extends ep_Object{
 
 		}
 		return $this->_druki;
-
 	}
 
 	/**

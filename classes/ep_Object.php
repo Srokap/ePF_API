@@ -155,12 +155,10 @@ abstract class ep_Object extends ep_Api {
 				return $this->data[ $key ];
 
 		return '';
-
 	}
 
 	public function getDescription(){
 		return false;
-
 	}
 
 }

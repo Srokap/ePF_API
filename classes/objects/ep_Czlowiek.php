@@ -13,7 +13,6 @@ class ep_Czlowiek extends ep_Object{
 
 		}
 		return $this->_stanowiska;
-
 	}
 
 	/**

@@ -13,7 +13,6 @@ class ep_RCL_Projekt extends ep_Object{
 		}
 
 		return $this->_tablica;
-
 	}
 
 	public function set_ep_instytucje($data){

@@ -65,7 +65,6 @@ class ep_Gmina extends ep_Object{
 		}
 
 		return $this->_poslowie_dataset;
-
 	}
 
 	/**

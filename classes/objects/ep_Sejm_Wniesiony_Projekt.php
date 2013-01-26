@@ -8,7 +8,6 @@ class ep_Sejm_Wniesiony_Projekt extends ep_Object{
 			return ep_Legislacja_Projekt( $this->data['projekt_id'] );
 		else
 			return false;
-
 	}
 
 	/**

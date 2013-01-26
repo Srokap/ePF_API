@@ -139,7 +139,6 @@ class ep_Dataset extends ep_Api {
 				}
 
 				return $result;
-
 			}
 
 		} else {
@@ -148,7 +147,6 @@ class ep_Dataset extends ep_Api {
 				return $this->return_objects();
 			else
 				return $this->items;
-
 		}
 
 	}

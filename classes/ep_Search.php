@@ -11,13 +11,11 @@ class ep_Search extends ep_Api {
 	public function set_q( $q ) {
 		$this->q = trim( $q );
 		return $this;
-
 	}
 
 	public function set_dataset( $dataset ) {
 		$this->dataset = trim( $dataset );
 		return $this;
-
 	}
 
 	public function find_all($limit, $offset){
@@ -52,7 +50,6 @@ class ep_Search extends ep_Api {
 		}
 
 		return $this->items;
-
 	}
 
 }

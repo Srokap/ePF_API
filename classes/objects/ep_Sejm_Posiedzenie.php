@@ -25,7 +25,6 @@ class ep_Sejm_Posiedzenie extends ep_Object{
 		}
 
 		return $this->_dni;
-
 	}
 
 	public function poslowie(){
@@ -35,7 +34,6 @@ class ep_Sejm_Posiedzenie extends ep_Object{
 		}
 
 		return $this->_poslowie;
-
 	}
 
 	public function punkty(){
@@ -45,7 +43,6 @@ class ep_Sejm_Posiedzenie extends ep_Object{
 		}
 
 		return $this->_punkty;
-
 	}
 
 	public function wystapienia(){
@@ -55,7 +52,6 @@ class ep_Sejm_Posiedzenie extends ep_Object{
 		}
 
 		return $this->_wystapienia;
-
 	}
 
 	public function glosowania(){
@@ -65,7 +61,6 @@ class ep_Sejm_Posiedzenie extends ep_Object{
 		}
 
 		return $this->_glosowania;
-
 	}
 
 	/**

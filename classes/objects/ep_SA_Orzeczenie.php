@@ -25,7 +25,6 @@ class ep_SA_Orzeczenie extends ep_Object{
 		}
 
 		return $this->_sedziowie;
-
 	}
 
 	public function set_ep_sa_sady($data){

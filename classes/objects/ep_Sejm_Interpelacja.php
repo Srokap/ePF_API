@@ -14,7 +14,6 @@ class ep_Sejm_Interpelacja extends ep_Object{
 			$this->_poslowie = $_poslowie->find_all();
 		}
 		return $this->_poslowie;
-
 	}
 
 	public function tablica(){
@@ -23,7 +22,6 @@ class ep_Sejm_Interpelacja extends ep_Object{
 			$this->_tablica->init_where('interpelacja_id', '=', $this->data['id']);
 		}
 		return $this->_tablica;
-
 	}
 
 	/**
