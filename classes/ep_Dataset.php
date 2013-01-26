@@ -165,7 +165,7 @@ class ep_Dataset extends ep_Api {
 
 	public function find_one($return_objects=true){
 		$data = $this->find_all( 1, 0, $return_objects );
-		return $data[0];
+		return array_shift($data);
 	}
 
 	public function find($return_objects=true){
