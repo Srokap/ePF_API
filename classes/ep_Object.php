@@ -21,10 +21,11 @@ abstract class ep_Object extends ep_Api {
 			// echo '-1<br/>';
 
 			$id = false;
-			foreach( $this->_aliases as $alias )
+			foreach( $this->_aliases as $alias ) {
 				if( $id = $data[ $alias.'.id'] ){
 					break;
 				}
+			}
 		} elseif( $this->_field_init_lookup && is_string( $data ) && !is_numeric( $data ) ) {
 
 			// echo '-2<br/>';
@@ -147,11 +148,11 @@ abstract class ep_Object extends ep_Api {
 	}
 
 	public function getTitle(){
-		foreach( array('tytul', 'nazwa', 'label', 'sygnatura', 'kod') as $key )
+		foreach( array('tytul', 'nazwa', 'label', 'sygnatura', 'kod') as $key ) {
 			if( $this->data[ $key ] ){
 				return $this->data[ $key ];
 			}
-
+		}
 		return '';
 	}
 

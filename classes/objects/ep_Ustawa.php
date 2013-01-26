@@ -27,8 +27,9 @@ class ep_Ustawa extends ep_Object{
 		parent::parse_data($data);
 
 		$fields = array('autor_id', 'data_publikacji', 'data_wejscia_w_zycie', 'data_wydania', 'isap_data_uchylenia', 'isap_data_wygasniecia', 'isap_id', 'isap_uwagi_str', 'status_id', 'sygnatura', 'typ_id', 'typ_nazwa', 'tytul', 'tytul_skrocony', 'zrodlo');
-		foreach( $fields as $f )
+		foreach( $fields as $f ) {
 			$this->data[$f] = $this->prawo()->data[$f];
+		}
 	}
 
 	/**
