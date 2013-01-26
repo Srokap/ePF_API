@@ -4,12 +4,12 @@ class ep_Senator extends ep_Object{
 	public $_aliases = array('senatorowie');
 	public $_field_init_lookup = 'nazwa';
 
-    private $_komisje = false;
-    private $_zespoly_parlamentarne = false;
-    private $_zespoly_senackie = false;
-    private $_oswiadczenia_majatkowe = false;
-    private $_rejestr_korzysci = false;
-    private $_wystapienia = false;
+		private $_komisje = false;
+		private $_zespoly_parlamentarne = false;
+		private $_zespoly_senackie = false;
+		private $_oswiadczenia_majatkowe = false;
+		private $_rejestr_korzysci = false;
+		private $_wystapienia = false;
 	/**
 	 * @return int
 	 */
@@ -40,7 +40,7 @@ class ep_Senator extends ep_Object{
 
 	public function komisje(){
 
-		if( !$this->_komisje ) {			  
+		if( !$this->_komisje ) {				
 			$this->_komisje = new ep_Dataset('senat_senatorowie_komisje');
 			$this->_komisje->init_where('senator_id', '=', $this->id);
 		}
@@ -48,7 +48,7 @@ class ep_Senator extends ep_Object{
 	}
 
 	public function zespoly_parlamentarne(){
-		if( !$this->_zespoly_parlamentarne ) {			  
+		if( !$this->_zespoly_parlamentarne ) {				
 			$this->_zespoly_parlamentarne = new ep_Dataset('senat_senatorowie_zespoly_parlamentarne');
 			$this->_zespoly_parlamentarne->init_where('senator_id', '=', $this->id);
 		}
@@ -56,7 +56,7 @@ class ep_Senator extends ep_Object{
 	}
 
 	public function zespoly_senackie(){
-		if( !$this->_zespoly_senackie ) {			  
+		if( !$this->_zespoly_senackie ) {				
 			$this->_zespoly_senackie = new ep_Dataset('senat_senatorowie_zespoly_senackie');
 			$this->_zespoly_senackie->init_where('senator_id', '=', $this->id);
 		}

@@ -2,20 +2,20 @@
 
 class ep_Kod_Pocztowy extends ep_Object{
 
-  public $_aliases = array('kody_pocztowe');
+	public $_aliases = array('kody_pocztowe');
 	public $_field_init_lookup = 'kod';
 
-  private $_gminy = false;
+	private $_gminy = false;
 
-  public function gminy(){
-	  if( !$this->_gminy ) {
+	public function gminy(){
+		if( !$this->_gminy ) {
 
-		  $this->_gminy = new ep_Dataset('gminy');
-		  $this->_gminy->init_where('kody_pocztowe_gminy.kod_id', '=', $this->data['id'])->order_by('typ_id', 'ASC');
+			$this->_gminy = new ep_Dataset('gminy');
+			$this->_gminy->init_where('kody_pocztowe_gminy.kod_id', '=', $this->data['id'])->order_by('typ_id', 'ASC');
 
-	  }
-	  return $this->_gminy;
-  }
+		}
+		return $this->_gminy;
+	}
 
 	/**
 	 * @var ep_Wojewodztwo

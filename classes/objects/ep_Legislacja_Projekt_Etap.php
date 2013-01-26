@@ -1,14 +1,14 @@
 <?php
 class ep_Legislacja_Projekt_Etap extends ep_Object{
 
-  public $_aliases = array('legislacja_projekty-etapy');
+	public $_aliases = array('legislacja_projekty-etapy');
 
-  public function parse_data( $data ){
+	public function parse_data( $data ){
 
-	  parent::parse_data($data);
-	  // echo "\n";
-	  // echo $this->data['data_json'];
-    $this->data['_data'] = json_decode( $this->data['data_json'], true );
+		parent::parse_data($data);
+		// echo "\n";
+		// echo $this->data['data_json'];
+		$this->data['_data'] = json_decode( $this->data['data_json'], true );
 
 	}
 

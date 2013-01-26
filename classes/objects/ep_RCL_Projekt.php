@@ -1,31 +1,31 @@
 <?php
 class ep_RCL_Projekt extends ep_Object{
 
-  public $_aliases = array('rcl_projekty');
+	public $_aliases = array('rcl_projekty');
 
-  private $_tablica;
-  private $_autor;
+	private $_tablica;
+	private $_autor;
 
-  public function tablica() {
+	public function tablica() {
 
-	  if( !$this->_tablica ) {
-	    $this->_tablica = new ep_Dataset('rcl_projekty_tablice');
-	    $this->_tablica->init_where('projekt_id', '=', $this->id);
-	  }
+		if( !$this->_tablica ) {
+			$this->_tablica = new ep_Dataset('rcl_projekty_tablice');
+			$this->_tablica->init_where('projekt_id', '=', $this->id);
+		}
 
-	  return $this->_tablica;
+		return $this->_tablica;
 
-  }
+	}
 
-  public function set_ep_instytucje($data){
+	public function set_ep_instytucje($data){
 
-	  $this->_autor = new ep_Instytucja($data);
+		$this->_autor = new ep_Instytucja($data);
 
-  }
+	}
 
-  public function autor(){
-	  return $this->_autor;
-  }
+	public function autor(){
+		return $this->_autor;
+	}
 
 	/**
 	 * @return int

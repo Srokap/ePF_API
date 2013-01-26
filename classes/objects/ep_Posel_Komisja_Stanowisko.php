@@ -1,27 +1,27 @@
 <?php
 class ep_Posel_Komisja_Stanowisko extends ep_Object{
 
-  public $_aliases = array('poslowie_komisje_stanowiska', 'sejm_komisje_stanowiska');
-  private $_komisja = false;
-  private $_posel = fasle;
+	public $_aliases = array('poslowie_komisje_stanowiska', 'sejm_komisje_stanowiska');
+	private $_komisja = false;
+	private $_posel = fasle;
 
-  public function set_ep_poslowie($data){
+	public function set_ep_poslowie($data){
 
-	  $this->_posel = new ep_Posel($data);
+		$this->_posel = new ep_Posel($data);
 
-  }
-  public function posel(){
-	  return $this->_posel;
-  }
+	}
+	public function posel(){
+		return $this->_posel;
+	}
 
-  public function set_ep_sejm_komisje($data){
+	public function set_ep_sejm_komisje($data){
 
-	  $this->_komisja = new ep_Sejm_Komisja($data);
+		$this->_komisja = new ep_Sejm_Komisja($data);
 
-  }
-  public function komisja(){
-	  return $this->_komisja;
-  }
+	}
+	public function komisja(){
+		return $this->_komisja;
+	}
 
 	/**
 	 * @return int

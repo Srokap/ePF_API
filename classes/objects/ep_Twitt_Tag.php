@@ -1,7 +1,7 @@
 <?php
 class ep_Twitt_Tag extends ep_Object{
 
-  public $_aliases = array('twitter_tags');
+	public $_aliases = array('twitter_tags');
 
 	/**
 	 * @return int

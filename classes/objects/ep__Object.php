@@ -1,8 +1,8 @@
 <?php
 class ep__Object extends ep_Object{
 
-  public $_aliases = array('_objects');
-  public $_field_init_lookup = 'class';
+	public $_aliases = array('_objects');
+	public $_field_init_lookup = 'class';
 
 	/**
 	 * @return int

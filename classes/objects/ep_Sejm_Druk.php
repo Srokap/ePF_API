@@ -1,8 +1,8 @@
 <?php
 class ep_Sejm_Druk extends ep_Object{
 
-  public $_aliases = array('sejm_druki', 'sejm_druki_typy');
-  public $_field_init_lookup = 'numer';
+	public $_aliases = array('sejm_druki', 'sejm_druki_typy');
+	public $_field_init_lookup = 'numer';
 
 	/**
 	* @return int

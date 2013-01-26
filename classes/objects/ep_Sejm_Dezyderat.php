@@ -1,8 +1,8 @@
 <?php
 class ep_Sejm_Dezyderat extends ep_Object{
 
-  public $_aliases = array('sejm_dezyderaty');
-  public $_field_init_lookup = 'tytul';
+	public $_aliases = array('sejm_dezyderaty');
+	public $_field_init_lookup = 'tytul';
 
 	/**
 	 * @return int

@@ -11,7 +11,7 @@ class ep_Senat_Oswiadczenie_Majatkowe extends ep_Object{
 
 	public function senator(){
 		return $this->_senator;
-	}  
+	}	
 
 	/**
 	 * @return integer

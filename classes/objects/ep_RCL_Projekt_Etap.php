@@ -1,7 +1,7 @@
 <?php
 class ep_RCL_Projekt_Etap extends ep_Object{
 
-  public $_aliases = array('rcl_projekty_tablice', 'rcl_projekty_tablice_typy');
+	public $_aliases = array('rcl_projekty_tablice', 'rcl_projekty_tablice_typy');
 
 	/**
 	 * @return int

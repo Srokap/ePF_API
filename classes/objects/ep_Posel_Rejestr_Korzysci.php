@@ -6,13 +6,13 @@ class ep_Posel_Rejestr_Korzysci extends ep_Object{
 
 	private $_posel = false;
 
-  public function set_ep_poslowie($data){
-	  $this->_posel = new ep_Posel($data);
-  }
+	public function set_ep_poslowie($data){
+		$this->_posel = new ep_Posel($data);
+	}
 
-  public function posel(){
-	  return $this->_posel;
-  } 
+	public function posel(){
+		return $this->_posel;
+	} 
 
 	/**
 	 * @return integer

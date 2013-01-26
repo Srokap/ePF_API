@@ -1,7 +1,7 @@
 <?php
 class ep_Sejm_Glosowanie_Typ extends ep_Object{
 
-  public $_aliases = array('sejm_glosowania_typy');
+	public $_aliases = array('sejm_glosowania_typy');
 
 	/**
 	 * @return int

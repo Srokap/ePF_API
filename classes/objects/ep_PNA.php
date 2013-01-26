@@ -2,7 +2,7 @@
 
 class ep_PNA extends ep_Object{
 
-  public $_aliases = array('kody_pocztowe_miejsca');
+	public $_aliases = array('kody_pocztowe_miejsca');
 
 	/**
 	 * @var ep_Gmina

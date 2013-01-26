@@ -1,7 +1,7 @@
 <?php
 class ep_Legislacja_Projekt_Podpis extends ep_Object{
 
-  public $_aliases = array('legislacja_projekty-podpisy');
+	public $_aliases = array('legislacja_projekty-podpisy');
 
 	/**
 	 * @return int

@@ -1,15 +1,15 @@
 <?php
 class ep_Twitt extends ep_Object{
 
-  public $_aliases = array('twitter');
-  private $_posel = false;
+	public $_aliases = array('twitter');
+	private $_posel = false;
 
-  public function set_ep_poslowie( $data ){
+	public function set_ep_poslowie( $data ){
 		$this->_posel = new ep_Posel( $data );
 	}
 
 	public function posel(){
-	  return $this->_posel;	
+		return $this->_posel;	
 	}
 
 	/**

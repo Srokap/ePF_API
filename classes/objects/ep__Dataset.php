@@ -1,19 +1,19 @@
 <?php
 class ep__Dataset extends ep_Object{
 
-  public $_aliases = array('_datasets');
-  public $_field_init_lookup = 'base_alias';
+	public $_aliases = array('_datasets');
+	public $_field_init_lookup = 'base_alias';
 
-  public function __construct( $data ) {
+	public function __construct( $data ) {
 
-    $id = $data['_datasets.base_alias'];
-    if( !$id )
+		$id = $data['_datasets.base_alias'];
+		if( !$id )
 			return false;
 
-    $this->id = $id;
-	  $this->loaded = $this->parse_data( $data );
+		$this->id = $id;
+		$this->loaded = $this->parse_data( $data );
 
-  }
+	}
 
 	/**
 	 * @return int

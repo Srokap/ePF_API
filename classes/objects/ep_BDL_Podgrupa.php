@@ -1,7 +1,7 @@
 <?php
 class ep_BDL_Grupa extends ep_Object{
 
-  public $_aliases = array('bdl_wskazniki_grupy');
+	public $_aliases = array('bdl_wskazniki_grupy');
 
 	/**
 	 * @return int

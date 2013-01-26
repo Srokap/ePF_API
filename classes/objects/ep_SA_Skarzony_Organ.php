@@ -1,7 +1,7 @@
 <?php
 class ep_SA_Skarzony_Organ extends ep_Object{
 
-  public $_aliases = array('sa_skarzone_organy');
+	public $_aliases = array('sa_skarzone_organy');
 
 	/**
 	 * @return int

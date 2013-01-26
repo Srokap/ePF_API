@@ -1,7 +1,7 @@
 <?php
 class ep_BDL_Kategoria extends ep_Object{
 
-  public $_aliases = array('bdl_wskazniki_kategorie');
+	public $_aliases = array('bdl_wskazniki_kategorie');
 
 	/**
 	 * @return int

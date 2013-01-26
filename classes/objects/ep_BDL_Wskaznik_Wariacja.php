@@ -1,11 +1,11 @@
 <?php
 class ep_BDL_Wskaznik_Wariacja extends ep_Object{
 
-  public $_aliases = array('bdl_wskazniki_wariacje', 'bdl_wskazniki');
+	public $_aliases = array('bdl_wskazniki_wariacje', 'bdl_wskazniki');
 
-   public $_podgrupa = null;
-   public $_wojewodztwa = null;
-   public $_powiaty	 = null;
+	public $_podgrupa = null;
+	public $_wojewodztwa = null;
+	public $_powiaty	 = null;
 
 	/**
 	 * @return int

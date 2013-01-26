@@ -1,5 +1,5 @@
 <?
-  class ep_Dataset extends ep_Api {
+	class ep_Dataset extends ep_Api {
 
 		public $name;
 		public $mode;
@@ -23,17 +23,17 @@
 		protected $_runtime_keywords = array();
 		protected $_runtime_layers = array();
 
-	  public function __construct( $name ) {
+		public function __construct( $name ) {
 
-		  $this->name = $name;
+			$this->name = $name;
 
-	  }
+		}
 
-	  public function keyword($keyword){
+		public function keyword($keyword){
 
-		  $this->add_runtime_keywords( $keyword );
+			$this->add_runtime_keywords( $keyword );
 			return $this;		
-	  }
+		}
 
 		public function where( $key, $operator, $value ){
 			$this->add_runtime_wheres( array( $this->name.'.'. $key, $operator, $value ) );
@@ -47,24 +47,24 @@
 
 		public function init_layer( $layer ) {
 			if( $layer )
-			  $this->_init_layers[] = $layer;
+				$this->_init_layers[] = $layer;
 			return $this;
 		}
 
 		public function order_by( $field, $direction = 'ASC' ){
 
-		  if( !$field )
-		    return $this;
+			if( !$field )
+				return $this;
 
-		  $parts = explode('.', $field);
-		  $parts_count = count($parts);
+			$parts = explode('.', $field);
+			$parts_count = count($parts);
 
-		  if( $parts_count===1 )
-		    $d_field = $this->name.'.'. $field;
-		  else
-			  $d_field = $parts[ $parts_count-2 ].'.'.$parts[ $parts_count-1 ];
+			if( $parts_count===1 )
+				$d_field = $this->name.'.'. $field;
+			else
+				$d_field = $parts[ $parts_count-2 ].'.'.$parts[ $parts_count-1 ];
 
-		  $this->add_runtime_orders( array( $d_field, $direction ) );
+			$this->add_runtime_orders( array( $d_field, $direction ) );
 
 			return $this;
 		}
@@ -85,16 +85,16 @@
 		public function find_all( $limit = null, $offset = null, $return_objects=true ){
 
 			if( $limit )
-			  $this->limit = $limit;
+				$this->limit = $limit;
 
 			if( $offset )
-			  $this->offset = $offset;
+				$this->offset = $offset;
 
 			$params = $this->get_params();			
 			$data = $this->call( 'dataset-search', $params );
 
-		  $this->performance = $data['performance'];
-		  $this->q = isset($data['query']) ? $data['query'] : null;
+			$this->performance = $data['performance'];
+			$this->q = isset($data['query']) ? $data['query'] : null;
 			$this->items_class = $data['items_class'];
 			$this->items = $data['items'];
 			$this->items_found_rows = $data['items_found_rows'];
@@ -106,10 +106,10 @@
 			// var_export( $order );
 
 			for( $i=0; $i<count($this->fields); $i++ ) {
-		    if( $this->fields[$i]['field']==$order[0] ) {
-		      $this->fields[$i]['selected'] = true;
-		      $this->fields[$i]['direction'] = $order[1];
-		    }
+				if( $this->fields[$i]['field']==$order[0] ) {
+					$this->fields[$i]['selected'] = true;
+					$this->fields[$i]['direction'] = $order[1];
+				}
 			}
 			// var_export( $this->items ); die();
 
@@ -117,7 +117,7 @@
 
 			if( $this->mode=='DBF' ) {
 
-			  $class = $this->items_class;
+				$class = $this->items_class;
 				$result = array();
 
 				if( $class && is_array($this->items) && !empty($this->items) ) {
@@ -133,26 +133,26 @@
 								$obj = new $class( $id, false );
 								$obj->data = $data;
 								$result[] = $obj;
-						  }
+							}
 
 						} else {
 
 							$result[] = $data;
 
-					  }
+						}
 
-				  }
+					}
 
 				return $result;
 
-			  }
+				}
 
 			} else {
 
 				if( $return_objects )
-				  return $this->return_objects();
+					return $this->return_objects();
 				else 
-				  return $this->items;
+					return $this->items;
 
 			}
 
@@ -181,40 +181,40 @@
 		public function get_params(){
 
 			return array(
-			  'name' => $this->name,
-				'l'  => $this->limit,
+				'name' => $this->name,
+				'l'	=> $this->limit,
 				'of' => $this->offset,
 				'j' => $this->_joins,
 				'w' => $this->get_wheres(),
 				'ls' => $this->get_layers(),
-				'o'  => array_merge( $this->_init_orders, $this->_runtime_orders ),
-				'k'  => array_merge( $this->_init_keywords, $this->_runtime_keywords ),
+				'o'	=> array_merge( $this->_init_orders, $this->_runtime_orders ),
+				'k'	=> array_merge( $this->_init_keywords, $this->_runtime_keywords ),
 				'rl' => $this->respect_limit,
 			);
 		}
 
 		protected function get_wheres(){
 
-		  $result = array();
+			$result = array();
 
-		  for( $i=0; $i<count($this->_init_wheres); $i++ )
-		    $result[] = $this->_init_wheres[$i];
+			for( $i=0; $i<count($this->_init_wheres); $i++ )
+				$result[] = $this->_init_wheres[$i];
 
-		  for( $i=0; $i<count($this->_runtime_wheres); $i++ )
-		    $result[] = $this->_runtime_wheres[$i];
+			for( $i=0; $i<count($this->_runtime_wheres); $i++ )
+				$result[] = $this->_runtime_wheres[$i];
 
 			return $result;
 		}
 
 		protected function get_layers(){
 
-		  $result = array();
+			$result = array();
 
-		  for( $i=0; $i<count($this->_init_layers); $i++ )
-		    $result[] = $this->_init_layers[$i];
+			for( $i=0; $i<count($this->_init_layers); $i++ )
+				$result[] = $this->_init_layers[$i];
 
-		  for( $i=0; $i<count($this->_runtime_layers); $i++ )
-		    $result[] = $this->_runtime_layers[$i];
+			for( $i=0; $i<count($this->_runtime_layers); $i++ )
+				$result[] = $this->_runtime_layers[$i];
 
 			return $result;
 		}
@@ -227,15 +227,15 @@
 			if( $class && is_array($this->items) && !empty($this->items) )
 				foreach( $this->items as $item ) {
 
-				  /*
-				  if( $item && $this->mode=='DBF' && $_SERVER['REMOTE_ADDR']=='80.72.34.251' )
-					  $item = @json_decode( $item, true );
+					/*
+					if( $item && $this->mode=='DBF' && $_SERVER['REMOTE_ADDR']=='80.72.34.251' )
+						$item = @json_decode( $item, true );
 					*/
 
 					if( $item )
 						$result[] = new $class( $item, false );
 
-			  }
+				}
 
 			return $result;
 		}
@@ -261,7 +261,7 @@
 
 		public function add_runtime_keywords( $keyword ){
 			if( $keyword )
-			  $this->_runtime_keywords[] = $keyword;
+				$this->_runtime_keywords[] = $keyword;
 			return $this;
 		}
 
@@ -314,11 +314,11 @@
 
 		protected $_joins = array();
 		public function add_join( $alias ){
-		  $this->_joins[] = $alias;
+			$this->_joins[] = $alias;
 		}
 
 		public function set_joins( $joins ){
-		  $this->_joins = $joins;
+			$this->_joins = $joins;
 		}
 
 	}

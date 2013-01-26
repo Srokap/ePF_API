@@ -1,8 +1,8 @@
 <?php
 class ep_SA_Orzeczenie_Wynik extends ep_Object{
 
-  public $_aliases = array('sa_orzeczenia_wyniki');
-  public $_field_init_lookup = 'nazwa';
+	public $_aliases = array('sa_orzeczenia_wyniki');
+	public $_field_init_lookup = 'nazwa';
 
 	/**
 	 * @return int

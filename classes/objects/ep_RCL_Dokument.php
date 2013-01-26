@@ -1,7 +1,7 @@
 <?php
 class ep_RCL_Dokument extends ep_Object{
 
-  public $_aliases = array('rcl_dokumenty');
+	public $_aliases = array('rcl_dokumenty');
 
 	/**
 	 * @return int

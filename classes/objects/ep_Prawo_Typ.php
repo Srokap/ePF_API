@@ -1,7 +1,7 @@
 <?php
 class ep_Prawo_Typ extends ep_Object{
 
-  public $_aliases = array('prawo_typy');
+	public $_aliases = array('prawo_typy');
 
 	/**
 	 * @return int

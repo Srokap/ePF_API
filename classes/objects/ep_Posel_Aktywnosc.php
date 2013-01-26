@@ -1,15 +1,15 @@
 <?php
 class ep_Posel_Aktywnosc extends ep_Object{
 
-  public $_aliases = array('poslowie_aktywnosci');
+	public $_aliases = array('poslowie_aktywnosci');
 
-  /*
-  public function parse_data( $data ){
+	/*
+	public function parse_data( $data ){
 
-	  parent::parse_data($data);
-	  // echo "\n";
-	  // echo $this->data['data_json'];
-    // $this->data['meta'] = json_decode( $this->data['meta'], true );
+		parent::parse_data($data);
+		// echo "\n";
+		// echo $this->data['data_json'];
+		// $this->data['meta'] = json_decode( $this->data['meta'], true );
 
 	}
 */

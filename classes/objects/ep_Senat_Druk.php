@@ -1,8 +1,8 @@
 <?php
 class ep_Senat_Druk extends ep_Object{
 
-  public $_aliases = array('senat_druki');
-  public $_field_init_lookup = 'numer';
+	public $_aliases = array('senat_druki');
+	public $_field_init_lookup = 'numer';
 
 	/**
 	* @return int

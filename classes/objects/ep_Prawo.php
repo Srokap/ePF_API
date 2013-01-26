@@ -1,14 +1,14 @@
 <?php
 class ep_Prawo extends ep_Object{
 
-  public $_aliases = array('prawo');
-  public $_field_init_lookup = 'tytul';
+	public $_aliases = array('prawo');
+	public $_field_init_lookup = 'tytul';
 
-  public function getDescription(){
+	public function getDescription(){
 
-	  return $this->data ? $this->data['sygnatura'] : false;
+		return $this->data ? $this->data['sygnatura'] : false;
 
-  }
+	}
 
 	/**
 	* @return int

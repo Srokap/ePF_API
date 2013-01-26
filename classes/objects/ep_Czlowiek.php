@@ -1,21 +1,21 @@
 <?php
 class ep_Czlowiek extends ep_Object{
 
-  protected $_aliases = array('ludzie');
-  protected $_field_init_lookup = 'nazwa';
-  private $_stanowiska = false;
+	protected $_aliases = array('ludzie');
+	protected $_field_init_lookup = 'nazwa';
+	private $_stanowiska = false;
 
-  public function stanowiska(){
+	public function stanowiska(){
 
-	  if( !$this->_stanowiska ) {
+		if( !$this->_stanowiska ) {
 
-	    $this->_stanowiska = new ep_Dataset('stanowiska');
-	    $this->_stanowiska->init_where('ludzie.id', '=', $this->id);
+			$this->_stanowiska = new ep_Dataset('stanowiska');
+			$this->_stanowiska->init_where('ludzie.id', '=', $this->id);
 
-    }
-    return $this->_stanowiska;
+		}
+		return $this->_stanowiska;
 
-  }
+	}
 
 	/**
 	* @return int

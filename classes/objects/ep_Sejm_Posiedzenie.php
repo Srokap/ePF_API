@@ -1,78 +1,78 @@
 <?php
 class ep_Sejm_Posiedzenie extends ep_Object{
 
-  public $_aliases = array('sejm_posiedzenia');
-  public $_field_init_lookup = 'tytul';
-  private $_dni = false;
-  private $_punkty = false;
-  private $_wystapienia = false;
-  private $_glosowania = false;
-  private $_poslowie = false;
+	public $_aliases = array('sejm_posiedzenia');
+	public $_field_init_lookup = 'tytul';
+	private $_dni = false;
+	private $_punkty = false;
+	private $_wystapienia = false;
+	private $_glosowania = false;
+	private $_poslowie = false;
 
-  public function __construct( $data, $complex = true ){
+	public function __construct( $data, $complex = true ){
 
 		parent::__construct( $data, $complex );
 		$this->data['stats'] = json_decode( $this->data['stats_json'], true );
 		unset( $this->data['stats_json'] );
 		$this->data['numer'] = (int) $this->data['tytul'];
-	  $this->data['tytul'] = 'Posiedzenie Sejmu nr '.$this->data['tytul'];
+		$this->data['tytul'] = 'Posiedzenie Sejmu nr '.$this->data['tytul'];
 
-  }
+	}
 
-  public function dni(){
+	public function dni(){
 
-	  if( !$this->_dni ) {
-	    $this->_dni = new ep_Dataset('sejm_posiedzenia_dni');
-	    $this->_dni->init_where('posiedzenie_id', '=', $this->id)->order_by('sejm_posiedzenia_dni.data', 'ASC');
-	  }
+		if( !$this->_dni ) {
+			$this->_dni = new ep_Dataset('sejm_posiedzenia_dni');
+			$this->_dni->init_where('posiedzenie_id', '=', $this->id)->order_by('sejm_posiedzenia_dni.data', 'ASC');
+		}
 
-	  return $this->_dni;
+		return $this->_dni;
 
-  }
+	}
 
-  public function poslowie(){
+	public function poslowie(){
 
-	  if( !$this->_poslowie ) {
-	    $this->_poslowie = new ep_Dataset('poslowie');
-	    $this->_poslowie->init_layer('sejm_posiedzenia_poslowie')->init_where('sejm_posiedzenia_poslowie.posiedzenie_id', '=', $this->data['id']);
-	  }
+		if( !$this->_poslowie ) {
+			$this->_poslowie = new ep_Dataset('poslowie');
+			$this->_poslowie->init_layer('sejm_posiedzenia_poslowie')->init_where('sejm_posiedzenia_poslowie.posiedzenie_id', '=', $this->data['id']);
+		}
 
-	  return $this->_poslowie;
+		return $this->_poslowie;
 
-  }
+	}
 
-  public function punkty(){
+	public function punkty(){
 
-	  if( !$this->_punkty ) {
-	    $this->_punkty = new ep_Dataset('sejm_posiedzenia_punkty');
-	    $this->_punkty->init_where('sejm_posiedzenia_punkty.posiedzenie_id', '=', $this->id)->order_by('sejm_posiedzenia_punkty.kolejnosc', 'ASC')->set_limit( 1000 );
-	  }
+		if( !$this->_punkty ) {
+			$this->_punkty = new ep_Dataset('sejm_posiedzenia_punkty');
+			$this->_punkty->init_where('sejm_posiedzenia_punkty.posiedzenie_id', '=', $this->id)->order_by('sejm_posiedzenia_punkty.kolejnosc', 'ASC')->set_limit( 1000 );
+		}
 
-	  return $this->_punkty;
+		return $this->_punkty;
 
-  }
+	}
 
-  public function wystapienia(){
+	public function wystapienia(){
 
-	  if( !$this->_wystapienia ) {
-	    $this->_wystapienia = new ep_Dataset('sejm_wystapienia');
-	    $this->_wystapienia->init_where('sejm_wystapienia.posiedzenie_id', '=', $this->id)->order_by('sejm_wystapienia.kolejnosc', 'ASC');
-	  }
+		if( !$this->_wystapienia ) {
+			$this->_wystapienia = new ep_Dataset('sejm_wystapienia');
+			$this->_wystapienia->init_where('sejm_wystapienia.posiedzenie_id', '=', $this->id)->order_by('sejm_wystapienia.kolejnosc', 'ASC');
+		}
 
-	  return $this->_wystapienia;
+		return $this->_wystapienia;
 
-  }
+	}
 
-  public function glosowania(){
+	public function glosowania(){
 
-	  if( !$this->_glosowania ) {
-	    $this->_glosowania = new ep_Dataset('sejm_glosowania');
-	    $this->_glosowania->init_where('sejm_glosowania.posiedzenie_id', '=', $this->id)->order_by('sejm_glosowania.czas', 'ASC')->set_limit( 1000 );
-	  }
+		if( !$this->_glosowania ) {
+			$this->_glosowania = new ep_Dataset('sejm_glosowania');
+			$this->_glosowania->init_where('sejm_glosowania.posiedzenie_id', '=', $this->id)->order_by('sejm_glosowania.czas', 'ASC')->set_limit( 1000 );
+		}
 
-	  return $this->_glosowania;
+		return $this->_glosowania;
 
-  }
+	}
 
 	/**
 	 * @return int

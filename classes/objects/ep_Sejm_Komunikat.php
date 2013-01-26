@@ -1,7 +1,7 @@
 <?php
 class ep_Sejm_Komunikat extends ep_Object{
 
-  public $_aliases = array('sejm_komunikaty');
+	public $_aliases = array('sejm_komunikaty');
 
 	/**
 	 * @return int

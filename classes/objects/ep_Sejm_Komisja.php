@@ -1,20 +1,20 @@
 <?php
 class ep_Sejm_Komisja extends ep_Object{
 
-  public $_aliases = array('sejm_komisje');
-  public $_field_init_lookup = 'nazwa';
+	public $_aliases = array('sejm_komisje');
+	public $_field_init_lookup = 'nazwa';
 
-  private $_stanowiska = false;
+	private $_stanowiska = false;
 
-  public function stanowiska(){
-	  if( !$this->_stanowiska ) {
-	    $this->_stanowiska = new ep_Dataset('poslowie_komisje_stanowiska');
-	    $this->_stanowiska->init_where('poslowie_komisje_stanowiska.komisja_id', '=', $this->data['id']);
-	    $this->_stanowiska->init_where('poslowie_komisje_stanowiska.aktywny', '=', '1');
-	    // $this->_stanowiska->init_where('poslowie_komisje_stanowiska.podkomisja_id', '!=', '0');
-	  }
-	  return $this->_stanowiska;
-  }
+	public function stanowiska(){
+		if( !$this->_stanowiska ) {
+			$this->_stanowiska = new ep_Dataset('poslowie_komisje_stanowiska');
+			$this->_stanowiska->init_where('poslowie_komisje_stanowiska.komisja_id', '=', $this->data['id']);
+			$this->_stanowiska->init_where('poslowie_komisje_stanowiska.aktywny', '=', '1');
+			// $this->_stanowiska->init_where('poslowie_komisje_stanowiska.podkomisja_id', '!=', '0');
+		}
+		return $this->_stanowiska;
+	}
 
 	/**
 	 * @return int
