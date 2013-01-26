@@ -1,4 +1,4 @@
-<?
+<?php
 class ep_Search extends ep_Api {
 
 	public $q;
@@ -53,4 +53,3 @@ class ep_Search extends ep_Api {
 		return $this->items;
 	}
 }
-?>

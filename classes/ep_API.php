@@ -1,4 +1,4 @@
-<?
+<?php
 class ep_Api {
 
 	public $_version = '0.1';
@@ -138,4 +138,3 @@ if( !function_exists('sm_dzien_slowny') ) {
 		return $dni[ $w ];
 	}
 }
-?>

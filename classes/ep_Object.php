@@ -1,4 +1,4 @@
-<?
+<?php
 abstract class ep_Object extends ep_Api {
 
 	public $id;
@@ -167,4 +167,3 @@ abstract class ep_Object extends ep_Api {
 		return (int) $this->data['id'];
 	}
 }
-?>
