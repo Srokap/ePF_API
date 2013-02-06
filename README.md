@@ -1,4 +1,5 @@
 ePF_API - Dane publiczne dostępne jak nigdy wcześniej!
+------------------------------------------------------
 
 To jest oficjalny klient platformy ePF_API. Umożliwia pobieranie danych publicznych, udostępnianych na portalu http://sejmometr.pl.
 Zobacz więcej informacji o platformie ePF_API na stronie http://sejmometr.pl/api.
@@ -20,6 +21,7 @@ ePF_API daje dostęp do danych publicznych, pochodzących od wielu instytucji pu
 
 
 Warunki korzystania
+-------------------
 
 Wydawcą portalu Sejmometr i operatorem platformy ePF_API jest Fundacja ePaństwo - niezależna organizacja pozarządowa, działająca na rzecz dostępu do informacji publicznych w Polsce. Zobacz http://epanstwo.org.pl.
 
