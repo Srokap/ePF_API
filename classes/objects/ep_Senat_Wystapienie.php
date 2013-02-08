@@ -1,5 +1,6 @@
 <?php
 class ep_Senat_Wystapienie extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('senat_wystapienia');
 	private $_mowca = false;

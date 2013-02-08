@@ -1,5 +1,6 @@
 <?php
 class ep_Sejm_Posiedzenie_Punkt extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_posiedzenia_punkty');
 

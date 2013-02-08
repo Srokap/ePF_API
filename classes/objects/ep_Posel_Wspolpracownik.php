@@ -1,5 +1,6 @@
 <?php
 class ep_Posel_Wspolpracownik extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('poslowie_wspolpracownicy');
 	private $_posel = false;

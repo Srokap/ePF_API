@@ -1,5 +1,6 @@
 <?php
 class ep_Senat_Zespol extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('senat_zespoly_senackie');
 	public $_field_init_lookup = 'nazwa';

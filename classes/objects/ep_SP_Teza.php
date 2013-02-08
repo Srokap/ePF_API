@@ -1,5 +1,6 @@
 <?php
 class ep_SP_Teza extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('sp_tezy','sp_orzeczenia','sp_sady');
 

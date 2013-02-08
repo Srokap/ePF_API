@@ -1,5 +1,6 @@
 <?php
 class ep_Legislacja_Projekt extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('legislacja_projekty_ustaw','legislacja_projekty_uchwal','legislacja_projekty','konsultacje');
 	public $_field_init_lookup = 'tytul';

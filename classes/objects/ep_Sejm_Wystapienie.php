@@ -1,5 +1,6 @@
 <?php
 class ep_Sejm_Wystapienie extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_wystapienia', 'sejm_posiedzenia_dni');
 	public $_field_init_lookup = 'skrot';

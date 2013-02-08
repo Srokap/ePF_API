@@ -1,5 +1,6 @@
 <?php
 class ep_SA_Orzeczenie_Wynik extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('sa_orzeczenia_wyniki');
 	public $_field_init_lookup = 'nazwa';

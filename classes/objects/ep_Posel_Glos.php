@@ -1,5 +1,6 @@
 <?php
 class ep_Posel_Glos extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('poslowie_glosy');
 	private $_glosowanie = false;

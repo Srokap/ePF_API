@@ -1,5 +1,6 @@
 <?php
 class ep_SP_Orzeczenie_Czesc extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array( 'sp_orzeczenia_czesci' );
 

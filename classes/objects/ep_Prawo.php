@@ -1,5 +1,6 @@
 <?php
 class ep_Prawo extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('prawo');
 	public $_field_init_lookup = 'tytul';

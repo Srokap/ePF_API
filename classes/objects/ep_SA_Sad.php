@@ -1,5 +1,6 @@
 <?php
 class ep_SA_Sad extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('sa_sady');
 	public $_field_init_lookup = 'nazwa';

@@ -1,5 +1,6 @@
 <?php
 class ep_BDL_Grupa extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('bdl_wskazniki_grupy');
 

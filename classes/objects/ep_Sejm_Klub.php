@@ -1,5 +1,6 @@
 <?php
 class ep_Sejm_Klub extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_kluby');
 	public $_field_init_lookup = 'nazwa';
