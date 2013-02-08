@@ -1,5 +1,6 @@
 <?php
 class ep_Senat_Oswiadczenie_Majatkowe extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('senatorowie_oswiadczenia_majatkowe');
 

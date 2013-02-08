@@ -1,5 +1,6 @@
 <?php
 class ep_Senat_Druk extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('senat_druki');
 	public $_field_init_lookup = 'numer';

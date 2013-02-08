@@ -87,6 +87,33 @@ class ep_Autoloader {
 	}
 	
 	/**
+	 * @return array full paths to files containing object classes
+	 */
+	public function getAllObjectClassPaths() {
+		$basePath = dirname(__FILE__).'/objects/';
+		$files = scandir($basePath);
+		foreach ($files as $key => $file) {
+			if ($file[0]=='.' || !is_file($basePath.$file)) {
+				unset($files[$key]);
+			} else {
+				$files[$key] = $basePath.$file;
+			}
+		}
+		return $files;
+	}
+	
+	/**
+	 * @return array all object classes names
+	 */
+	public function getAllObjectClassNames() {
+		$files = $this->getAllObjectClassPaths();
+		foreach ($files as $key => $file) {
+			$files[$key] = basename($file, '.php');
+		}
+		return $files;
+	}
+	
+	/**
 	 * Autoload callback to be registered with spl_autoload_register
 	 * @param string $class
 	 * @return boolean

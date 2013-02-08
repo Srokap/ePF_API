@@ -1,5 +1,6 @@
 <?php
 class ep_SN_Izba extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array( 'sn_izby' );
 

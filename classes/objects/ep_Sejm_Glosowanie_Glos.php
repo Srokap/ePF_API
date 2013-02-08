@@ -1,5 +1,6 @@
 <?php
 class ep_Sejm_Glosowanie_Glos extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_glosowania_glosy');
 

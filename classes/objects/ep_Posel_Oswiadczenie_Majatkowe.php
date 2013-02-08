@@ -1,5 +1,6 @@
 <?php
 class ep_Posel_Oswiadczenie_Majatkowe extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('poslowie_oswiadczenia_majatkowe');
 	public $_field_init_lookup = 'label';

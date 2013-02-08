@@ -1,5 +1,6 @@
 <?php
 class ep_RCL_Projekt_Etap extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('rcl_projekty_tablice', 'rcl_projekty_tablice_typy');
 

@@ -1,5 +1,6 @@
 <?php
 class ep_SN_Orzeczenie_Forma extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array( 'sn_orzeczenia_typy' );
 

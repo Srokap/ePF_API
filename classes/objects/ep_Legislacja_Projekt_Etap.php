@@ -1,5 +1,6 @@
 <?php
 class ep_Legislacja_Projekt_Etap extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('legislacja_projekty-etapy');
 

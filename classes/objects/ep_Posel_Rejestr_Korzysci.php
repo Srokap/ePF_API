@@ -1,5 +1,6 @@
 <?php
 class ep_Posel_Rejestr_Korzysci extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('poslowie_rejestr_korzysci');
 	public $_field_init_lookup = 'label';

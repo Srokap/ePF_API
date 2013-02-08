@@ -1,5 +1,6 @@
 <?php
 class ep_Sejm_Okreg_Wyborczy extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_okregi_wyborcze');
 	public $_field_init_lookup = 'numer';

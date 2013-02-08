@@ -1,5 +1,6 @@
 <?php
 class ep_Sejm_Sprawozdanie extends ep_Object{
+	/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_sprawozdania');
 	public $_field_init_lookup = 'tytul';
