@@ -18,13 +18,6 @@ class ep_Senat_komisja extends ep_Object{
 	/**
 	 * @return string
 	 */
-	public function get_nazwa(){
-		return (string)$this->data['nazwa'];
-	}
-
-	/**
-	 * @return string
-	 */
 	public function __toString(){
 		return $this->get_nazwa();
 	}

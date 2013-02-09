@@ -151,20 +151,6 @@ class ep_Gmina extends ep_Object{
 	/**
 	 * @return string
 	 */
-	public function get_nazwa(){
-		return (string)$this->data['nazwa'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_typ_id(){
-		return (int)$this->data['typ_id'];
-	}
-
-	/**
-	 * @return string
-	 */
 	public function __toString(){
 		return $this->get_nazwa();
 	}

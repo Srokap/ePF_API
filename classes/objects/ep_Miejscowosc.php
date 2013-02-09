@@ -34,41 +34,6 @@ class ep_Miejscowosc extends ep_Object{
 	protected $_wojewodztwo = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_gmina_id(){
-		return (int) $this->data['gmina_id'];
-	}
-
-	/**
-	 * @return string
-	 */
-	public function get_nazwa(){
-		return (string) $this->data['nazwa'];
-	}
-
-	/**
-	 * @return string
-	 */
-	public function get_nazwa_gminy(){
-		return (string) $this->data['nazwa_gminy'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_powiat_id(){
-		return (int) $this->data['powiat_id'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_wojewodztwo_id(){
-		return (int) $this->data['wojewodztwo_id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function __toString(){

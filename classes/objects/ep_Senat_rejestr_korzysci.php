@@ -28,27 +28,6 @@ class ep_Senat_rejestr_korzysci extends ep_Object{
 		return $this->_senator;
 	}
 
-	/**
-	 * @return integer
-	 */
-	public function get_dokument_id(){
-		return (int) $this->data['dokument_id'];
-	}
-
-	/**
-	 * @return integer
-	 */
-	public function get_posel_id(){
-		return (int) $this->data['senator_id'];
-	}
-
-	/**
-	 * @return string
-	 */
-	public function get_nazwa(){
-		return (string) $this->data['nazwa'];
-	}
-
 	public function __toString(){
 		return $this->get_nazwa();
 	}

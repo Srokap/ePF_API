@@ -26,20 +26,6 @@ class ep_SP_Haslo extends ep_Object{
 	protected $_orzeczenie_sp = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sp_haslo_tematyczne_id(){
-		return (int) $this->data['orzeczenie_sp_haslo_tematyczne_id'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sp_id(){
-		return (int) $this->data['orzeczenie_sp_id'];
-	}
-
-	/**
 	 * @return ep_SP_Haslo_Tematyczne
 	 */
 	public function orzeczenie_sp_haslo_tematyczne(){
