@@ -39,27 +39,6 @@ class ep_Kod_Pocztowy extends ep_Object{
 	protected $_wojewodztwo = null;
 
 	/**
-	 * @return string
-	 */
-	public function get_kod(){
-		return (string) $this->data['kod'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_kod_int(){
-		return (int) $this->data['kod_int'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_wojewodztwo_id(){
-		return (int) $this->data['wojewodztwo_id'];
-	}
-
-	/**
 	 * @return ep_Wojewodztwo
 	 */
 	public function wojewodztwo(){

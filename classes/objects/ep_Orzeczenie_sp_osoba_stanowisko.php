@@ -29,27 +29,6 @@ class ep_Orzeczenie_sp_osoba_stanowisko extends ep_Object{
 	protected $_orzeczenie_sp_stanowisko = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sp_id(){
-		return (int) $this->data['orzeczenie_sp_id'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sp_osoba_id(){
-		return (int) $this->data['orzeczenie_sp_osoba_id'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sp_stanowisko_id(){
-		return (int) $this->data['orzeczenie_sp_stanowisko_id'];
-	}
-
-	/**
 	 * @return ep_SP_Orzeczenie
 	 */
 	public function orzeczenie_sp(){

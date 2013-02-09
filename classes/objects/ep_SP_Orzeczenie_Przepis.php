@@ -22,27 +22,6 @@ class ep_SP_Orzeczenie_Przepis extends ep_Object{
 	protected $_orzeczenie_sp = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_lp(){
-		return (int) $this->data['lp'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sp_id(){
-		return (int) $this->data['orzeczenie_sp_id'];
-	}
-
-	/**
-	 * @return string
-	 */
-	public function get_przepis(){
-		return (string) $this->data['przepis'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function __toString(){

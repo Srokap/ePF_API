@@ -26,20 +26,6 @@ class ep_Senator extends ep_Object{
 	private $_wystapienia = false;
 
 	/**
-	 * @return int
-	 */
-	public function get_mowca_id(){
-		return (int)$this->data['mowca_id'];
-	}
-
-	/**
-	 * @return string
-	 */
-	public function get_nazwa(){
-		return (string)$this->data['nazwa'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function __toString(){

@@ -22,20 +22,6 @@ class ep_Senat_senator_komisja extends ep_Object{
 	private $_senator = false;
 
 	/**
-	 * @return int
-	 */
-	public function get_komisja_id(){
-		return (int)$this->data['komisja_id'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_senator_id(){
-		return (int)$this->data['senator_id'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_stanowisko(){

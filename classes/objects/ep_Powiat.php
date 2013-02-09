@@ -26,13 +26,6 @@ class ep_Powiat extends ep_Object{
 	 */
 	private $_obszar = null;
 
-	/**
-	 * @return string
-	 */
-	public function get_nazwa(){
-		return (string) $this->data['nazwa'];
-	}
-
 	public function __toString(){
 		return $this->get_nazwa();
 	}

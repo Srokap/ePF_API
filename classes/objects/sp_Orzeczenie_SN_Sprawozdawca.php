@@ -26,20 +26,6 @@ class sp_Orzeczenie_SN_Sprawozdawca extends ep_Object{
 	protected $_orzeczenie_sn_osoba = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sn_id(){
-		return (int) $this->data['orzeczenie_sn_id'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sn_osoba_id(){
-		return (int) $this->data['orzeczenie_sn_osoba_id'];
-	}
-
-	/**
 	 * @return ep_SN_Orzeczenie
 	 */
 	public function orzeczenie_sn(){

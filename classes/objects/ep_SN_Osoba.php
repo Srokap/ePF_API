@@ -39,13 +39,6 @@ class ep_SN_Osoba extends ep_Object{
 	/**
 	 * @return string
 	 */
-	public function get_nazwa(){
-		return (string) $this->data['nazwa'];
-	}
-
-	/**
-	 * @return string
-	 */
 	public function __toString(){
 		return (string) $this->get_nazwa();
 	}

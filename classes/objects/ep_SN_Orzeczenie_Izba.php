@@ -26,20 +26,6 @@ class ep_SN_Orzeczenie_Izba extends ep_Object{
 	protected $_orzeczenie_sn_izba = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sn_id(){
-		return (int) $this->data['orzeczenie_sn_id'];
-	}
-
-	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sn_izba_id(){
-		return (int) $this->data['orzeczenie_sn_izba_id'];
-	}
-
-	/**
 	 * @return ep_SN_Orzeczenie
 	 */
 	public function orzeczenie_sn(){

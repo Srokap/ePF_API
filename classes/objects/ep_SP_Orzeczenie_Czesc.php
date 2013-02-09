@@ -22,20 +22,6 @@ class ep_SP_Orzeczenie_Czesc extends ep_Object{
 	protected $_orzeczenie_sp = null;
 
 	/**
-	 * @return int
-	 */
-	public function get_orzeczenie_sp_id(){
-		return (int) $this->data['orzeczenie_sp_id'];
-	}
-
-	/**
-	 * @return string
-	 */
-	public function get_tytul(){
-		return (string) $this->data['tytul'];
-	}
-
-	/**
 	 * @return string
 	 */
 	public function get_wartosc(){
