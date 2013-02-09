@@ -1,7 +1,28 @@
 <?php
 class ep_SP_Orzeczenie extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'akcept' => ep_Object::TYPE_INT,
+			'data' => ep_Object::TYPE_STRING,
+			'hasla_tematyczne' => ep_Object::TYPE_STRING,
+			'podstawa_prawna' => ep_Object::TYPE_STRING,
+			'sad_sp_id' => ep_Object::TYPE_INT,
+			'sad' => ep_Object::TYPE_STRING,
+			'str_ident' => ep_Object::TYPE_STRING,
+			'sygnatura' => ep_Object::TYPE_STRING,
+			'teza' => ep_Object::TYPE_STRING,
+			'typ' => ep_Object::TYPE_STRING,
+			'typ_id' => ep_Object::TYPE_INT,
+			'wydzial' => ep_Object::TYPE_STRING,
+			'dopelniacz' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array( 'sp_orzeczenia', 'sady_sp' );
 

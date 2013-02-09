@@ -1,7 +1,28 @@
 <?php
 class ep_Sejm_Posiedzenie extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'data_start' => ep_Object::TYPE_STRING,
+			'data_stop' => ep_Object::TYPE_STRING,
+			'data_str' => ep_Object::TYPE_STRING,
+			'img' => ep_Object::TYPE_STRING,
+			'informacja_marszalka_id' => ep_Object::TYPE_STRING,
+			'komunikat_id' => ep_Object::TYPE_STRING,
+			'liczba_glosowan' => ep_Object::TYPE_STRING,
+			'liczba_punktow' => ep_Object::TYPE_STRING,
+			'opis' => ep_Object::TYPE_STRING,
+			'tytul' => ep_Object::TYPE_STRING,
+			'zapowiedz' => ep_Object::TYPE_STRING,
+			'stats' => ep_Object::TYPE_STRING,
+			'numer' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('sejm_posiedzenia');
 	public $_field_init_lookup = 'tytul';

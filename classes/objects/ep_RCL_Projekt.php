@@ -1,7 +1,33 @@
 <?php
 class ep_RCL_Projekt extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'autor_id' => ep_Object::TYPE_STRING,
+			'data_ostatnie_zmiany' => ep_Object::TYPE_STRING,
+			'data_start' => ep_Object::TYPE_STRING,
+			'dokument_id' => ep_Object::TYPE_STRING,
+			'label' => ep_Object::TYPE_STRING,
+			'lista_id' => ep_Object::TYPE_STRING,
+			'opis' => ep_Object::TYPE_STRING,
+			'opis_skrocony' => ep_Object::TYPE_STRING,
+			'rcl_id' => ep_Object::TYPE_STRING,
+			'rm_wykaz_prac_numer' => ep_Object::TYPE_STRING,
+			'status_id' => ep_Object::TYPE_STRING,
+			'status_str' => ep_Object::TYPE_STRING,
+			'tk_str' => ep_Object::TYPE_STRING,
+			'tytul' => ep_Object::TYPE_STRING,
+			'tytul_skrocony' => ep_Object::TYPE_STRING,
+			'ue_dyrektywa_nr' => ep_Object::TYPE_STRING,
+			'uwagi' => ep_Object::TYPE_STRING,
+			'uwagi_ss' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('rcl_projekty');
 

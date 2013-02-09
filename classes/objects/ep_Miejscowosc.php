@@ -1,7 +1,20 @@
 <?php
 class ep_Miejscowosc extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'gmina_id' => ep_Object::TYPE_INT,
+			'nazwa' => ep_Object::TYPE_STRING,
+			'nazwa_gminy' => ep_Object::TYPE_STRING,
+			'powiat_id' => ep_Object::TYPE_INT,
+			'wojewodztwo_id' => ep_Object::TYPE_INT,
+		));
+		return $result;
+	}
 
 	public $_aliases = array( 'miejscowosci' );
 

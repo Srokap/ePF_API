@@ -1,7 +1,23 @@
 <?php
 class ep_Posel_Komisja_Stanowisko extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'aktywny' => ep_Object::TYPE_STRING,
+			'data_start' => ep_Object::TYPE_STRING,
+			'data_stop' => ep_Object::TYPE_STRING,
+			'funkcja_id' => ep_Object::TYPE_STRING,
+			'komisja_id' => ep_Object::TYPE_STRING,
+			'podkomisja_id' => ep_Object::TYPE_STRING,
+			'posel_id' => ep_Object::TYPE_STRING,
+			'nazwa_stanowiska' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('poslowie_komisje_stanowiska', 'sejm_komisje_stanowiska');
 	private $_komisja = false;

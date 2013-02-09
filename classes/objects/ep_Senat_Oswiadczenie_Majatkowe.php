@@ -1,7 +1,18 @@
 <?php
 class ep_Senat_Oswiadczenie_Majatkowe extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'dokument_id' => ep_Object::TYPE_INT,
+			'senator_id' => ep_Object::TYPE_INT,
+			'nazwa' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('senatorowie_oswiadczenia_majatkowe');
 

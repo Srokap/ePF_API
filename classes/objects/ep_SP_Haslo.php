@@ -1,7 +1,17 @@
 <?php
 class ep_SP_Haslo extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'orzeczenie_sp_haslo_tematyczne_id' => ep_Object::TYPE_INT,
+			'orzeczenie_sp_id' => ep_Object::TYPE_INT,
+		));
+		return $result;
+	}
 
 	public $_aliases = array( 'sp_orzeczenia_hasla' );
 

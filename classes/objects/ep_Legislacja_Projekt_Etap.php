@@ -1,7 +1,24 @@
 <?php
 class ep_Legislacja_Projekt_Etap extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'czas' => ep_Object::TYPE_STRING,
+			'c_id' => ep_Object::TYPE_STRING,
+			'data' => ep_Object::TYPE_STRING,
+			'data_json' => ep_Object::TYPE_STRING,
+			'liczba_dokumentow' => ep_Object::TYPE_STRING,
+			'projekt_id' => ep_Object::TYPE_STRING,
+			'typ_id' => ep_Object::TYPE_STRING,
+			'tytul' => ep_Object::TYPE_STRING,
+			'_data' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('legislacja_projekty-etapy');
 

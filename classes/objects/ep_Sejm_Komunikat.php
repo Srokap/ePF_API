@@ -1,7 +1,20 @@
 <?php
 class ep_Sejm_Komunikat extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'date' => ep_Object::TYPE_STRING,
+			'datetime' => ep_Object::TYPE_STRING,
+			'img' => ep_Object::TYPE_STRING,
+			'opis' => ep_Object::TYPE_STRING,
+			'tytul' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('sejm_komunikaty');
 

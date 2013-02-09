@@ -1,7 +1,28 @@
 <?php
 class ep_Sejm_Wystapienie extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'data' => ep_Object::TYPE_STRING,
+			'posiedzenie_id' => ep_Object::TYPE_STRING,
+			'czlowiek_id' => ep_Object::TYPE_STRING,
+			'debata_id' => ep_Object::TYPE_STRING,
+			'dzien_sejmowy_id' => ep_Object::TYPE_STRING,
+			'ilosc_slow' => ep_Object::TYPE_STRING,
+			'klub_id' => ep_Object::TYPE_STRING,
+			'kolejnosc' => ep_Object::TYPE_STRING,
+			'punkt_id' => ep_Object::TYPE_STRING,
+			'skrot' => ep_Object::TYPE_STRING,
+			'stanowisko_id' => ep_Object::TYPE_STRING,
+			'video' => ep_Object::TYPE_STRING,
+			'tytul' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('sejm_wystapienia', 'sejm_posiedzenia_dni');
 	public $_field_init_lookup = 'skrot';

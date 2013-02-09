@@ -1,7 +1,17 @@
 <?php
 class ep_SN_Orzeczenie_Sedzia extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'orzeczenie_sn_id' => ep_Object::TYPE_INT,
+			'orzeczenie_sn_osoba_id' => ep_Object::TYPE_INT,
+		));
+		return $result;
+	}
 
 	public $_aliases = array( 'sn_sedziowie' );
 

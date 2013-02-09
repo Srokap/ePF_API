@@ -1,7 +1,19 @@
 <?php
 class ep_Senator extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'mowca_id' => ep_Object::TYPE_INT,
+			'nazwa' => ep_Object::TYPE_STRING,
+			'email' => ep_Object::TYPE_STRING,
+			'opis' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('senatorowie');
 	public $_field_init_lookup = 'nazwa';

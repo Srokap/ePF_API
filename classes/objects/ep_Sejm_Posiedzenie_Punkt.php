@@ -1,7 +1,27 @@
 <?php
 class ep_Sejm_Posiedzenie_Punkt extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'kolejnosc' => ep_Object::TYPE_STRING,
+			'liczba_debat' => ep_Object::TYPE_STRING,
+			'liczba_glosowan' => ep_Object::TYPE_STRING,
+			'liczba_slow' => ep_Object::TYPE_STRING,
+			'liczba_wystapien' => ep_Object::TYPE_STRING,
+			'numer' => ep_Object::TYPE_STRING,
+			'numer_int' => ep_Object::TYPE_STRING,
+			'posiedzenie_id' => ep_Object::TYPE_STRING,
+			'promo_wystapienie_id' => ep_Object::TYPE_STRING,
+			'stats_str' => ep_Object::TYPE_STRING,
+			'tytul' => ep_Object::TYPE_STRING,
+			'video' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('sejm_posiedzenia_punkty');
 
