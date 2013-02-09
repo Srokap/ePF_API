@@ -221,11 +221,4 @@ abstract class ep_Object extends ep_Api {
 	public function getDescription(){
 		return false;
 	}
-	
-// 	/**
-// 	 * @return int
-// 	 */
-// 	public function get_id(){
-// 		return (int) $this->data['id'];
-// 	}
 }

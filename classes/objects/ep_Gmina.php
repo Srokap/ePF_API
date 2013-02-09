@@ -6,7 +6,6 @@ class ep_Gmina extends ep_Object{
 		$result = array_merge($result, array (
 			'nazwa' => ep_Object::TYPE_STRING,
 			'typ_id' => ep_Object::TYPE_INT,
-			'id' => ep_Object::TYPE_INT,
 			'adres' => ep_Object::TYPE_STRING,
 			'bip_www' => ep_Object::TYPE_STRING,
 			'dochody_roczne' => ep_Object::TYPE_STRING,
