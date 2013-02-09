@@ -1,7 +1,8 @@
 <?php
 //
 class ep_Senat_rejestr_korzysci extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('senat_rejestr_korzysci');
 	public $_field_init_lookup = 'nazwa';

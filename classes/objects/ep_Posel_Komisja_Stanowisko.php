@@ -1,6 +1,7 @@
 <?php
 class ep_Posel_Komisja_Stanowisko extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('poslowie_komisje_stanowiska', 'sejm_komisje_stanowiska');
 	private $_komisja = false;

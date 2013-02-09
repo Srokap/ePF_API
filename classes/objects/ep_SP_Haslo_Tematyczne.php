@@ -1,6 +1,7 @@
 <?php
 class ep_SP_Haslo_Tematyczne extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array( 'sp_orzeczenia_hasla_tematyczne' );
 

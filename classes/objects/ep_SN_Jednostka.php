@@ -1,6 +1,7 @@
 <?php
 class ep_SN_Jednostka extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array( 'sn_jednostki' );
 

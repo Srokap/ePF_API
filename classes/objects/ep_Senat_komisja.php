@@ -1,6 +1,7 @@
 <?php
 class ep_Senat_komisja extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('senat_komisje');
 	public $_field_init_lookup = 'nazwa';

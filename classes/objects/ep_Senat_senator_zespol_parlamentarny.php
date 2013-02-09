@@ -3,7 +3,8 @@
 //senat_senatorowie_zespoly_parlamentarne
 
 class ep_Senat_senator_zespol_parlamentarny extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('senat_senatorowie_zespoly_parlamentarne');
 

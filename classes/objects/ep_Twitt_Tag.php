@@ -1,6 +1,7 @@
 <?php
 class ep_Twitt_Tag extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('twitter_tags');
 

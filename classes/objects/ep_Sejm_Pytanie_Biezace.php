@@ -1,6 +1,7 @@
 <?php
 class ep_Sejm_Pytanie_Biezace extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_pytania_biezace', 'sejm_interpelacje');
 

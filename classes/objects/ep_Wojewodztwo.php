@@ -1,6 +1,7 @@
 <?php
 class ep_Wojewodztwo extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('wojewodztwa');
 	public $_field_init_lookup = 'nazwa';

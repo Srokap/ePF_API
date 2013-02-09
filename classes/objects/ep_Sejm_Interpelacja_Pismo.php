@@ -1,6 +1,7 @@
 <?php
 class ep_Sejm_Interpelacja_Pismo extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_interpelacje_pisma');
 

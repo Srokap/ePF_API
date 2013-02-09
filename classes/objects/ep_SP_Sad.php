@@ -1,6 +1,7 @@
 <?php
 class ep_SP_Sad extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array( 'sady_sp' );
 

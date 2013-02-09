@@ -1,6 +1,7 @@
 <?php
 class ep_SA_Skarzony_Organ extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('sa_skarzone_organy');
 

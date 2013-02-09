@@ -1,6 +1,7 @@
 <?php
 class ep__Object extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('_objects');
 	public $_field_init_lookup = 'class';

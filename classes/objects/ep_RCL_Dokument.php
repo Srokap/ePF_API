@@ -1,6 +1,7 @@
 <?php
 class ep_RCL_Dokument extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('rcl_dokumenty');
 

@@ -1,6 +1,7 @@
 <?php
 class ep_Prawo_Typ extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('prawo_typy');
 

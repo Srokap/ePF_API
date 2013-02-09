@@ -1,6 +1,7 @@
 <?php
 class ep_Posel extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('poslowie','ludzie_poslowie');
 	public $_field_init_lookup = 'nazwa';

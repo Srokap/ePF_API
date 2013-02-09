@@ -1,6 +1,7 @@
 <?php
 class ep_Kod_Pocztowy extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('kody_pocztowe');
 	public $_field_init_lookup = 'kod';

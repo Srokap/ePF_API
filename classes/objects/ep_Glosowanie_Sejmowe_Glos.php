@@ -1,6 +1,7 @@
 <?php
 class ep_Glosowanie_Sejmowe_Glos extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_glosowania_glosy_wyniki');
 	private $_posel = false;

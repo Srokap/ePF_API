@@ -1,6 +1,7 @@
 <?php
 class ep_BDL_Kategoria extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('bdl_wskazniki_kategorie');
 

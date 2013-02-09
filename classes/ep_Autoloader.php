@@ -124,7 +124,11 @@ class ep_Autoloader {
 				return false;
 			}
 		} else {
-			if (!@include_once('objects/'.$class.'.php')) {
+			$path = dirname(__FILE__).'/objects/'.$class.'.php';
+			if (!file_exists($path)) {
+				return false;
+			}
+			if (!@include_once($path)) {
 				return false;
 			}
 		}
