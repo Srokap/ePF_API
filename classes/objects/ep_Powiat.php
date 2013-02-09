@@ -1,6 +1,7 @@
 <?php
 class ep_Powiat extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('powiaty');
 	public $_field_init_lookup = 'nazwa';

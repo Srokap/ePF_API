@@ -1,6 +1,7 @@
 <?php
 class ep_Sejm_Interpelacja extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_interpelacje');
 	public $_field_init_lookup = 'numer';

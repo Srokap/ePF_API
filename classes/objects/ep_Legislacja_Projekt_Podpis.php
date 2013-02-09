@@ -1,6 +1,7 @@
 <?php
 class ep_Legislacja_Projekt_Podpis extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('legislacja_projekty-podpisy');
 

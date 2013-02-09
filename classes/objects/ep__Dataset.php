@@ -1,6 +1,7 @@
 <?php
 class ep__Dataset extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('_datasets');
 	public $_field_init_lookup = 'base_alias';

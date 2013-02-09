@@ -1,6 +1,7 @@
 <?php
 class ep_Sejm_Dezyderat extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_dezyderaty');
 	public $_field_init_lookup = 'tytul';

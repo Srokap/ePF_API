@@ -1,6 +1,7 @@
 <?php
 class ep_Bip_Instytucja extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array( 'bip_instytucje' );
 

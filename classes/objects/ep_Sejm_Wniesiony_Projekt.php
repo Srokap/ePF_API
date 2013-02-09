@@ -1,6 +1,7 @@
 <?php
 class ep_Sejm_Wniesiony_Projekt extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('sejm_wniesione_projekty');
 

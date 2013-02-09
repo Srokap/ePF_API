@@ -1,6 +1,7 @@
 <?php
 class ep_RCL_Projekt_Status extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('rcl_projekty_statusy');
 

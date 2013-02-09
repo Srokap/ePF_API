@@ -1,6 +1,7 @@
 <?php
 class ep_KRS_Wpis extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('krs');
 	public $_field_init_lookup = 'krs';

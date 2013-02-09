@@ -1,6 +1,7 @@
 <?php
 class ep_SA_Orzeczenie extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('sa_orzeczenia', 'sa_orzeczenia_typy');
 	public $_field_init_lookup = 'sygnatura';

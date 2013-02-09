@@ -1,6 +1,7 @@
 <?php
 class ep_Orzeczenie_sp_osoba_stanowisko extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array( 'sp_ludzie_stanowiska' );
 

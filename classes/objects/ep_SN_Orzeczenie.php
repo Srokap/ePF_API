@@ -1,6 +1,7 @@
 <?php
 class ep_SN_Orzeczenie extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array( 'sn_orzeczenia' );
 

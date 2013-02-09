@@ -1,6 +1,7 @@
 <?php
 class ep_Posel_Aktywnosc extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('poslowie_aktywnosci');
 

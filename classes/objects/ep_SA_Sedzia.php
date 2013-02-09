@@ -1,6 +1,7 @@
 <?php
 class ep_SA_Sedzia extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('sa_sedziowie', 'sa_sedziowie_orzeczenia');
 	public $_field_init_lookup = 'nazwa';

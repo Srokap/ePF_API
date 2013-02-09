@@ -1,6 +1,7 @@
 <?php
 class ep_ISAP_Plik extends ep_Object{
-	/*INSERT_STUB*/
+
+/*INSERT_STUB*/
 
 	public $_aliases = array('isap_pliki');
 
