@@ -1,7 +1,20 @@
 <?php
 class ep_Twitt extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'created_at' => ep_Object::TYPE_STRING,
+			'html' => ep_Object::TYPE_STRING,
+			'posel_id' => ep_Object::TYPE_STRING,
+			'twitter_user_id' => ep_Object::TYPE_STRING,
+			'twitt_id' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('twitter');
 	private $_posel = false;

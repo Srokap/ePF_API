@@ -1,7 +1,23 @@
 <?php
 class ep_Kod_Pocztowy extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'kod' => ep_Object::TYPE_STRING,
+			'kod_int' => ep_Object::TYPE_INT,
+			'wojewodztwo_id' => ep_Object::TYPE_INT,
+			'gminy' => ep_Object::TYPE_STRING,
+			'liczba_gmin' => ep_Object::TYPE_STRING,
+			'liczba_powiatow' => ep_Object::TYPE_STRING,
+			'miejscowosci_str' => ep_Object::TYPE_STRING,
+			'wojewodztwo' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('kody_pocztowe');
 	public $_field_init_lookup = 'kod';

@@ -1,7 +1,24 @@
 <?php
 class ep_PNA extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'gmina_id' => ep_Object::TYPE_STRING,
+			'kod' => ep_Object::TYPE_STRING,
+			'kod_int' => ep_Object::TYPE_INT,
+			'miejscowosc' => ep_Object::TYPE_STRING,
+			'powiat_id' => ep_Object::TYPE_STRING,
+			'wojewodztwo_id' => ep_Object::TYPE_INT,
+			'numery' => ep_Object::TYPE_STRING,
+			'ulica' => ep_Object::TYPE_STRING,
+			'wojewodztwo' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('kody_pocztowe_miejsca');
 

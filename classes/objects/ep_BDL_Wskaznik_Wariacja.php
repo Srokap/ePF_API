@@ -1,7 +1,29 @@
 <?php
 class ep_BDL_Wskaznik_Wariacja extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'podgrupa_id' => ep_Object::TYPE_INT,
+			'tytul' => ep_Object::TYPE_STRING,
+			'data_count' => ep_Object::TYPE_STRING,
+			'fv' => ep_Object::TYPE_STRING,
+			'fy' => ep_Object::TYPE_STRING,
+			'jednostka_str' => ep_Object::TYPE_STRING,
+			'lv' => ep_Object::TYPE_STRING,
+			'ly' => ep_Object::TYPE_STRING,
+			'p2' => ep_Object::TYPE_STRING,
+			'p3' => ep_Object::TYPE_STRING,
+			'p4' => ep_Object::TYPE_STRING,
+			'p5' => ep_Object::TYPE_STRING,
+			'wskaznik_id' => ep_Object::TYPE_STRING,
+			'zv' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('bdl_wskazniki_wariacje', 'bdl_wskazniki');
 

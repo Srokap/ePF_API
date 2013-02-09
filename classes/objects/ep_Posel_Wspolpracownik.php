@@ -1,7 +1,20 @@
 <?php
 class ep_Posel_Wspolpracownik extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'nazwa' => ep_Object::TYPE_STRING,
+			'data' => ep_Object::TYPE_STRING,
+			'dokument_id' => ep_Object::TYPE_STRING,
+			'funkcja' => ep_Object::TYPE_STRING,
+			'posel_id' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('poslowie_wspolpracownicy');
 	private $_posel = false;

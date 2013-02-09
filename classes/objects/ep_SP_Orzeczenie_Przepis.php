@@ -1,7 +1,18 @@
 <?php
 class ep_SP_Orzeczenie_Przepis extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'lp' => ep_Object::TYPE_INT,
+			'orzeczenie_sp_id' => ep_Object::TYPE_INT,
+			'przepis' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array( 'sp_przepisy' );
 

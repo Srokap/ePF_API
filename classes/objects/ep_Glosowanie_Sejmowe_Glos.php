@@ -1,7 +1,20 @@
 <?php
 class ep_Glosowanie_Sejmowe_Glos extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'bunt' => ep_Object::TYPE_STRING,
+			'glosowanie_id' => ep_Object::TYPE_STRING,
+			'glos_id' => ep_Object::TYPE_STRING,
+			'klub_id' => ep_Object::TYPE_STRING,
+			'posel_id' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('sejm_glosowania_glosy_wyniki');
 	private $_posel = false;

@@ -1,7 +1,20 @@
 <?php
 class ep_Posel_Glos extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'bunt' => ep_Object::TYPE_STRING,
+			'glosowanie_id' => ep_Object::TYPE_STRING,
+			'glos_id' => ep_Object::TYPE_STRING,
+			'klub_id' => ep_Object::TYPE_STRING,
+			'posel_id' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('poslowie_glosy');
 	private $_glosowanie = false;

@@ -1,7 +1,22 @@
 <?php
 class ep_Sejm_Dzien extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+			'data' => ep_Object::TYPE_STRING,
+			'dlugosc' => ep_Object::TYPE_STRING,
+			'dokument_id' => ep_Object::TYPE_STRING,
+			'posiedzenie_id' => ep_Object::TYPE_STRING,
+			'start_time' => ep_Object::TYPE_STRING,
+			'stop_time' => ep_Object::TYPE_STRING,
+			'tytul' => ep_Object::TYPE_STRING,
+		));
+		return $result;
+	}
 
 	public $_aliases = array('sejm_posiedzenia_dni');
 	private $_posiedzenie = false;
