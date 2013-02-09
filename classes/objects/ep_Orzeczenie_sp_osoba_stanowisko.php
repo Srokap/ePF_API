@@ -1,7 +1,15 @@
 <?php
 class ep_Orzeczenie_sp_osoba_stanowisko extends ep_Object{
 
-/*INSERT_STUB*/
+	/**
+	 * @see ep_Object::getDataStruct()
+	 */
+	public function getDataStruct() {
+		$result = parent::getDataStruct();
+		$result = array_merge($result, array (
+		));
+		return $result;
+	}
 
 	public $_aliases = array( 'sp_ludzie_stanowiska' );
 
