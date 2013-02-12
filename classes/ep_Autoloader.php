@@ -36,47 +36,73 @@ class ep_Autoloader {
 	}
 	
 	/**
-	 * Generate and output classmap for autoloader
+	 * Generate and output (SPL'ish) classmap for autoloader
+	 *
 	 * @param bool $return If true, returns PHP code instead of outputting it. Default: false
 	 * @return string
 	 */
-	public function regenerateClassMap($return = false) {
-		$base = __DIR__;
+	public function regenerateClassMap($return = false) 
+	{
+		$dir = __DIR__;
 		$result = array();
-		$files = scandir($base);
-		foreach ($files as $file) {
-			if ($file[0]=='.') {
-				continue;
-			}
-			$path = $base.'/'.$file;
-			if (is_dir($path)) {
-				$subFiles = scandir($path);
-				foreach ($subFiles as $subFile) {
-					if ($subFile[0]=='.') {
-						continue;
-					}
-					$path2 = $file.'/'.$subFile;
-					$result[] = $path2;
-				}
-			} else {
-				$result[] = $file;
-			}
-		}
-		$map = array();
-		foreach ($result as $path) {
-			$lines = file($base.'/'.$path);
-			$i = 0;
-			$regExp = '/class\s+([a-zA-Z0-9_]*)\s/i';
-			while (!preg_match($regExp, $lines[$i], $matches)) {
-				$i++;
-			}
-			if (preg_match($regExp, $lines[$i], $matches)) {
-				$map[$matches[1]] = $path;
-			} else {
-				trigger_error("No class found in file ".$path, E_USER_WARNING);
-			}
-		}
+
+    //: Recursive SPL Directory Iterator
+    $i = new RecursiveDirectoryIterator($dir
+             , RecursiveDirectoryIterator::KEY_AS_FILENAME
+             | RecursiveDirectoryIterator::SKIP_DOTS
+             );
+    $i = new RecursiveIteratorIterator($i
+           , RecursiveIteratorIterator::LEAVES_ONLY
+             );
+    
+    //: use only *.php files (eg. for filter .dot.files)
+    $i = new RegexIterator($i, '/^.+\.php$/i', RegexIterator::MATCH);
+    
+    //: class name (without .php extension) as key
+    $i = new RegexIterator($i, '/(\.php)$/i', RegexIterator::REPLACE, RegexIterator::USE_KEY);
+    
+    $i->rewind();
+        
+    //: map map
+    $map = array();
+    $map_all = array();
+    $map_oks = array();
+    $map_bad = array();
+        
+    //: maping
+    foreach ($i as $k) {        
+        //: all files map
+        $map_all[$i->key()] = $i->getSubPathName();
+
+        //: path
+        $path = $i->getRealPath();
+        
+        //: file object
+        $f = new SplFileObject($path);
+        
+        $regExp = '/class\s+([a-zA-Z0-9_]*)\s/i';
+                
+        //: match object
+        $m = new RegexIterator($f, $regExp, RegexIterator::MATCH);
+        
+        //: trigger error for files without "class"
+        $ma = iterator_to_array($m, false);
+        if (!($ma)) trigger_error("No class found in file ". $path, E_USER_WARNING);
+        
+        //: (matches) maping
+        foreach ($m as $k) {
+            $map_oks[$i->key()] = $i->getSubPathName();
+        }    
+    }
+    
+    //: error's map
+    $map_bad = array_diff($map_all, $map_oks);
+
+    //: choose map
+    $map = $map_oks;
+    
 		$result = 'return '.str_replace('  ', "\t", var_export($map, true)).';';
+		
 		if ($return) {
 			return $result;
 		} else {
