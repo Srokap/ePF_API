@@ -34,6 +34,7 @@ class ep_Sejm_Wystapienie extends ep_Object{
 
 	public function __construct( $data, $complex = true) {
 		parent::__construct( $data, $complex );
+		//FIXME line below: Trying to get property of non-object
 		$this->data['tytul'] = strip_tags( 'Wystąpienie '.sm_data_slowna( $this->data['data'] ) ).' '.$this->mowca()->data['nazwa'];
 	}
 

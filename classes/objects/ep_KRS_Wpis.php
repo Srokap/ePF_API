@@ -7,6 +7,7 @@ class ep_KRS_Wpis extends ep_Object{
 	public function getDataStruct() {
 		$result = parent::getDataStruct();
 		$result = array_merge($result, array (
+			//FIXME missing definition
 		));
 		return $result;
 	}

@@ -13,6 +13,7 @@ class ep_RCL_Projekt_Etap extends ep_Object{
 			'projekt_id' => ep_Object::TYPE_STRING,
 			'typ_id' => ep_Object::TYPE_STRING,
 			'tablica_typ_nazwa' => ep_Object::TYPE_STRING,
+			//FIXME possibly incomplete definition
 		));
 		return $result;
 	}

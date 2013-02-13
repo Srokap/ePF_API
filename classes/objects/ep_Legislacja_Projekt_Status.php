@@ -10,6 +10,7 @@ class ep_Legislacja_Projekt_Status extends ep_Object{
 			'kolejnosc' => ep_Object::TYPE_STRING,
 			'nazwa' => ep_Object::TYPE_STRING,
 			'typ_id' => ep_Object::TYPE_STRING,
+			//FIXME possibly incomplete definition
 		));
 		return $result;
 	}

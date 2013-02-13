@@ -10,6 +10,7 @@ class ep_SP_Teza extends ep_Object{
 			'data' => ep_Object::TYPE_STRING,
 			'sad_id' => ep_Object::TYPE_STRING,
 			'teza' => ep_Object::TYPE_STRING,
+			//FIXME possibly incomplete definition
 		));
 		return $result;
 	}

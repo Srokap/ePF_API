@@ -10,6 +10,7 @@ class ep_Legislacja_Projekt_Podpis extends ep_Object{
 			'klub_id' => ep_Object::TYPE_STRING,
 			'posel_id' => ep_Object::TYPE_STRING,
 			'projekt_id' => ep_Object::TYPE_STRING,
+			//FIXME possibly incomplete definition
 		));
 		return $result;
 	}

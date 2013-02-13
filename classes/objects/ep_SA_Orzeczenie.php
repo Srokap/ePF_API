@@ -41,9 +41,9 @@ class ep_SA_Orzeczenie extends ep_Object{
 
 	public function __construct( $data, $complex = true ){
 		parent::__construct( $data, $complex );
-		$sad = $this->sad()->data;
+		$sad = $this->sad()->data;//FIXME Trying to get property of non-object
 		$this->data['tytul_skrocony'] = $this->data['nazwa'].' '.$sad['dopelniacz'].'	z dnia '.sm_data_slowna($this->data['data_orzeczenia']);
-		$this->data['tytul'] = $this->data['sygnatura'];
+		$this->data['tytul'] = $this->data['sygnatura'];//FIXME Undefined index: sygnatura
 	}
 
 	public function sedziowie() {

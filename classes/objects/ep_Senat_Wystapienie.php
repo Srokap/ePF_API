@@ -29,7 +29,7 @@ class ep_Senat_Wystapienie extends ep_Object{
 
 	public function __construct( $data, $complex = true) {
 		parent::__construct( $data, $complex );
-		$this->data['tytul'] = strip_tags( 'Wystąpienie '.$this->mowca()->data['nazwa'] );
+		$this->data['tytul'] = strip_tags( 'Wystąpienie '.$this->mowca()->data['nazwa'] );//FIXME Trying to get property of non-object
 	}
 
 	/*

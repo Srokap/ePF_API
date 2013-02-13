@@ -8,6 +8,7 @@ class ep_RCL_Projekt_Status extends ep_Object{
 		$result = parent::getDataStruct();
 		$result = array_merge($result, array (
 			'tytul' => ep_Object::TYPE_STRING,
+			//FIXME possibly incomplete definition
 		));
 		return $result;
 	}

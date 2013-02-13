@@ -34,7 +34,7 @@ class ep_Sejm_Posiedzenie extends ep_Object{
 
 	public function __construct( $data, $complex = true ){
 		parent::__construct( $data, $complex );
-		$this->data['stats'] = json_decode( $this->data['stats_json'], true );
+		$this->data['stats'] = json_decode( $this->data['stats_json'], true );//FIXME Undefined index: stats_json
 		unset( $this->data['stats_json'] );
 		$this->data['numer'] = (int) $this->data['tytul'];
 		$this->data['tytul'] = 'Posiedzenie Sejmu nr '.$this->data['tytul'];
