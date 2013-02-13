@@ -53,6 +53,9 @@ class ep_Api {
 
 			case '200': {
 				$result = json_decode( $data, true );
+				if ($result===null) {
+					throw new Exception('Niepoprawna odpowiedź serwera: '.$data);
+				}
 				if (isset($result['performance'])) {
 					$result['performance']['client_total'] = $requestTime;
 				}

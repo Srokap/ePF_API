@@ -34,7 +34,7 @@ abstract class ep_Object extends ep_Api {
 					break;
 				}
 			}
-		} elseif( $this->_field_init_lookup && is_string( $data ) && !is_numeric( $data ) ) {
+		} elseif( isset($this->_field_init_lookup) && $this->_field_init_lookup && is_string( $data ) && !is_numeric( $data ) ) {
 
 			// echo '-2<br/>';
 
