@@ -1,4 +1,22 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Klasa obiektu ep_Posel_Komisja_Stanowisko.
+ *
+ * Alias: poslowie_komisje_stanowiska, 
+ *        sejm_komisje_stanowiska
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Posel_Komisja_Stanowisko extends ep_Object{
 
 	/**

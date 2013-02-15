@@ -4,7 +4,7 @@
  * @file
  * ePF_API — Dane publiczne dostępne jak nigdy wcześniej
  * 
- * Dzęki ePF_API możesz programistycznie poruszać się po największej w Polsce 
+ * Dzięki ePF_API możesz programistycznie poruszać się po największej w Polsce 
  * otwartej bazie danych publicznych. Intuicyjny zestaw obiektów PHP umożliwia 
  * pobieranie danych oraz poruszanie się w sieci powiązań między nimi.
  *
@@ -14,18 +14,18 @@
  * materiały, znaki i symbole, o których mowa w art. 4 ustawy o prawie autorskim
  * i prawach pokrewnych. Jako takie zaś nie są przedmiotem prawa autorskiego. 
  *
- * @category   System
+ * @category   API
  * @package    ePF_API
  * @subpackage Core
  * @author     Daniel Macyszyn
  * @copyright  Copyright (c) 2012-2013 Fundacja ePaństwo
  * @license    http://sejmometr.pl/api 
- * @version    0.x.x
+ * @version    0.x.x-dev
  * @link       http://sejmometr.pl/api
  * @link       http://epf.org.pl/projekty/epf_api
  * @link       https://github.com/epforgpl/ePF_API
  * @see        README.md
- * @since      version 1.0
+ * @since      version 0.1.0
  **/
  
 /*

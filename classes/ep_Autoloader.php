@@ -8,11 +8,12 @@
 /**
  * Autoloader of ep_API classes. Uses SPL autoloader.
  *
- * @category   System
+ * @category   API
  * @package    ePF_API
  * @subpackage Core
  * @author     Paweł Sroka 'Srokap' https://github.com/Srokap
- * @since      version 1.0
+ * @version    0.x.x-dev
+ * @since      version 0.1.0 
  */
 class ep_Autoloader {
 	

@@ -6,12 +6,16 @@
  */
 
 /**
- * Klasa ep_Object - podstawowy składnik biblioteki.
+ * Klasa (A) ep_Object - podstawowy składnik biblioteki.
  *
- * @category   System
+ * Odpowiada za struktury danych obiektów.
+ *
+ * @category   API
  * @package    ePF_API
  * @subpackage Core
- * @since      version 1.0
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ * @abstract
  */
 abstract class ep_Object extends ep_Api {
 

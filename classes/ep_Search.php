@@ -8,10 +8,13 @@
 /**
  * Klasa ep_Search - podstawowy składnik biblioteki.
  *
- * @category   System
+ * Odpowiada za konstrukcję zapytań bazodanowych.
+ *
+ * @category   API
  * @package    ePF_API
  * @subpackage Core
- * @since      version 1.0
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
  */
 class ep_Search extends ep_Api {
 

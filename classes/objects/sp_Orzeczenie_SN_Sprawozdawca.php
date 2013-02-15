@@ -1,4 +1,21 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Klasa obiektu sp_Orzeczenie_SN_Sprawozdawca.
+ *
+ * Alias: sn_sprawozdawcy
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class sp_Orzeczenie_SN_Sprawozdawca extends ep_Object{
 
 	/**
