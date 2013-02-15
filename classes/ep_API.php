@@ -1,4 +1,18 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Klasa ep_Api - podstawowy składnik biblioteki.
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Core
+ * @since      version 1.0
+ */
 class ep_Api {
 
 	public $_version = '0.1';

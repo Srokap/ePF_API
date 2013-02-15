@@ -1,4 +1,18 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Klasa ep_Object - podstawowy składnik biblioteki.
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Core
+ * @since      version 1.0
+ */
 abstract class ep_Object extends ep_Api {
 
 	public $id;
