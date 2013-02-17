@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_RCL_Projekt.
+ * Obiekt ep_RCL_Projekt.
  *
- * Alias: rcl_projekty
+ * Aliasy:
+ *   rcl_projekty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('rcl_projekty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_RCL_Projekt
+ *
+ * @see ep_RCL_Projekt::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Czlowiek.
+ * Obiekt ep_Czlowiek.
  *
- * Alias: ludzie
+ * Aliasy:
+ *   ludzie
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('ludzie');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Czlowiek
+ *
+ * @see ep_Czlowiek::$_aliases
  *
  * @category   System
  * @package    ePF_API

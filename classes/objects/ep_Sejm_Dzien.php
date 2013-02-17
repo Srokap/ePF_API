@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Dzien.
+ * Obiekt ep_Sejm_Dzien.
  *
- * Alias: sejm_posiedzenia_dni
+ * Aliasy:
+ *   sejm_posiedzenia_dni
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_posiedzenia_dni');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Dzien
+ *
+ * @see ep_Sejm_Dzien::$_aliases
  *
  * @category   System
  * @package    ePF_API

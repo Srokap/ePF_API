@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SN_Orzeczenie_Sedzia.
+ * Obiekt ep_SN_Orzeczenie_Sedzia.
  *
- * Alias: sn_sedziowie
+ * Aliasy:
+ *   sn_sedziowie
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sn_sedziowie');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SN_Orzeczenie_Sedzia
+ *
+ * @see ep_SN_Orzeczenie_Sedzia::$_aliases
  *
  * @category   System
  * @package    ePF_API

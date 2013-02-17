@@ -6,10 +6,20 @@
  */
 
 /**
- * Klasa obiektu ep_Posel_Komisja_Stanowisko.
+ * Obiekt ep_Posel_Komisja_Stanowisko.
  *
- * Alias: poslowie_komisje_stanowiska, 
- *        sejm_komisje_stanowiska
+ * Aliasy:
+ *   poslowie_komisje_stanowiska
+ *   sejm_komisje_stanowiska
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie_komisje_stanowiska');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel_Komisja_Stanowisko
+ *
+ * @see ep_Posel_Komisja_Stanowisko::$_aliases
  *
  * @category   System
  * @package    ePF_API

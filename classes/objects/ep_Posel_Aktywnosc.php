@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Posel_Aktywnosc.
+ * Obiekt ep_Posel_Aktywnosc.
  *
- * Alias: poslowie_aktywnosci
+ * Aliasy:
+ *   poslowie_aktywnosci
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie_aktywnosci');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel_Aktywnosc
+ *
+ * @see ep_Posel_Aktywnosc::$_aliases
  *
  * @category   System
  * @package    ePF_API

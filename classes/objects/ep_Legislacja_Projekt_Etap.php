@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Legislacja_Projekt_Etap.
+ * Obiekt ep_Legislacja_Projekt_Etap.
  *
- * Alias: legislacja_projekty-etapy
+ * Aliasy:
+ *   legislacja_projekty-etapy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('legislacja_projekty-etapy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Legislacja_Projekt_Etap
+ *
+ * @see ep_Legislacja_Projekt_Etap::$_aliases
  *
  * @category   System
  * @package    ePF_API

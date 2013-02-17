@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Miejscowosc.
+ * Obiekt ep_Miejscowosc.
  *
- * Alias: miejscowosci
+ * Aliasy:
+ *   miejscowosci
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('miejscowosci');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Miejscowosc
+ *
+ * @see ep_Miejscowosc::$_aliases
  *
  * @category   System
  * @package    ePF_API

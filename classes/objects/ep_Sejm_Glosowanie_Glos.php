@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Glosowanie_Glos.
+ * Obiekt ep_Sejm_Glosowanie_Glos.
  *
- * Alias: sejm_glosowania_glosy
+ * Aliasy:
+ *   sejm_glosowania_glosy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_glosowania_glosy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Glosowanie_Glos
+ *
+ * @see ep_Sejm_Glosowanie_Glos::$_aliases
  *
  * @category   System
  * @package    ePF_API

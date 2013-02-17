@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Powiat.
+ * Obiekt ep_Powiat.
  *
- * Alias: powiaty
+ * Aliasy:
+ *   powiaty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('powiaty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Powiat
+ *
+ * @see ep_Powiat::$_aliases
  *
  * @category   System
  * @package    ePF_API

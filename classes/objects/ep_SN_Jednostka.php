@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SN_Jednostka.
+ * Obiekt ep_SN_Jednostka.
  *
- * Alias: sn_jednostki
+ * Aliasy:
+ *   sn_jednostki
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sn_jednostki');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SN_Jednostka
+ *
+ * @see ep_SN_Jednostka::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Wniesiony_Projekt.
+ * Obiekt ep_Sejm_Wniesiony_Projekt.
  *
- * Alias: sejm_wniesione_projekty
+ * Aliasy:
+ *   sejm_wniesione_projekty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_wniesione_projekty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Wniesiony_Projekt
+ *
+ * @see ep_Sejm_Wniesiony_Projekt::$_aliases
  *
  * @category   System
  * @package    ePF_API

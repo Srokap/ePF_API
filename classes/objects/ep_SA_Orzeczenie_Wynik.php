@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SA_Orzeczenie_Wynik.
+ * Obiekt ep_SA_Orzeczenie_Wynik.
  *
- * Alias: sa_orzeczenia_wyniki
+ * Aliasy:
+ *   sa_orzeczenia_wyniki
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sa_orzeczenia_wyniki');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SA_Orzeczenie_Wynik
+ *
+ * @see ep_SA_Orzeczenie_Wynik::$_aliases
  *
  * @category   System
  * @package    ePF_API

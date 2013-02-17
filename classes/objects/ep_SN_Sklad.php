@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SN_Sklad.
+ * Obiekt ep_SN_Sklad.
  *
- * Alias: sn_sklady
+ * Aliasy:
+ *   sn_sklady
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sn_sklady');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SN_Sklad
+ *
+ * @see ep_SN_Sklad::$_aliases
  *
  * @category   System
  * @package    ePF_API

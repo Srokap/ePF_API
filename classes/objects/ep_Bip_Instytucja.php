@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Bip_Instytucja.
+ * Obiekt ep_Bip_Instytucja.
  *
- * Alias: bip_instytucje
+ * Aliasy:
+ *   bip_instytucje
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('bip_instytucje');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Bip_Instytucja
+ *
+ * @see ep_Bip_Instytucja::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Dezyderat.
+ * Obiekt ep_Sejm_Dezyderat.
  *
- * Alias: sejm_dezyderaty
+ * Aliasy:
+ *   sejm_dezyderaty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_dezyderaty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Dezyderat
+ *
+ * @see ep_Sejm_Dezyderat::$_aliases
  *
  * @category   System
  * @package    ePF_API

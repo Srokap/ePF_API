@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_NIK_Raport.
+ * Obiekt ep_NIK_Raport.
  *
- * Alias: nik_raporty
+ * Aliasy:
+ *   nik_raporty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('nik_raporty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_NIK_Raport
+ *
+ * @see ep_NIK_Raport::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Senat_Druk.
+ * Obiekt ep_Senat_Druk.
  *
- * Alias: senat_druki
+ * Aliasy:
+ *   senat_druki
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('senat_druki');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Senat_Druk
+ *
+ * @see ep_Senat_Druk::$_aliases
  *
  * @category   System
  * @package    ePF_API

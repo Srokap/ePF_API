@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Legislacja_Projekt_Status.
+ * Obiekt ep_Legislacja_Projekt_Status.
  *
- * Alias: legislacja_projekty_statusy
+ * Aliasy:
+ *   legislacja_projekty_statusy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('legislacja_projekty_statusy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Legislacja_Projekt_Status
+ *
+ * @see ep_Legislacja_Projekt_Status::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_ISAP_Plik.
+ * Obiekt ep_ISAP_Plik.
  *
- * Alias: isap_pliki
+ * Aliasy:
+ *   isap_pliki
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('isap_pliki');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_ISAP_Plik
+ *
+ * @see ep_ISAP_Plik::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Prawo.
+ * Obiekt ep_Prawo.
  *
- * Alias: prawo
+ * Aliasy:
+ *   prawo
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('prawo');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Prawo
+ *
+ * @see ep_Prawo::$_aliases
  *
  * @category   System
  * @package    ePF_API

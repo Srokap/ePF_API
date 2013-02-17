@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Orzeczenie_sp_osoba_stanowisko.
+ * Obiekt ep_Orzeczenie_sp_osoba_stanowisko.
  *
- * Alias: sp_ludzie_stanowiska
+ * Aliasy:
+ *   sp_ludzie_stanowiska
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_ludzie_stanowiska');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Orzeczenie_sp_osoba_stanowisko
+ *
+ * @see ep_Orzeczenie_sp_osoba_stanowisko::$_aliases
  *
  * @category   System
  * @package    ePF_API

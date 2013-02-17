@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_PNA.
+ * Obiekt ep_PNA.
  *
- * Alias: kody_pocztowe_miejsca
+ * Aliasy:
+ *   kody_pocztowe_miejsca
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('kody_pocztowe_miejsca');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_PNA
+ *
+ * @see ep_PNA::$_aliases
  *
  * @category   System
  * @package    ePF_API

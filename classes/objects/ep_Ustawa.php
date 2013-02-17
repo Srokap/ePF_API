@@ -6,11 +6,21 @@
  */
 
 /**
- * Klasa obiektu ep_Ustawa.
+ * Obiekt ep_Ustawa.
  *
- * Alias: ustawy,
- *        prawo_typy,
- *        isap_pliki
+ * Aliasy:
+ *   ustawy
+ *   prawo_typy
+ *   isap_pliki
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('ustawy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Ustawa
+ *
+ * @see ep_Ustawa::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Senat_Wystapienie.
+ * Obiekt ep_Senat_Wystapienie.
  *
- * Alias: senat_wystapienia
+ * Aliasy:
+ *   senat_wystapienia
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('senat_wystapienia');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Senat_Wystapienie
+ *
+ * @see ep_Senat_Wystapienie::$_aliases
  *
  * @category   System
  * @package    ePF_API

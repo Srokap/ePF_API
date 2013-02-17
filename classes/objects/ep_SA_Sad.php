@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SA_Sad.
+ * Obiekt ep_SA_Sad.
  *
- * Alias: sa_sady
+ * Aliasy:
+ *   sa_sady
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sa_sady');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SA_Sad
+ *
+ * @see ep_SA_Sad::$_aliases
  *
  * @category   System
  * @package    ePF_API

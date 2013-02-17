@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Posel_Wspolpracownik.
+ * Obiekt ep_Posel_Wspolpracownik.
  *
- * Alias: poslowie_wspolpracownicy
+ * Aliasy:
+ *   poslowie_wspolpracownicy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie_wspolpracownicy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel_Wspolpracownik
+ *
+ * @see ep_Posel_Wspolpracownik::$_aliases
  *
  * @category   System
  * @package    ePF_API

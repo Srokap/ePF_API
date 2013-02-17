@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Okreg_Wyborczy.
+ * Obiekt ep_Sejm_Okreg_Wyborczy.
  *
- * Alias: sejm_okregi_wyborcze
+ * Aliasy:
+ *   sejm_okregi_wyborcze
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_okregi_wyborcze');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Okreg_Wyborczy
+ *
+ * @see ep_Sejm_Okreg_Wyborczy::$_aliases
  *
  * @category   System
  * @package    ePF_API

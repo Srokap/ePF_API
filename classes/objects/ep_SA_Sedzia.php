@@ -6,10 +6,20 @@
  */
 
 /**
- * Klasa obiektu ep_SA_Sedzia.
+ * Obiekt ep_SA_Sedzia.
  *
- * Alias: sa_sedziowie,
- *        sa_sedziowie_orzeczenia
+ * Aliasy:
+ *   sa_sedziowie
+ *   sa_sedziowie_orzeczenia
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sa_sedziowie');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SA_Sedzia
+ *
+ * @see ep_SA_Sedzia::$_aliases
  *
  * @category   System
  * @package    ePF_API

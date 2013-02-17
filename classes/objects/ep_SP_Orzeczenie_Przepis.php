@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SP_Orzeczenie_Przepis.
+ * Obiekt ep_SP_Orzeczenie_Przepis.
  *
- * Alias: sp_przepisy
+ * Aliasy:
+ *   sp_przepisy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_przepisy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SP_Orzeczenie_Przepis
+ *
+ * @see ep_SP_Orzeczenie_Przepis::$_aliases
  *
  * @category   System
  * @package    ePF_API

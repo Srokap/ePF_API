@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_BDL_Kategoria.
+ * Obiekt ep_BDL_Kategoria.
  *
- * Alias: bdl_wskazniki_kategorie
+ * Aliasy:
+ *   bdl_wskazniki_kategorie
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('bdl_wskazniki_kategorie');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_BDL_Kategoria
+ *
+ * @see ep_BDL_Kategoria::$_aliases
  *
  * @category   System
  * @package    ePF_API

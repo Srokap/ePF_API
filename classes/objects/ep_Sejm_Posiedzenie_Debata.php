@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Posiedzenie_Debata.
+ * Obiekt ep_Sejm_Posiedzenie_Debata.
  *
- * Alias: sejm_debaty
+ * Aliasy:
+ *   sejm_debaty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_debaty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Posiedzenie_Debata
+ *
+ * @see ep_Sejm_Posiedzenie_Debata::$_aliases
  *
  * @category   System
  * @package    ePF_API

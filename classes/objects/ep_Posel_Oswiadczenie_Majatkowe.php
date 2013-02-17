@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Posel_Oswiadczenie_Majatkowe.
+ * Obiekt ep_Posel_Oswiadczenie_Majatkowe.
  *
- * Alias: poslowie_oswiadczenia_majatkowe
+ * Aliasy:
+ *   poslowie_oswiadczenia_majatkowe
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie_oswiadczenia_majatkowe');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel_Oswiadczenie_Majatkowe
+ *
+ * @see ep_Posel_Oswiadczenie_Majatkowe::$_aliases
  *
  * @category   System
  * @package    ePF_API

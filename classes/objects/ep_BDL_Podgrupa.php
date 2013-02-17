@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_BDL_Podgrupa.
+ * Obiekt ep_BDL_Podgrupa.
  *
- * Alias: bdl_wskazniki_podgrupy
+ * Aliasy:
+ *   bdl_wskazniki_podgrupy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('bdl_wskazniki_podgrupy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_BDL_Podgrupa
+ *
+ * @see ep_BDL_Kategoria::$_aliases
  *
  * @category   System
  * @package    ePF_API

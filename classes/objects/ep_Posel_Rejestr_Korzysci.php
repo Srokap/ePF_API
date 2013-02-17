@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Posel_Rejestr_Korzysci.
+ * Obiekt ep_Posel_Rejestr_Korzysci.
  *
- * Alias: poslowie_rejestr_korzysci
+ * Aliasy:
+ *   poslowie_rejestr_korzysci
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie_rejestr_korzysci');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel_Rejestr_Korzysci
+ *
+ * @see ep_Posel_Rejestr_Korzysci::$_aliases
  *
  * @category   System
  * @package    ePF_API

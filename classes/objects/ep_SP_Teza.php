@@ -6,11 +6,21 @@
  */
 
 /**
- * Klasa obiektu ep_SP_Teza.
+ * Obiekt ep_SP_Teza.
  *
- * Alias: sp_tezy,
- *        sp_orzeczenia,
- *        sp_sady
+ * Aliasy:
+ *   sp_tezy
+ *   sp_orzeczenia
+ *   sp_sady
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_tezy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SP_Teza
+ *
+ * @see ep_SP_Teza::$_aliases
  *
  * @category   System
  * @package    ePF_API

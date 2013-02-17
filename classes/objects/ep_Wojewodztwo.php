@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Wojewodztwo.
+ * Obiekt ep_Wojewodztwo.
  *
- * Alias: wojewodztwa
+ * Aliasy:
+ *   wojewodztwa
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('wojewodztwa');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Wojewodztwo
+ *
+ * @see ep_Wojewodztwo::$_aliases
  *
  * @category   System
  * @package    ePF_API

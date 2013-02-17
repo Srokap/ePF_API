@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu sp_Orzeczenie_SN_Sprawozdawca.
+ * Obiekt sp_Orzeczenie_SN_Sprawozdawca.
  *
- * Alias: sn_sprawozdawcy
+ * Aliasy:
+ *   sn_sprawozdawcy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sn_sprawozdawcy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/sp_Orzeczenie_SN_Sprawozdawca
+ *
+ * @see sp_Orzeczenie_SN_Sprawozdawca::$_aliases
  *
  * @category   System
  * @package    ePF_API

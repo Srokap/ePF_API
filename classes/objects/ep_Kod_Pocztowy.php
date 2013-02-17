@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Kod_Pocztowy.
+ * Obiekt ep_Kod_Pocztowy.
  *
- * Alias: kody_pocztowe
+ * Aliasy:
+ *   kody_pocztowe
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('kody_pocztowe');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Kod_Pocztowy
+ *
+ * @see ep_Kod_Pocztowy::$_aliases
  *
  * @category   System
  * @package    ePF_API

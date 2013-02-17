@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SP_Haslo_Tematyczne.
+ * Obiekt ep_SP_Haslo_Tematyczne.
  *
- * Alias: sp_orzeczenia_hasla_tematyczne
+ * Aliasy:
+ *   sp_orzeczenia_hasla_tematyczne
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_orzeczenia_hasla_tematyczne');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SP_Haslo_Tematyczne
+ *
+ * @see ep_SP_Haslo_Tematyczne::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_RCL_Dokument.
+ * Obiekt ep_RCL_Dokument.
  *
- * Alias: rcl_dokumenty
+ * Aliasy:
+ *   rcl_dokumenty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('rcl_dokumenty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_RCL_Dokument
+ *
+ * @see ep_RCL_Dokument::$_aliases
  *
  * @category   System
  * @package    ePF_API

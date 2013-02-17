@@ -6,12 +6,22 @@
  */
 
 /**
- * Klasa obiektu ep_Legislacja_Projekt.
+ * Obiekt ep_Legislacja_Projekt.
  *
- * Alias: legislacja_projekty_ustaw,
- *        legislacja_projekty_uchwal,
- *        legislacja_projekty,
- *        konsultacje
+ * Aliasy:
+ *   legislacja_projekty_ustaw
+ *   legislacja_projekty_uchwal
+ *   legislacja_projekty
+ *   konsultacje
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('legislacja_projekty_ustaw');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Legislacja_Projekt
+ *
+ * @see ep_Legislacja_Projekt::$_aliases
  *
  * @category   System
  * @package    ePF_API

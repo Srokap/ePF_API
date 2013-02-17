@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Sprawozdanie.
+ * Obiekt ep_Sejm_Sprawozdanie.
  *
- * Alias: sejm_sprawozdania
+ * Aliasy:
+ *   sejm_sprawozdania
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_sprawozdania');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Sprawozdanie
+ *
+ * @see ep_Sejm_Sprawozdanie::$_aliases
  *
  * @category   System
  * @package    ePF_API

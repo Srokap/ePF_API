@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SP_Haslo.
+ * Obiekt ep_SP_Haslo.
  *
- * Alias: sp_orzeczenia_hasla
+ * Aliasy:
+ *   sp_orzeczenia_hasla
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_orzeczenia_hasla');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SP_Haslo
+ *
+ * @see ep_SP_Haslo::$_aliases
  *
  * @category   System
  * @package    ePF_API

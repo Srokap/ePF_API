@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Prawo_Typ.
+ * Obiekt ep_Prawo_Typ.
  *
- * Alias: prawo_typy
+ * Aliasy:
+ *   prawo_typy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('prawo_typy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Prawo_Typ
+ *
+ * @see ep_Prawo_Typ::$_aliases
  *
  * @category   System
  * @package    ePF_API

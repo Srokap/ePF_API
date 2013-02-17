@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Senat_rejestr_korzysci.
+ * Obiekt ep_Senat_rejestr_korzysci.
  *
- * Alias: senat_rejestr_korzysci
+ * Aliasy:
+ *   senat_rejestr_korzysci
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('senat_rejestr_korzysci');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Senat_rejestr_korzysci
+ *
+ * @see ep_Senat_rejestr_korzysci::$_aliases
  *
  * @category   System
  * @package    ePF_API

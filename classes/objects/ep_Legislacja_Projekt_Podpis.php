@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Legislacja_Projekt_Podpis.
+ * Obiekt ep_Legislacja_Projekt_Podpis.
  *
- * Alias: legislacja_projekty-podpisy
+ * Aliasy:
+ *   legislacja_projekty-podpisy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('legislacja_projekty-podpisy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Legislacja_Projekt_Podpis
+ *
+ * @see ep_Legislacja_Projekt_Podpis::$_aliases
  *
  * @category   System
  * @package    ePF_API

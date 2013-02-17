@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Senat_Oswiadczenie_Majatkowe.
+ * Obiekt ep_Senat_Oswiadczenie_Majatkowe.
  *
- * Alias: senatorowie_oswiadczenia_majatkowe
+ * Aliasy:
+ *   senatorowie_oswiadczenia_majatkowe
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('senatorowie_oswiadczenia_majatkowe');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Senat_Oswiadczenie_Majatkowe
+ *
+ * @see ep_Senat_Oswiadczenie_Majatkowe::$_aliases
  *
  * @category   System
  * @package    ePF_API

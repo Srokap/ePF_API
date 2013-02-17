@@ -6,10 +6,20 @@
  */
 
 /**
- * Klasa obiektu ep_Posel.
+ * Obiekt ep_Posel.
  *
- * Alias: poslowie, 
- *        ludzie_poslowie
+ * Aliasy:
+ *   poslowie
+ *   ludzie_poslowie
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel
+ *
+ * @see ep_Posel::$_aliases
  *
  * @category   System
  * @package    ePF_API

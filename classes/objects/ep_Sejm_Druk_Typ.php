@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Druk_Typ.
+ * Obiekt ep_Sejm_Druk_Typ.
  *
- * Alias: sejm_druki
+ * Aliasy:
+ *   sejm_druki_typy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_druki_typy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Druk_Typ
+ *
+ * @see ep_Sejm_Druk_Typ::$_aliases
  *
  * @category   System
  * @package    ePF_API

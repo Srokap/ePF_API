@@ -6,10 +6,20 @@
  */
 
 /**
- * Klasa obiektu ep_SA_Orzeczenie.
+ * Obiekt ep_SA_Orzeczenie.
  *
- * Alias: sa_orzeczenia, 
- *        sa_orzeczenia_typy
+ * Aliasy:
+ *   sa_orzeczenia
+ *   sa_orzeczenia_typy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sa_orzeczenia');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SA_Orzeczenie
+ *
+ * @see ep_SA_Orzeczenie::$_aliases
  *
  * @category   System
  * @package    ePF_API

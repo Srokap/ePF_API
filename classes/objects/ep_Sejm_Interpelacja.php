@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Interpelacja.
+ * Obiekt ep_Sejm_Interpelacja.
  *
- * Alias: sejm_interpelacje
+ * Aliasy:
+ *   sejm_interpelacje
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_interpelacje');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Interpelacja
+ *
+ * @see ep_Sejm_Interpelacja::$_aliases
  *
  * @category   System
  * @package    ePF_API

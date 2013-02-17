@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SA_Skarzony_Organ.
+ * Obiekt ep_SA_Skarzony_Organ.
  *
- * Alias: sa_skarzone_organy
+ * Aliasy:
+ *   sa_skarzone_organy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sa_skarzone_organy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SA_Skarzony_Organ
+ *
+ * @see ep_SA_Skarzony_Organ::$_aliases
  *
  * @category   System
  * @package    ePF_API

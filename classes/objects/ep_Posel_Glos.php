@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Posel_Glos.
+ * Obiekt ep_Posel_Glos.
  *
- * Alias: poslowie_glosy
+ * Aliasy:
+ *   poslowie_glosy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie_glosy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel_Glos
+ *
+ * @see ep_Posel_Glos::$_aliases
  *
  * @category   System
  * @package    ePF_API

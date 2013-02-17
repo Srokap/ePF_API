@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Instytucja.
+ * Obiekt ep_Instytucja.
  *
- * Alias: instytucje
+ * Aliasy:
+ *   instytucje
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('instytucje');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Instytucja
+ *
+ * @see ep_Instytucja::$_aliases
  *
  * @category   System
  * @package    ePF_API

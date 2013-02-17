@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Twitt_Tag.
+ * Obiekt ep_Twitt_Tag.
  *
- * Alias: twitter_tags
+ * Aliasy:
+ *   twitter_tags
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('twitter_tags');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Twitt_Tag
+ *
+ * @see ep_Twitt_Tag::$_aliases
  *
  * @category   System
  * @package    ePF_API

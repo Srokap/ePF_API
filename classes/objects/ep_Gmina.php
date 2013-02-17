@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Gmina.
+ * Obiekt ep_Gmina.
  *
- * Alias: gminy
+ * Aliasy:
+ *   gminy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('gminy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Gmina
+ *
+ * @see ep_Gmina::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,10 +6,20 @@
  */
 
 /**
- * Klasa obiektu ep_RCL_Projekt_Etap.
+ * Obiekt ep_RCL_Projekt_Etap.
  *
- * Alias: rcl_projekty_tablice, 
- *        rcl_projekty_tablice_typy
+ * Aliasy:
+ *   rcl_projekty_tablice
+ *   rcl_projekty_tablice_typy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('rcl_projekty_tablice');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_RCL_Projekt_Etap
+ *
+ * @see ep_RCL_Projekt_Etap::$_aliases
  *
  * @category   System
  * @package    ePF_API

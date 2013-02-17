@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Posiedzenie_Punkt.
+ * Obiekt ep_Sejm_Posiedzenie_Punkt.
  *
- * Alias: sejm_posiedzenia_punkty
+ * Aliasy:
+ *   sejm_posiedzenia_punkty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_posiedzenia_punkty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Posiedzenie_Punkt
+ *
+ * @see ep_Sejm_Posiedzenie_Punkt::$_aliases
  *
  * @category   System
  * @package    ePF_API

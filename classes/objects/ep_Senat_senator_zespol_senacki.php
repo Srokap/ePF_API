@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Senat_senator_zespol_senacki.
+ * Obiekt ep_Senat_senator_zespol_senacki.
  *
- * Alias: senat_senatorowie_zespoly_senackie
+ * Aliasy:
+ *   senat_senatorowie_zespoly_senackie
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('senat_senatorowie_zespoly_senackie');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Senat_senator_zespol_senacki
+ *
+ * @see ep_Senat_senator_zespol_senacki::$_aliases
  *
  * @category   System
  * @package    ePF_API

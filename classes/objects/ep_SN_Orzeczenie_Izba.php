@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SN_Orzeczenie_Izba.
+ * Obiekt ep_SN_Orzeczenie_Izba.
  *
- * Alias: sn_izby-orzeczenia
+ * Aliasy:
+ *   sn_izby-orzeczenia
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sn_izby-orzeczenia');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SN_Orzeczenie_Izba
+ *
+ * @see ep_SN_Orzeczenie_Izba::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SN_Wspolsprawozdawca.
+ * Obiekt ep_SN_Wspolsprawozdawca.
  *
- * Alias: sn_wspolsprawozdawcy
+ * Aliasy:
+ *   sn_wspolsprawozdawcy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sn_wspolsprawozdawcy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SN_Wspolsprawozdawca
+ *
+ * @see ep_SN_Wspolsprawozdawca::$_aliases
  *
  * @category   System
  * @package    ePF_API

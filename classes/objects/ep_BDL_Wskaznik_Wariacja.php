@@ -6,9 +6,20 @@
  */
 
 /**
- * Klasa obiektu ep_BDL_Wskaznik_Wariacja.
+ * Obiekt ep_BDL_Wskaznik_Wariacja.
  *
- * Alias: bdl_wskazniki_wariacje, bdl_wskazniki
+ * Aliasy:
+ *   bdl_wskazniki_wariacje
+ *   bdl_wskazniki
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('bdl_wskazniki_wariacje');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_BDL_Wskaznik_Wariacja
+ *
+ * @see ep_BDL_Wskaznik_Wariacja::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SN_Orzeczenie_Forma.
+ * Obiekt ep_SN_Orzeczenie_Forma.
  *
- * Alias: sn_orzeczenia_typy
+ * Aliasy:
+ *   sn_orzeczenia_typy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sn_orzeczenia_typy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SN_Orzeczenie_Forma
+ *
+ * @see ep_SN_Orzeczenie_Forma::$_aliases
  *
  * @category   System
  * @package    ePF_API

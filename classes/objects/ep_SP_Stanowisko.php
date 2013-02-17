@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SP_Stanowisko.
+ * Obiekt ep_SP_Stanowisko.
  *
- * Alias: sp_stanowiska
+ * Aliasy:
+ *   sp_stanowiska
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_stanowiska');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SP_Stanowisko
+ *
+ * @see ep_SP_Stanowisko::$_aliases
  *
  * @category   System
  * @package    ePF_API

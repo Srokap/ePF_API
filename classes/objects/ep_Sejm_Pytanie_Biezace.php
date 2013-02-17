@@ -6,10 +6,20 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Pytanie_Biezace.
+ * Obiekt ep_Sejm_Pytanie_Biezace.
  *
- * Alias: sejm_pytania_biezace, 
- *        sejm_interpelacje
+ * Aliasy:
+ *   sejm_pytania_biezace
+ *   sejm_interpelacje
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_pytania_biezace');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Pytanie_Biezace
+ *
+ * @see ep_Sejm_Pytanie_Biezace::$_aliases
  *
  * @category   System
  * @package    ePF_API

@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SN_Orzeczenie.
+ * Obiekt ep_SN_Orzeczenie.
  *
- * Alias: sn_orzeczenia
+ * Aliasy:
+ *   sn_orzeczenia
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sn_orzeczenia');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SN_Orzeczenie
+ *
+ * @see ep_SN_Orzeczenie::$_aliases
  *
  * @category   System
  * @package    ePF_API

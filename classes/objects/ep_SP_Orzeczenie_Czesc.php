@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_SP_Orzeczenie_Czesc.
+ * Obiekt ep_SP_Orzeczenie_Czesc.
  *
- * Alias: sp_orzeczenia_czesci
+ * Aliasy:
+ *   sp_orzeczenia_czesci
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_orzeczenia_czesci');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SP_Orzeczenie_Czesc
+ *
+ * @see ep_SP_Orzeczenie_Czesc::$_aliases
  *
  * @category   System
  * @package    ePF_API

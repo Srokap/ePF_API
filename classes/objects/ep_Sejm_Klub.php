@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Sejm_Klub.
+ * Obiekt ep_Sejm_Klub.
  *
- * Alias: sejm_kluby
+ * Aliasy:
+ *   sejm_kluby
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_kluby');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Klub
+ *
+ * @see ep_Sejm_Klub::$_aliases
  *
  * @category   System
  * @package    ePF_API

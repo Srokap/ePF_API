@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_KRS_Wpis.
+ * Obiekt ep_KRS_Wpis.
  *
- * Alias: krs
+ * Aliasy:
+ *   krs
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('krs');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_KRS_Wpis
+ *
+ * @see ep_KRS_Wpis::$_aliases
  *
  * @category   System
  * @package    ePF_API

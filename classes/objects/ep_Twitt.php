@@ -6,9 +6,19 @@
  */
 
 /**
- * Klasa obiektu ep_Twitt.
+ * Obiekt ep_Twitt.
  *
- * Alias: twitter
+ * Aliasy:
+ *   twitter
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('twitter');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Twitt
+ *
+ * @see ep_Twitt::$_aliases
  *
  * @category   System
  * @package    ePF_API
