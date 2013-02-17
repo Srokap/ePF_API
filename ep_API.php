@@ -19,10 +19,9 @@
  * @subpackage Core
  * @author     Daniel Macyszyn
  * @copyright  Copyright (c) 2012-2013 Fundacja ePaństwo
- * @license    http://sejmometr.pl/api 
- * @version    0.x.x-dev
- * @link       http://sejmometr.pl/api
  * @link       http://epf.org.pl/projekty/epf_api
+ * @license    http://sejmometr.pl/api
+ * @version    0.x.x-dev
  * @link       https://github.com/epforgpl/ePF_API
  * @see        README.md
  * @since      version 0.1.0
@@ -43,7 +42,7 @@
  */
 
 /**
- * Inicjalizacja systemu
+ * Inicjalizacja systemu automatycznego ładowania klas.
  */
 require_once('classes/ep_Autoloader.php');
 $autoloader = new ep_Autoloader();
