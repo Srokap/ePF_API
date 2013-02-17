@@ -10,6 +10,10 @@
  *
  * Odpowiada za wysyłanie i pobieranie danych z serwera.
  *
+ * @api
+ * @see ep_Api::$_version
+ * @see ep_Api::$server_address
+ *
  * @category   API
  * @package    ePF_API
  * @subpackage Core
@@ -103,16 +107,23 @@ class ep_Api {
 // Helper functions
 
 /**
- * Helper: sm_data_slowna.
- *
- * @category   API
- * @package    ePF_API
- * @subpackage Helpers
- * @version    0.x.x-dev
- * @since      version 0.1.0
- * @todo       move to class or separate file
+ * @addtogroup helpers
+ * @{
  */
+
 if( !function_exists('sm_data_slowna') ) {
+
+  /**
+  * Helper: sm_data_slowna()
+  *
+  * @package    ePF_API
+  * @subpackage Helpers
+  * @version    0.x.x-dev
+  * @since      version 0.1.0
+  *
+  * @ingroup    Helpers
+  * @todo       move to class or separate file
+  */
 	function sm_data_slowna( $data ) {
 		$_miesiace = array(
 				1 => 'stycznia',
@@ -143,17 +154,18 @@ if( !function_exists('sm_data_slowna') ) {
 	}
 }
 
-/**
- * Helper: sm_dzien_slowny.
- *
- * @category   API
- * @package    ePF_API
- * @subpackage Helpers
- * @version    0.x.x-dev
- * @since      version 0.1.0
- * @todo       move to class or separate file
- */
 if( !function_exists('sm_dzien_slowny') ) {
+  /**
+   * Helper: sm_dzien_slowny()
+   *
+   * @package    ePF_API
+   * @subpackage Helpers
+   * @version    0.x.x-dev
+   * @since      version 0.1.0
+   *
+   * @ingroup    Helpers
+   * @todo       move to class or separate file
+   */
 	function sm_dzien_slowny( $data ){
 		$dni = array('Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota', 'Niedziela');
 		$w = (int) date('w', strtotime($data));
@@ -161,3 +173,7 @@ if( !function_exists('sm_dzien_slowny') ) {
 		return $dni[ $w ];
 	}
 }
+
+/**
+ * @} End of "addtogroup helpers"
+ */
