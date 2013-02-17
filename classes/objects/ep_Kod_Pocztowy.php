@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Kod_Pocztowy.
+ *
+ * Aliasy:
+ *   kody_pocztowe
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('kody_pocztowe');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Kod_Pocztowy
+ *
+ * @see ep_Kod_Pocztowy::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Kod_Pocztowy extends ep_Object{
 
 	/**

@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_SP_Haslo.
+ *
+ * Aliasy:
+ *   sp_orzeczenia_hasla
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_orzeczenia_hasla');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SP_Haslo
+ *
+ * @see ep_SP_Haslo::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_SP_Haslo extends ep_Object{
 
 	/**

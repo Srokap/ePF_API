@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Legislacja_Projekt_Etap.
+ *
+ * Aliasy:
+ *   legislacja_projekty-etapy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('legislacja_projekty-etapy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Legislacja_Projekt_Etap
+ *
+ * @see ep_Legislacja_Projekt_Etap::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Legislacja_Projekt_Etap extends ep_Object{
 
 	/**

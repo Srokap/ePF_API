@@ -1,4 +1,34 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Legislacja_Projekt.
+ *
+ * Aliasy:
+ *   legislacja_projekty_ustaw
+ *   legislacja_projekty_uchwal
+ *   legislacja_projekty
+ *   konsultacje
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('legislacja_projekty_ustaw');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Legislacja_Projekt
+ *
+ * @see ep_Legislacja_Projekt::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Legislacja_Projekt extends ep_Object{
 
 	/**

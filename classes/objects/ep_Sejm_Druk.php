@@ -1,4 +1,32 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Sejm_Druk.
+ *
+ * Aliasy:
+ *   sejm_druki
+ *   sejm_druki_typy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_druki');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Druk
+ *
+ * @see ep_Sejm_Druk::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Sejm_Druk extends ep_Object{
 
 	/**

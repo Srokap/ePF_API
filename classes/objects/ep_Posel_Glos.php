@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Posel_Glos.
+ *
+ * Aliasy:
+ *   poslowie_glosy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie_glosy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel_Glos
+ *
+ * @see ep_Posel_Glos::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Posel_Glos extends ep_Object{
 
 	/**

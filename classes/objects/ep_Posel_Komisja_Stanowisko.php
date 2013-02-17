@@ -1,4 +1,32 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Posel_Komisja_Stanowisko.
+ *
+ * Aliasy:
+ *   poslowie_komisje_stanowiska
+ *   sejm_komisje_stanowiska
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie_komisje_stanowiska');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel_Komisja_Stanowisko
+ *
+ * @see ep_Posel_Komisja_Stanowisko::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Posel_Komisja_Stanowisko extends ep_Object{
 
 	/**

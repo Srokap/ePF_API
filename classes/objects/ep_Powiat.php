@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Powiat.
+ *
+ * Aliasy:
+ *   powiaty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('powiaty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Powiat
+ *
+ * @see ep_Powiat::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Powiat extends ep_Object{
 
 	/**

@@ -1,4 +1,21 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Klasa ep__Dataset - podstawowy składnik biblioteki.
+ *
+ * Alias: _datasets
+ *
+ * @category   API
+ * @package    ePF_API
+ * @subpackage Core
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep__Dataset extends ep_Object{
 
 	/**

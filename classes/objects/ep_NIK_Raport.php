@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_NIK_Raport.
+ *
+ * Aliasy:
+ *   nik_raporty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('nik_raporty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_NIK_Raport
+ *
+ * @see ep_NIK_Raport::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_NIK_Raport extends ep_Object{
 
 	/**

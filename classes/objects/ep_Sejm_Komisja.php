@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Sejm_Komisja.
+ *
+ * Aliasy:
+ *   sejm_komisje
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_komisje');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Komisja
+ *
+ * @see ep_Sejm_Komisja::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Sejm_Komisja extends ep_Object{
 
 	/**

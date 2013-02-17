@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_PNA.
+ *
+ * Aliasy:
+ *   kody_pocztowe_miejsca
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('kody_pocztowe_miejsca');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_PNA
+ *
+ * @see ep_PNA::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_PNA extends ep_Object{
 
 	/**

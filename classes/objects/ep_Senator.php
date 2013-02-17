@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Senator.
+ *
+ * Aliasy:
+ *   senatorowie
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('senatorowie');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Senator
+ *
+ * @see ep_Senator::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Senator extends ep_Object{
 
 	/**

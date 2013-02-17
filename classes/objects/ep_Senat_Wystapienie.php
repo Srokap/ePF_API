@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Senat_Wystapienie.
+ *
+ * Aliasy:
+ *   senat_wystapienia
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('senat_wystapienia');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Senat_Wystapienie
+ *
+ * @see ep_Senat_Wystapienie::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Senat_Wystapienie extends ep_Object{
 
 	/**

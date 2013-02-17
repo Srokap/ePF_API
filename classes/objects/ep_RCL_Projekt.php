@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_RCL_Projekt.
+ *
+ * Aliasy:
+ *   rcl_projekty
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('rcl_projekty');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_RCL_Projekt
+ *
+ * @see ep_RCL_Projekt::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_RCL_Projekt extends ep_Object{
 
 	/**

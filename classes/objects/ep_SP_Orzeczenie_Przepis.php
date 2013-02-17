@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_SP_Orzeczenie_Przepis.
+ *
+ * Aliasy:
+ *   sp_przepisy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_przepisy');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SP_Orzeczenie_Przepis
+ *
+ * @see ep_SP_Orzeczenie_Przepis::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_SP_Orzeczenie_Przepis extends ep_Object{
 
 	/**

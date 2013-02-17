@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Orzeczenie_sp_osoba_stanowisko.
+ *
+ * Aliasy:
+ *   sp_ludzie_stanowiska
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sp_ludzie_stanowiska');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Orzeczenie_sp_osoba_stanowisko
+ *
+ * @see ep_Orzeczenie_sp_osoba_stanowisko::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Orzeczenie_sp_osoba_stanowisko extends ep_Object{
 
 	/**

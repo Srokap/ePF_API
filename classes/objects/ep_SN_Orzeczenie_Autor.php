@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_SN_Orzeczenie_Autor.
+ *
+ * Aliasy:
+ *   sn_orzeczenia_ludzie
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sn_orzeczenia_ludzie');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SN_Orzeczenie_Autor
+ *
+ * @see ep_SN_Orzeczenie_Autor::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_SN_Orzeczenie_Autor extends ep_Object{
 
 	/**

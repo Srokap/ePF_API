@@ -1,4 +1,32 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Sejm_Pytanie_Biezace.
+ *
+ * Aliasy:
+ *   sejm_pytania_biezace
+ *   sejm_interpelacje
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_pytania_biezace');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Pytanie_Biezace
+ *
+ * @see ep_Sejm_Pytanie_Biezace::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Sejm_Pytanie_Biezace extends ep_Object{
 
 	/**

@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Posel_Oswiadczenie_Majatkowe.
+ *
+ * Aliasy:
+ *   poslowie_oswiadczenia_majatkowe
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('poslowie_oswiadczenia_majatkowe');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Posel_Oswiadczenie_Majatkowe
+ *
+ * @see ep_Posel_Oswiadczenie_Majatkowe::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Posel_Oswiadczenie_Majatkowe extends ep_Object{
 
 	/**

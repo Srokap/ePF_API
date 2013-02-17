@@ -1,4 +1,32 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_SA_Orzeczenie.
+ *
+ * Aliasy:
+ *   sa_orzeczenia
+ *   sa_orzeczenia_typy
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sa_orzeczenia');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_SA_Orzeczenie
+ *
+ * @see ep_SA_Orzeczenie::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_SA_Orzeczenie extends ep_Object{
 
 	/**

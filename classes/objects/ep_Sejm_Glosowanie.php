@@ -1,4 +1,31 @@
 <?php
+
+/**
+ * @file
+ * Ten plik jest częścią biblioteki ePF_API.
+ */
+
+/**
+ * Obiekt ep_Sejm_Glosowanie.
+ *
+ * Aliasy:
+ *   sejm_glosowania
+ *
+ * Przykładowe zastosowanie:
+ * <code>
+ *   $dataset = new ep_Dataset('sejm_glosowania');
+ *   $data = $dataset->find_all();
+ * </code>
+ * @example objects/ep_Sejm_Glosowanie
+ *
+ * @see ep_Sejm_Glosowanie::$_aliases
+ *
+ * @category   System
+ * @package    ePF_API
+ * @subpackage Objects
+ * @version    0.x.x-dev
+ * @since      version 0.1.0
+ */
 class ep_Sejm_Glosowanie extends ep_Object{
 
 	/**
