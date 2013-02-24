@@ -40,6 +40,7 @@
  * Jeżeli stałe eP_API_KEY i eP_API_SECRET definiujesz w innym pliku - pamiętaj,
  * aby powyższe definicje były wykomentowane
  */
+// include_once('config.php');
 
 /**
  * Inicjalizacja systemu automatycznego ładowania klas.
