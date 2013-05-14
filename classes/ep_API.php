@@ -43,7 +43,7 @@ class ep_Api {
 	 */
 	private function get_server_address(){
 		
-		return defined('ep_API_SERVER') ? ep_API_SERVER : $this->_default_server_address;
+		return defined('eP_API_SERVER_ADDRESS') ? eP_API_SERVER_ADDRESS : $this->_default_server_address;
 
 	}
 

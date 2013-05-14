@@ -22,6 +22,40 @@ ePF_API daje dostęp do danych publicznych, pochodzących od wielu instytucji pu
 * Wyniki wyborów samorządowych oraz parlamentarnych,
 * Wskaźniki ekonomiczne i socjalne (Bank Danych Lokalnych oraz inne bazy Głównego Urzędu Statystycznego).
 
+Przykład użycia
+---------------
+
+Wyszukiwanie danych publicznych, w których występuje fraza "Informacja publiczna":
+		
+		$searcher = new ep_Search();
+		$searcher->setQ('"Informacja publiczna"');
+		$searcher->load();
+		
+		$objects = $searcher->getObjects();
+		$pagination = $searcher->getPagination();
+		
+Zmienna $objects jest teraz tablicą 20 obiektów. Każdy taki obiekt, w swojej właściwości data zawiera opisujące go dane.
+
+Zmienna $pagination jest tablicą asocjacyjną zawierającą pola:
+* total - liczba wszystkich obiektów spełniających warunki wyszukiwania
+* limit - liczba obiektów zwróconych w bieżącym wywołaniu metody load()
+* page - numer strony wyników
+
+Aby regulować ilość zwracanych wyników i poruszać się po wszystkich stronach wyników, użyj parametrów metody load(), np:
+		$searcher->load(30, 2);
+zwróci 30 wyników, poczynając od strony nr 2.
+
+
+
+Pobieranie listy posłów na Sejm:
+
+		$searcher = new ep_Search();
+		$searcher->setDataset('poslowie');
+		$searcher->load();
+		
+		$objects = $searcher->getObjects();
+		$pagination = $searcher->getPagination();
+
 
 Warunki korzystania
 -------------------

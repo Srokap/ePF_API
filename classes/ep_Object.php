@@ -43,15 +43,6 @@ abstract class ep_Object extends ep_Api {
 				if( isset($data[ $alias.'.id']) && $id = $data[ $alias.'.id'] )
 					break;
 			
-		} elseif( isset($this->_field_init_lookup) && $this->_field_init_lookup && is_string( $data ) && !is_numeric( $data ) ) {
-			
-			/*
-			$dataset = new ep_Dataset( $this->_aliases[0] );
-			$data = $dataset->where($this->_field_init_lookup, '=', $data)->find_one( false );
-			unset( $dataset );
-			$id = (int) $data[ $this->_aliases[0].'.id' ];
-			*/
-			
 		} elseif( $data ) {
 
 			$id = $data;
