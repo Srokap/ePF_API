@@ -13,8 +13,11 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('sejm_kluby');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('sejm_kluby')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
  * @example objects/ep_Sejm_Klub
  *
@@ -51,24 +54,9 @@ class ep_Sejm_Klub extends ep_Object{
 		return $result;
 	}
 
-	public $_aliases = array('sejm_kluby');
-	public $_field_init_lookup = 'nazwa';
-
-	private $_poslowie = false;
-
-	public function poslowie(){
-		if( !$this->_poslowie ) {
-
-			!$this->_poslowie = new ep_Dataset('poslowie');
-			$this->_poslowie->init_where('klub_id', '=', $this->data['id']);
-		}
-		return $this->_poslowie;
-	}
-
 	/**
-	 * @return string
+	 * @var array
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
-	}
+	public $_aliases = array('sejm_kluby');
+
 }

@@ -15,9 +15,13 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('ustawy');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('ustawy')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
  * @example objects/ep_Ustawa
  *
  * @see ep_Ustawa::$_aliases
@@ -58,41 +62,22 @@ class ep_Ustawa extends ep_Object{
 		return $result;
 	}
 
-	public $_aliases = array('ustawy','prawo_typy','isap_pliki');
-	// public $_field_init_lookup = 'tytul';
-	private $_prawo = false;
-	private $_projekty_zmian = false;
-
-	public function set_ep_Prawo($data){
-		$this->_prawo = new ep_Prawo($data);
-	}
-
-	public function projekty_zmian(){
-		if( !$this->_projekty_zmian ) {
-			$this->_projekty_zmian = new ep_Dataset('legislacja_projekty_ustaw');
-			$this->_projekty_zmian->init_where('ustawy.id', '=', $this->data['id']);
-		}
-
-		return $this->_projekty_zmian;
-	}
-
-	public function prawo(){
-		return $this->_prawo;
-	}
-
-	function parse_data( $data ){
-		parent::parse_data($data);
-
-		$fields = array('autor_id', 'data_publikacji', 'data_wejscia_w_zycie', 'data_wydania', 'isap_data_uchylenia', 'isap_data_wygasniecia', 'isap_id', 'isap_uwagi_str', 'status_id', 'sygnatura', 'typ_id', 'typ_nazwa', 'tytul', 'tytul_skrocony', 'zrodlo');
-		foreach( $fields as $f ) {
-			$this->data[$f] = $this->prawo()->data[$f];
-		}
-	}
+	/**
+	 * @var array
+	 */
+	public $_aliases = array('ustawy', 'prawo');	
 
 	/**
 	 * @return string
 	 */
 	public function __toString(){
 		return $this->get_nazwa();
+	}
+
+	/**
+	 * @return string
+	 */	
+	public function getDate(){
+		return $this->data['data_wydania'];
 	}
 }

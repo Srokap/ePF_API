@@ -23,42 +23,62 @@
 class ep_Api {
 
 	public $_version = '0.1';
-	public $server_address = 'http://ep_api.sejmometr.pl/v1/';
+	public $http_code = false;
 	private $_key = eP_API_KEY;
 	private $_secret = eP_API_SECRET;
-
+	private $_default_server_address = 'https://sejmometr.pl/api-server-v1';
+  
+  
+  
 	/**
 	 * @return ep_Api
 	 */
-	static public function init(){
+	static public function init(){		
 		return new ep_Api();
 	}
+	
+	
+	/**
+	 * @return string
+	 */
+	private function get_server_address(){
+		
+		return defined('ep_API_SERVER') ? ep_API_SERVER : $this->_default_server_address;
 
-	public function call( $service, $params ){
-		$service = trim( $service );
+	}
 
-		if( !$service ){
+	public function call( $call, $params ){
+				
+		if( !$call )
 			return false;
-		}
-
+		
+		if( !is_array($params) && !is_object($params) )
+			$params = array(
+				'param' => $params,
+			);
+		
 		parse_str( http_build_query( $params ), $params );
-		$params[ 'sign' ] = $this->generate_sig( $params );
-		$params[ 'key' ] = $this->_key;
-
-		$request_url = $this->server_address . $service;
-
+		$request_url = $this->get_server_address() . '?' . http_build_query(array(
+      'call' => $call,
+      'sign' => $this->generate_sig( $params ),
+      'key' => $this->_key,
+    ));
+            
 		$mt = microtime(true);
 		$data = '';
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $request_url );
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_POST, 1 );
 		curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query( $params ) );
 		$data = curl_exec( $ch );
-
+		
 		$this->http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 		curl_close($ch);
 		$requestTime = microtime(true) - $mt;
+
+		
+		
 		
 		switch( $this->http_code ) {
 

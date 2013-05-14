@@ -33,36 +33,26 @@ abstract class ep_Object extends ep_Api {
 	const TYPE_METHOD = 'method';
 	
 	public function __construct( $data, $complex = true ){
-		//echo get_class( $this ) . " create\n";
-		//var_dump( $data );
-		$id = false;
 
-		if( $_SERVER['REMOTE_ADDR']=='80.72.34.251' ) {
-			// echo "<br/><br/>";
-			// var_export( $data );
-		}
+		$id = false;
 
 		if( is_array( $data ) ) {
 
-			// echo '-1<br/>';
-
 			$id = false;
-			foreach( $this->_aliases as $alias ) {
-				if( $id = $data[ $alias.'.id'] ){
+			foreach( $this->_aliases as $alias )
+				if( isset($data[ $alias.'.id']) && $id = $data[ $alias.'.id'] )
 					break;
-				}
-			}
+			
 		} elseif( isset($this->_field_init_lookup) && $this->_field_init_lookup && is_string( $data ) && !is_numeric( $data ) ) {
-
-			// echo '-2<br/>';
-
+			
+			/*
 			$dataset = new ep_Dataset( $this->_aliases[0] );
 			$data = $dataset->where($this->_field_init_lookup, '=', $data)->find_one( false );
 			unset( $dataset );
 			$id = (int) $data[ $this->_aliases[0].'.id' ];
+			*/
+			
 		} elseif( $data ) {
-
-			// echo '-3<br/>';
 
 			$id = $data;
 			unset( $data );
@@ -73,16 +63,19 @@ abstract class ep_Object extends ep_Api {
 		}
 
 		$this->id = $id;
-
 		if( isset( $data ) ) {
+		
 			$this->loaded = $this->parse_data( $data );
+			
 		} else {
-			if( $complex ){
+		
+			if( $complex )
 				$this->load();
-			} else {
+			else
 				$this->loaded = true;
-			}
+			
 		}
+		
 	}
 	
 	/**
@@ -140,26 +133,20 @@ abstract class ep_Object extends ep_Api {
 	}
 
 	function load(){
-		$this->load_from_db();
+		
+		
+	  $response = $this->call('ep_Object/load', array(
+	  	'dataset' => $this->_aliases[0],
+	  	'object_id' => $this->id,
+ 	  ));
+				
+		$this->data = $response['data'];
+		return $this;
+		
 	}
-
+	
 	function load_from_db(){
-		$dataset = new ep_Dataset( $this->_aliases[0] );
-		$data = $dataset->where('id', '=', $this->id)->find_one( false );
-
-		if( $dataset->mode=='DBF' ) {
-
-			$this->data = $data;
-		} else {
-
-			if( $data ) {
-				$this->parse_data( $data );
-			} else {
-				$this->loaded = false;
-			}
-		}
-
-		unset( $dataset );
+		return $this->load();
 	}
 
 	function parse_data( $data ){
@@ -185,21 +172,20 @@ abstract class ep_Object extends ep_Api {
 
 				if( in_array($alias, $this->_aliases) ) {
 					$this->data[ $key ] = $v;
-				}
-				else{
+				} else {
+					
+				  $this->data[ $alias . '.' . $key ] = $v;
 					$children[ $alias ][ $alias.'.'.$key ] =	$v ;
+				
 				}
 			}
 
 			foreach( $children as $k => $v ){
 				$method = 'set_ep_' . $k;
 
-				// echo "\n".$method;
-
-				if( method_exists( $this, $method ) ) {
-					// var_export( $v );
+				if( method_exists( $this, $method ) )
 					call_user_func_array(array($this, $method), array($data));
-				}
+				
 			}
 
 			if( !empty($layers) ) {
@@ -210,33 +196,81 @@ abstract class ep_Object extends ep_Api {
 		return true;
 	}
 
+	/**
+	 * @return boolean
+	 */
 	function isloaded(){
 		return (Boolean) $this->loaded;
 	}
 
 	function load_layer($layer, $params = false) {
-		$data = $this->call('load-layer', array(
+
+		$data = $this->call('ep_Object/loadLayer', array(
 				'object' => get_class( $this ),
 				'id' => $this->id,
 				'layer' => $layer,
 				'params' => $params,
 		));
 
-		if( $data ){
-			$this->layers[ $layer ] = $data['data'];
-		}
+		return $data ? $this->layers[ $layer ] = $data['data'] : false;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getTitle(){
-		foreach( array('tytul', 'nazwa', 'label', 'sygnatura', 'kod') as $key ) {
-			if( $this->data[ $key ] ){
+		foreach( array('tytul', 'nazwa', 'label', 'sygnatura', 'kod', 'skrot') as $key ) {
+			if( isset( $this->data[ $key ] ) && $this->data[ $key ] ){
 				return $this->data[ $key ];
 			}
 		}
 		return '';
 	}
 
+	/**
+	 * @return string
+	 */
+	public function getLabel(){
+		return '';					   
+	}
+
+	/**
+	 * @return string
+	 */	
 	public function getDescription(){
 		return false;
+	}
+	
+	public function getDate(){			
+			return false;			
+	}
+	
+	public function getDatetime(){			
+		return false;			
+	}
+	
+	public function search(){
+		return false;
+	}
+
+	/**
+	 * @return string
+	 */	
+	public function __toString(){
+		return $this->getTitle();
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getId(){
+		return $this->get_id();
+	}
+	
+	/**
+	 * @return int
+	 */
+	public function get_id(){
+		return isset( $this->data['id'] )  ? $this->data['id'] : null;
 	}
 }

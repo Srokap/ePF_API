@@ -13,9 +13,21 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('nik_raporty');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('nik_raporty')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
+ * Dostępne dodatkowe warstwy danych:
+ * docs
+ *
+ * Przykład:
+ * <code>
+ * 	 $data = $object->load_layer('docs');
+ * </code>
+ *
  * @example objects/ep_NIK_Raport
  *
  * @see ep_NIK_Raport::$_aliases
@@ -45,13 +57,15 @@ class ep_NIK_Raport extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('nik_raporty');
-	public $_field_init_lookup = 'numer';
 
 	/**
-	 * @return string
+	 * @var string
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
+	public function getDate(){	
+		return $this->data['data_publikacji'];
 	}
 }

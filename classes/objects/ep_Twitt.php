@@ -13,9 +13,13 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('twitter');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('twitter')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
  * @example objects/ep_Twitt
  *
  * @see ep_Twitt::$_aliases
@@ -43,21 +47,29 @@ class ep_Twitt extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('twitter');
-	private $_posel = false;
-
-	public function set_ep_poslowie( $data ){
-		$this->_posel = new ep_Posel( $data );
-	}
-
-	public function posel(){
-		return $this->_posel;
-	}
-
+	
 	/**
 	 * @return string
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
+	public function getDate(){
+		return $this->data['created_at'];
+	}
+	
+	/**
+	 * @return string
+	 */
+	public function getTitle(){
+		return $this->data['html'];
+	}
+	
+	/**
+	 * @return string
+	 */
+	public function getDatetime(){
+		return $this->data['created_at'];
 	}
 }

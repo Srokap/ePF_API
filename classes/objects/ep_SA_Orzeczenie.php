@@ -14,9 +14,21 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('sa_orzeczenia');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('sa_orzeczenia')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
+ * Dostępne dodatkowe warstwy danych:
+ * html
+ *
+ * Przykład:
+ * <code>
+ * 	 $data = $object->load_layer('html');
+ * </code>
+ *
  * @example objects/ep_SA_Orzeczenie
  *
  * @see ep_SA_Orzeczenie::$_aliases
@@ -59,58 +71,15 @@ class ep_SA_Orzeczenie extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('sa_orzeczenia', 'sa_orzeczenia_typy');
-	public $_field_init_lookup = 'sygnatura';
-
-	private $_sad;
-	private $_organ;
-	private $_wynik;
-	private $_sedziowie;
-
-	public function __construct( $data, $complex = true ){
-		parent::__construct( $data, $complex );
-		$sad = $this->sad()->data;//FIXME Trying to get property of non-object
-		$this->data['tytul_skrocony'] = $this->data['nazwa'].' '.$sad['dopelniacz'].'	z dnia '.sm_data_slowna($this->data['data_orzeczenia']);
-		$this->data['tytul'] = $this->data['sygnatura'];//FIXME Undefined index: sygnatura
-	}
-
-	public function sedziowie() {
-		if( !$this->_sedziowie ) {
-			$this->_sedziowie = new ep_Dataset('sa_sedziowie');
-			$this->_sedziowie->init_where('sa_sedziowie_orzeczenia.orzeczenie_id', '=', $this->id);
-		}
-
-		return $this->_sedziowie;
-	}
-
-	public function set_ep_sa_sady($data){
-		$this->_sad = new ep_SA_Sad($data);
-	}
-
-	public function sad(){
-		return $this->_sad;
-	}
-
-	public function set_ep_sa_skarzone_organy($data){
-		$this->_organ = new ep_SA_Skarzony_Organ($data);
-	}
-
-	public function skarzony_organ(){
-		return $this->_organ;
-	}
-
-	public function set_ep_sa_orzeczenia_wyniki($data){
-		$this->_wynik = new ep_SA_Orzeczenie_Wynik($data);
-	}
-
-	public function wynik(){
-		return $this->_wynik;
-	}
 
 	/**
 	 * @return string
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
+	public function getDate(){	
+		return $this->data['data_orzeczenia'];
 	}
 }

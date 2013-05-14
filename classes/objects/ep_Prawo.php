@@ -13,9 +13,13 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('prawo');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('prawo')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
  * @example objects/ep_Prawo
  *
  * @see ep_Prawo::$_aliases
@@ -71,9 +75,19 @@ class ep_Prawo extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('prawo');
+
+	/**
+	 * @var string
+	 */
 	public $_field_init_lookup = 'tytul';
 
+	/**
+	 * @return string
+	 */
 	public function getDescription(){
 		return $this->data ? $this->data['sygnatura'] : false;
 	}
@@ -81,7 +95,7 @@ class ep_Prawo extends ep_Object{
 	/**
 	 * @return string
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
+	public function getDate(){
+		return $this->data['data_publikacji'];
 	}
 }

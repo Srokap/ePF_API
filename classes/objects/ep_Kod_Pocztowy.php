@@ -13,9 +13,21 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('kody_pocztowe');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('kody_pocztowe')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
+ * Dostępne dodatkowe warstwy danych:
+ * obszary
+ *
+ * Przykład:
+ * <code>
+ * 	 $data = $object->load_layer('obszary');
+ * </code>
+ *
  * @example objects/ep_Kod_Pocztowy
  *
  * @see ep_Kod_Pocztowy::$_aliases
@@ -46,32 +58,15 @@ class ep_Kod_Pocztowy extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('kody_pocztowe');
-	public $_field_init_lookup = 'kod';
-
-	private $_gminy = false;
-
-	public function gminy(){
-		if( !$this->_gminy ) {
-
-			$this->_gminy = new ep_Dataset('gminy');
-			$this->_gminy->init_where('kody_pocztowe_gminy.kod_id', '=', $this->data['id'])->order_by('typ_id', 'ASC');
-		}
-		return $this->_gminy;
-	}
-
+	
 	/**
-	 * @var ep_Wojewodztwo
-	 */
-	protected $_wojewodztwo = null;
-
-	/**
-	 * @return ep_Wojewodztwo
-	 */
-	public function wojewodztwo(){
-		if( !$this->_wojewodztwo ) {
-			$this->_wojewodztwo = new ep_Wojewodztwo( $this->get_wojewodztwo_id() );
-		}
-		return $this->_wojewodztwo;
+	 * @return string
+	 */		
+	public function getLabel(){
+		return '<b>Kod pocztowy</b>';
 	}
 }

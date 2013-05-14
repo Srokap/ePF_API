@@ -13,9 +13,23 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('bdl_wskazniki_podgrupy');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('bdl_wskazniki_podgrupy')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
+ * Dostępne dodatkowe warstwy danych:
+ * wskazniki
+ * dane_lokalne
+ * redirect_id
+ *
+ * Przykład:
+ * <code>
+ * 	 $data = $object->load_layer('wskazniki');
+ * </code>
+ *
  * @example objects/ep_BDL_Podgrupa
  *
  * @see ep_BDL_Kategoria::$_aliases
@@ -44,12 +58,33 @@ class ep_BDL_Podgrupa extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('bdl_wskazniki_podgrupy');
 
 	/**
 	 * @return string
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
+    public function getLabel(){
+	   return '<b>Wskaźniki</b> Banku Danych Lokalnych';
+	}
+
+	/**
+	 * @return ep_BDL_Grupa
+	 */	
+	public function grupa(){		
+		if( $this->data['grupa_id'] ){
+			return new ep_BDL_Grupa( $this->data['grupa_id'] );					
+		}
+	}
+
+	/**
+	 * @return ep_BDL_Kategoria
+	 */	
+	public function kategoria(){		
+		if( $this->data['kategoria_id'] ){
+			return new ep_BDL_Kategoria( $this->data['kategoria_id'] );
+		}			
 	}
 }

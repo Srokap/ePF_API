@@ -6,7 +6,7 @@
  */
 
 /**
- * Obiekt ep_Legislacja_Projekt.
+ * Obiekt ep_Projekt_Ustawy.
  *
  * Aliasy:
  *   legislacja_projekty_ustaw
@@ -23,7 +23,7 @@
  *   $pagination = $searcher->getPagination();
  * </code>
  *
- * @example objects/ep_Legislacja_Projekt
+ * @example objects/ep_Projekt_Ustawy
  *
  * @see ep_Legislacja_Projekt::$_aliases
  *
@@ -33,7 +33,7 @@
  * @version    0.x.x-dev
  * @since      version 0.1.0
  */
-class ep_Legislacja_Projekt extends ep_Object{
+class ep_Projekt_Ustawy extends ep_Object{
 
 	/**
 	 * @see ep_Object::getDataStruct()
@@ -63,12 +63,7 @@ class ep_Legislacja_Projekt extends ep_Object{
 	/**
 	 * @var array
 	 */
-	public $_aliases = array('legislacja_projekty_ustaw','legislacja_projekty_uchwal','legislacja_projekty','konsultacje');
-	
-	/**
-	 * @var string
-	 */
-	public $_field_init_lookup = 'tytul';
+	public $_aliases = array('legislacja_projekty_ustaw', 'legislacja_projekty');
 
 	/**
 	 * @var string

@@ -13,9 +13,21 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('sejm_interpelacje');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('sejm_interpelacje')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
+ * Dostępne dodatkowe warstwy danych:
+ * dane
+ *
+ * Przykład:
+ * <code>
+ * 	 $data = $object->load_layer('dane');
+ * </code>
+ *
  * @example objects/ep_Sejm_Interpelacja
  *
  * @see ep_Sejm_Interpelacja::$_aliases
@@ -52,33 +64,16 @@ class ep_Sejm_Interpelacja extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('sejm_interpelacje');
-	public $_field_init_lookup = 'numer';
 
-	private $_tablica = false;
-	private $_poslowie = false;
-
-	public function poslowie(){
-		if( $this->_poslowie===false ) {
-			$_poslowie = new ep_Dataset('poslowie');
-			$_poslowie->init_where('sejm_interpelacje.id', '=', $this->data['id']);
-			$this->_poslowie = $_poslowie->find_all();
-		}
-		return $this->_poslowie;
-	}
-
-	public function tablica(){
-		if( $this->_tablica===false ) {
-			$this->_tablica = new ep_Dataset('sejm_interpelacje_pisma');
-			$this->_tablica->init_where('interpelacja_id', '=', $this->data['id']);
-		}
-		return $this->_tablica;
-	}
 
 	/**
 	 * @return string
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
+	public function getDate(){
+		return (string) $this->data['data_ogloszenia'];
 	}
 }

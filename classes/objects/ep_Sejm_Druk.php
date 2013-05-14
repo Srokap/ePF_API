@@ -14,8 +14,11 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('sejm_druki');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('sejm_druki')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
  * @example objects/ep_Sejm_Druk
  *
@@ -49,13 +52,20 @@ class ep_Sejm_Druk extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('sejm_druki', 'sejm_druki_typy');
+
+	/**
+	 * @var array
+	 */
 	public $_field_init_lookup = 'numer';
 
 	/**
 	 * @return string
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
+	public function getDate(){
+		return (string) $this->data['data'];
 	}
 }

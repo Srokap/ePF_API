@@ -1,3 +1,3 @@
 <?php
-define('eP_API_KEY', '4d0de21ae408e351829fae4da2e72f03');
-define('eP_API_SECRET', '6d159ce77f02388369a8701a89257f81');
+define('eP_API_KEY', '6c627a9694f43fe87ac1bed7e02e7fa5');
+define('eP_API_SECRET', '72a2e23c6730d81edd61710ae6050a72');

@@ -13,9 +13,13 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('senatorowie_oswiadczenia_majatkowe');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('senatorowie_oswiadczenia_majatkowe')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
  * @example objects/ep_Senat_Oswiadczenie_Majatkowe
  *
  * @see ep_Senat_Oswiadczenie_Majatkowe::$_aliases
@@ -41,19 +45,9 @@ class ep_Senat_Oswiadczenie_Majatkowe extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('senatorowie_oswiadczenia_majatkowe');
 
-	private $_senator = false;
-
-	public function set_ep_senatorowie($data){
-		$this->_senator = new ep_Senator($data);
-	}
-
-	public function senator(){
-		return $this->_senator;
-	}
-
-	public function __toString(){
-		return $this->get_nazwa();
-	}
 }

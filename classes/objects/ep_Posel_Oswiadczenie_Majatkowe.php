@@ -13,9 +13,13 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('poslowie_oswiadczenia_majatkowe');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('poslowie_oswiadczenia_majatkowe')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
  * @example objects/ep_Posel_Oswiadczenie_Majatkowe
  *
  * @see ep_Posel_Oswiadczenie_Majatkowe::$_aliases
@@ -42,20 +46,15 @@ class ep_Posel_Oswiadczenie_Majatkowe extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('poslowie_oswiadczenia_majatkowe');
-	public $_field_init_lookup = 'label';
-
-	private $_posel = false;
-
-	public function set_ep_poslowie($data){
-		$this->_posel = new ep_Posel($data);
-	}
-
-	public function posel(){
-		return $this->_posel;
-	}
-
-	public function __toString(){
-		return $this->get_nazwa();
+	
+	/**
+	 * @return string
+	 */
+	public function getDate(){
+		return $this->data['data'];
 	}
 }

@@ -27,26 +27,31 @@
  * @since      version 0.1.0
  **/
  
+ 
+ 
+ 
 /*
- * PONIŻEJ WKLEJ SWOJE KLUCZE API. ABY JE UZYSKAĆ, MUSISZ ZAREJETROWAĆ KONTO 
- * NA PORTALU http://sejmometr.pl
+ * ABY ZACZĄĆ KORZYSTANIE Z ep_API:
+ * 1) ZAŁÓŻ KONTO NA PORTALU SEJMOMETR http://sejmometr.pl/rejestracja
+ * 2) PRZEJDŹ DO PANELU ADMINISTRACYJNEGO SWOJEGO KONTA, DO ZAKŁADKI "Klucze API" http://sejmometr.pl/api_klucze
+ * 3) WYGENERUJ SWOJE PRYWATNE KLUCZE API
+ * 4) ZMIEŃ NAZWĘ PLIKU config.dist.php na config.php I WKLEJ DO NIEGO SWOJE PRYWATNE KLUCZE API
+ *
  * WIĘCEJ INFORMACJI NA http://sejmometr.pl/api
  */
 
-// define('eP_API_KEY', '');
-// define('eP_API_SECRET', '');
+@include('config.php');
+		
 
-/*
- * Jeżeli stałe eP_API_KEY i eP_API_SECRET definiujesz w innym pliku - pamiętaj,
- * aby powyższe definicje były wykomentowane
- */
-// include_once('config.php');
+
 
 /**
  * Inicjalizacja systemu automatycznego ładowania klas.
  */
+
 require_once('classes/ep_Autoloader.php');
 $autoloader = new ep_Autoloader();
 $autoloader->register();
+
 
 require_once('classes/ep_API.php');

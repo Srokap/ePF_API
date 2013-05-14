@@ -13,8 +13,11 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('senat_druki');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('senat_druki')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
  * @example objects/ep_Senat_Druk
  *
@@ -42,13 +45,15 @@ class ep_Senat_Druk extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('senat_druki');
-	public $_field_init_lookup = 'numer';
 
 	/**
 	 * @return string
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
-	}
+	public function getDate(){
+		return (string) $this->data['data'];
+	}	
 }

@@ -13,9 +13,13 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('poslowie_rejestr_korzysci');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('poslowie_rejestr_korzysci')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
  * @example objects/ep_Posel_Rejestr_Korzysci
  *
  * @see ep_Posel_Rejestr_Korzysci::$_aliases
@@ -42,20 +46,16 @@ class ep_Posel_Rejestr_Korzysci extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('poslowie_rejestr_korzysci');
-	public $_field_init_lookup = 'label';
-
-	private $_posel = false;
-
-	public function set_ep_poslowie($data){
-		$this->_posel = new ep_Posel($data);
+	
+	/**
+	 * @return string
+	 */
+	public function getDate(){
+		return $this->data['data'];
 	}
 
-	public function posel(){
-		return $this->_posel;
-	}
-
-	public function __toString(){
-		return $this->get_nazwa();
-	}
 }

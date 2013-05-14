@@ -13,9 +13,21 @@
  *
  * Przykładowe zastosowanie:
  * <code>
- *   $dataset = new ep_Dataset('sejm_komunikaty');
- *   $data = $dataset->find_all();
+ * 	 $searcher = new ep_Search();
+ *	 $searcher->setDataset('sejm_komunikaty')->load();
+ *
+ *   $objects = $searcher->getObjects();
+ *   $pagination = $searcher->getPagination();
  * </code>
+ *
+ * Dostępne dodatkowe warstwy danych:
+ * content
+ *
+ * Przykład:
+ * <code>
+ * 	 $data = $object->load_layer('content');
+ * </code>
+ *
  * @example objects/ep_Sejm_Komunikat
  *
  * @see ep_Sejm_Komunikat::$_aliases
@@ -43,12 +55,22 @@ class ep_Sejm_Komunikat extends ep_Object{
 		return $result;
 	}
 
+	/**
+	 * @var array
+	 */
 	public $_aliases = array('sejm_komunikaty');
+	
+	/**
+	 * @return string
+	 */
+	public function getDate(){
+		return $this->data['datetime'];
+	}
 
 	/**
 	 * @return string
 	 */
-	public function __toString(){
-		return $this->get_nazwa();
+	public function getDatetime(){
+		return $this->data['datetime'];
 	}
 }
