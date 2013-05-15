@@ -27,6 +27,8 @@ Przykład użycia
 
 Wyszukiwanie danych publicznych, w których występuje fraza "Informacja publiczna":
 		
+		require_once('ePF_API/ep_API.php');
+		
 		$searcher = new ep_Search();
 		$searcher->setQ('"Informacja publiczna"');
 		$searcher->load();
@@ -42,13 +44,17 @@ Zmienna $pagination jest tablicą asocjacyjną zawierającą pola:
 * page - numer strony wyników
 
 Aby regulować ilość zwracanych wyników i poruszać się po wszystkich stronach wyników, użyj parametrów metody load(), np:
+
 		$searcher->load(30, 2);
+
 zwróci 30 wyników, poczynając od strony nr 2.
 
 
 
 Pobieranie listy posłów na Sejm:
-
+		
+		require_once('ePF_API/ep_API.php');
+		
 		$searcher = new ep_Search();
 		$searcher->setDataset('poslowie');
 		$searcher->load();
