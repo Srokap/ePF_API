@@ -26,7 +26,7 @@ class ep_Api {
 	public $http_code = false;
 	private $_key = eP_API_KEY;
 	private $_secret = eP_API_SECRET;
-	private $_default_server_address = 'https://sejmometr.pl/api-server-v1';
+	private $_default_server_address = 'http://sejmometr.pl/api-server-v1';
   
   
   
@@ -105,7 +105,7 @@ class ep_Api {
 			}
 			
 			default: {
-				throw new Exception('Błąd wewnętrzny: Nieoczekiwana odpowiedź serwera '.$this->http_code);
+				throw new Exception('Błąd wewnętrzny: Nieoczekiwana odpowiedź serwera: ' . $this->http_code . $data);
 				break;
 			}
 		}
