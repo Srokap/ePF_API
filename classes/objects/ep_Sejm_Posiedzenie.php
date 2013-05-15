@@ -59,16 +59,30 @@ class ep_Sejm_Posiedzenie extends ep_Object{
 	 * @var array
 	 */
 	public $_aliases = array('sejm_posiedzenia');
-
-	public function __construct( $data, $complex = true ){
-		parent::__construct( $data, $complex );
-		
-		if( isset($this->data['tytul']) ) {
-			$this->data['numer'] = (int) $this->data['tytul'];
-			$this->data['tytul'] = 'Posiedzenie Sejmu nr '.$this->data['tytul'];
-		}
-	}	
 	
+	/**
+	 * @var string
+	 */
+	
+	public function getTitle(){
+		
+		if( $this->data['numer'] )
+			return 'Posiedzenie Sejmu #' . $this->data['numer'];
+		else
+			return $this->data['tytul'];
+		
+	}
+	
+	/**
+	 * @var string
+	 */
+	
+	public function getDate(){
+		
+		return $this->data['data_start'];
+		
+	}
+	 
 	/**
 	 * @var ep_Search
 	 */
