@@ -40,7 +40,7 @@
  * WIĘCEJ INFORMACJI NA http://sejmometr.pl/api
  */
 
-@include('config.php');
+@include(dirname(__FILE__) . '/config.php');
 		
 
 
@@ -49,9 +49,9 @@
  * Inicjalizacja systemu automatycznego ładowania klas.
  */
 
-require_once('classes/ep_Autoloader.php');
+require_once(dirname(__FILE__) . '/classes/ep_Autoloader.php');
 $autoloader = new ep_Autoloader();
 $autoloader->register();
 
 
-require_once('classes/ep_API.php');
+require_once(dirname(__FILE__) . '/classes/ep_API.php');
